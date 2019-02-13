@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+
+  
+  <meta charset="UTF-8">
+  <title>
+    ajax 个人整理 | wuxingtao Blog
+  </title>
+
+
+  
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
+
+  
+  <link rel="canonical" href="/posts/summary/summary-ajax-learn/" />
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.loli.net/icon?family=Material+Icons">
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/ocean.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/index.css">
+  
+  <link rel="stylesheet" href="/css/custom.css">
+  
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="wuxingtao Blog" />
+  <link href="/index.xml" rel="feed" type="application/rss+xml" title="wuxingtao Blog" />
+
+  
+  <link href="/favicon.ico" rel="shortcut icon">
+
+  <script>
+    window.baseURL = '';
+  </script>
+</head>
+
+
+
+
+
+
+
+<body>
+  <div class="navbar-fixed">
+    <nav class="navbar">
+      <div class="nav-container container">
+        <div class="nav-wrapper inner">
+          <a href="javascript:void(0)" data-activates="sidebar" class="button-collapse hide-on-large-only">
+            <i class="material-icons">menu</i>
+          </a>
+          <a href="" class="brand-logo">
+            <i class="material-icons hide-on-med-and-down">restaurant_menu</i>
+            wuxingtao Blog
+          </a>
+          
+          <ul class=" nav-menu tabs tabs-transparent hide-on-med-and-down">
+            
+            <li class="tab">
+              <a href="/" class=''>
+                Home
+              </a>
+            </li>
+            
+            <li class="tab">
+              <a href="/archive/" class=''>
+                Archive
+              </a>
+            </li>
+            
+            <li class="tab">
+              <a href="/about/" class=''>
+                About
+              </a>
+            </li>
+            
+          </ul>
+          
+
+          <form class="nav-form hide-on-small-and-down">
+            <div class="form-group">
+              <i class="material-icons">search</i>
+              <input type='text' placeholder="输入搜索关键字" />
+            </div>
+            <div class="form-popout">
+              <div class="search-result">
+                <label>暂无搜索结果</label>
+                <ul>
+                </ul>
+              </div>
+            </div>
+          </form>
+
+
+          <ul class=" nav-menu apps">
+            
+            <li>
+              <a class="search-btn hide-on-med-and-up" href='#search-panel'>
+                <i class="material-icons">search</i>
+              </a>
+            </li>
+            <li>
+              <a class="term-btn hide-on-small-and-down" href='#term-panel'>
+                <i class="material-icons">apps</i>
+              </a>
+            </li>
+            <li>
+              <a class="rss-btn hide-on-small-and-down" href='/index.xml' target="_blank">
+                <i class="material-icons">rss_feed</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  
+  <div class="mobile-search hide-on-med-and-up">
+  <div class="header">
+    
+    <i class="material-icons">search</i>
+    <input type='text' placeholder="输入搜索关键字" />
+    <i class="material-icons mobile-search-close">cancel</i>
+  </div>
+  <div class="content">
+    <label>暂无搜索结果</label>
+    <ul></ul>
+  </div>
+</div>
+  
+
+  <div class="taxonomy">
+    <div class="container">
+      <div class="inner">
+        <div class="taxonomy-panel">
+          
+          <div class='group'>
+            <label>Category</label>
+            <ul>
+                
+              <li>
+                <a class="btn btn-secondary" href='/categories/node'> node
+                  <span class="badge">2</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/categories/summary'> summary
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/categories/tao'> tao
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          <div class='group'>
+            <label>Tag</label>
+            <ul>
+                
+              <li>
+                <a class="btn btn-secondary" href='/tags/summary'> summary
+                  <span class="badge">6</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/javascript'> javascript
+                  <span class="badge">2</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/node'> node
+                  <span class="badge">2</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/ajax'> ajax
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/development'> development
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/express'> express
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/git'> git
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/go'> go
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/golang'> golang
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/hack'> hack
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/html'> html
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/hugo'> hugo
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/mongodb'> mongodb
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/regexp'> regexp
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/seajs'> seajs
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/templates'> templates
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/theme'> theme
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/themes'> themes
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/vscode'> vscode
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='/tags/webstorm'> webstorm
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <ul class="side-nav" id="sidebar">
+    
+    <li>
+      <a href="/" class=''>
+        Home
+      </a>
+    </li>
+    
+    <li>
+      <a href="/archive/" class=''>
+        Archive
+      </a>
+    </li>
+    
+    <li>
+      <a href="/about/" class=''>
+        About
+      </a>
+    </li>
+    
+    <li>
+      <a class="term-btn-mobile hide-on-med-only" href='/categories/'>
+        Categories
+      </a>
+    </li>
+    <li>
+      <a class="term-btn-mobile hide-on-med-only" href='/tags/'>
+        Tags
+      </a>
+    </li>
+    <li>
+      <a class="rss-btn-mobile hide-on-med-only" href='/index.xml' target="_blank">
+        Rss
+      </a>
+    </li>
+  </ul>
+  
+
+
+
+
+
+<main id="single" role="main" class="main-panel">
+  <div class="page-content">
+    <div class="container container-ex">
+      <div class="inner">
+        <section class="post-wrapper">
+          
+          <div class="toc-panel">
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#简单应用">简单应用</a></li>
+<li><a href="#html-form-标签的-enctype-属性">HTML <form> 标签的 enctype 属性</a>
+<ul>
+<li><a href="#application-x-www-form-urlencoded">application/x-www-form-urlencoded</a></li>
+<li><a href="#multipart-form-data">multipart/form-data</a></li>
+<li><a href="#application-json">application/json</a></li>
+<li><a href="#text-xml">text/xml</a></li>
+</ul></li>
+<li><a href="#x-www-form-urlencoded与multipart-form-data区别-如何选择">x-www-form-urlencoded与multipart/form-data区别，如何选择？</a></li>
+<li><a href="#个人常使用情况">个人常使用情况：</a></li>
+<li><a href="#2-form表单中的post-与get与ajax中的post-get-作用相同么">2.Form表单中的post 与get与ajax中的post get 作用相同么？</a></li>
+<li><a href="#form表单插件jquery-form-js-ajaxform和ajaxsubmit">Form表单插件jquery.form.js ajaxForm和ajaxSubmit</a></li>
+<li><a href="#用html的file控件上传图片-用js判断和限制图片格式-类型-尺寸">用HTML的File控件上传图片，用JS判断和限制图片格式、类型、尺寸</a></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+          <div class="post reveal ">
+            <div class="card">
+              <section class="breadcrumb-root">
+  <div class="breadcrumbs" role="navigation" aria-label="breadcrumbs navigation">
+     
+
+    <a class="breadcrumb" href="">
+      <i class="material-icons">location_on</i>Home</a>
+      
+    
+        
+    
+      
+    
+        
+    
+      
+    <a class="breadcrumb" href='/posts/summary/'>Summary</a>
+        
+    
+      
+    <span class="breadcrumb">ajax 个人整理</span>
+
+        
+    
+      
+  </div>
+</section>
+              
+              <div class="card-header postinfo">
+                <span class="card-title">ajax 个人整理 </span>
+              </div>
+              <div class="card-header date">
+                
+                <div class="group">
+                  <i class="material-icons">flag</i>
+                  <time>创建：2014年10月11日
+                  </time>
+                </div>
+                
+                
+
+              </div>
+              
+              <div class="card-content">
+
+                <article class="article">
+                  
+
+<p>[toc]</p>
+
+<h2 id="简单应用">简单应用</h2>
+
+<p><span style="color:red">
+1.$.ajax默认为异步请求，async:true,</span></p>
+
+<p><span style="color:red">
+2..post 方法是异步的
+<a href="https://api.jquery.com/jQuery.post/">https://api.jquery.com/jQuery.post/</a>
+<a href="http://stackoverflow.com/questions/5821380/how-to-make-a-jquery-post-request-synchronous">http://stackoverflow.com/questions/5821380/how-to-make-a-jquery-post-request-synchronous</a>
+ </span></p>
+
+<pre><code>$.post(url,{jsonparam:json},function(data){
+    console.log(data)
+ }).error(function(xhr,errorText,errorType){
+    alert(errorText)
+ })
+</code></pre>
+
+<p><strong>$.post只是简化版的ajax是异步的</strong></p>
+
+<hr />
+
+<h2 id="html-form-标签的-enctype-属性">HTML <form> 标签的 enctype 属性</h2>
+
+<p><em>语法</em>
+<code>&lt;form enctype=&quot;value&quot;&gt;</code></p>
+
+<p><em>属性值</em></p>
+
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>application/x-www-form-urlencoded</td>
+<td align="center">在发送前编码所有字符（默认）</td>
+</tr>
+
+<tr>
+<td>multipart/form-data</td>
+<td align="center">不对字符编码。<br>在使用包含文件上传控件的表单时，必须使用该值。</td>
+</tr>
+
+<tr>
+<td>text/plain</td>
+<td align="center">空格转换为 &ldquo;+&rdquo; 加号，但不对特殊字符编码。</td>
+</tr>
+</tbody>
+</table>
+
+<p><br></p>
+
+<hr />
+
+<p>##四种常见的 POST 提交数据方式</p>
+
+<p><a href="http://www.ietf.org/rfc/rfc2616.txt">HTTP/1.1</a> 协议规定的 HTTP 请求方法有 OPTIONS、GET、HEAD、POST、PUT、DELETE、TRACE、CONNECT 这几种。其中 POST 一般用来向服务端提交数据，本文主要讨论 POST 提交数据的几种方式。</p>
+
+<p>我们知道，HTTP 协议是以 ASCII 码传输，建立在 TCP/IP 协议之上的应用层规范。规范把 HTTP 请求分为三个部分：状态行、请求头、消息主体。类似于下面这样：</p>
+
+<pre><code>&lt;method&gt; &lt;request-url&gt; &lt;version&gt;
+&lt;headers&gt;
+&lt;entity-body&gt;&lt;/entity-body&gt;&lt;/headers&gt;&lt;/version&gt;&lt;/request-url&gt;&lt;/method&gt;
+</code></pre>
+
+<p>协议规定 POST 提交的数据必须放在消息主体（entity-body）中，但协议并没有规定数据必须使用什么编码方式。实际上，开发者完全可以自己决定消息主体的格式，只要最后发送的 HTTP 请求满足上面的格式就可以。</p>
+
+<p>但是，数据发送出去，还要服务端解析成功才有意义。一般服务端语言如 php、python 等，以及它们的 framework，都内置了自动解析常见数据格式的功能。服务端通常是根据请求头（headers）中的 Content-Type 字段来获知请求中的消息主体是用何种方式编码，再对主体进行解析。所以说到 POST 提交数据方案，包含了 Content-Type 和消息主体编码方式两部分。下面就正式开始介绍它们。</p>
+
+<h3 id="application-x-www-form-urlencoded">application/x-www-form-urlencoded</h3>
+
+<p>这应该是最常见的 POST 提交数据的方式了。浏览器的原生 form 表单，如果不设置 enctype 属性，那么最终就会以 application/x-www-form-urlencoded 方式提交数据。请求类似于下面这样（无关的请求头在本文中都省略掉了）：</p>
+
+<pre><code>(POST http://www.example.com HTTP/1.1)
+Content-Type: application/x-www-form-urlencoded;charset=utf-8
+title=test&amp;sub%5B%5D=1&amp;sub%5B%5D=2&amp;sub%5B%5D=3
+</code></pre>
+
+<p>首先，Content-Type 被指定为 application/x-www-form-urlencoded；其次，提交的数据按照 key1=val1&amp;key2=val2 的方式进行编码，key 和 val 都进行了 URL 转码。大部分服务端语言都对这种方式有很好的支持。例如 PHP 中，POST[′title′]可以获取到title的值，POST[′title′]可以获取到title的值，_POST[&lsquo;sub&rsquo;] 可以得到 sub 数组。</p>
+
+<p>很多时候，我们用 Ajax 提交数据时，也是使用这种方式。例如 JQuery 和 QWrap 的 Ajax，Content-Type 默认值都是「application/x-www-form-urlencoded;charset=utf-8」。</p>
+
+<h3 id="multipart-form-data">multipart/form-data</h3>
+
+<p>这又是一个常见的 POST 数据提交的方式。我们使用表单上传文件时，必须让 form 的 enctyped 等于这个值。直接来看一个请求示例：</p>
+
+<p><code>POST http://www.example.com HTTP/1.1</code></p>
+
+<pre><code>Content-Type:multipart/form-data; boundary=----WebKitFormBoundaryrGKCBY7qhFd3TrwA
+ 
+------WebKitFormBoundaryrGKCBY7qhFd3TrwA
+ 
+Content-Disposition: form-data; name=&quot;text&quot;
+ 
+title
+ 
+------WebKitFormBoundaryrGKCBY7qhFd3TrwA
+ 
+Content-Disposition: form-data; name=&quot;file&quot;; filename=&quot;chrome.png&quot;
+ 
+Content-Type: image/png
+ 
+PNG ... content of chrome.png ...
+ 
+------WebKitFormBoundaryrGKCBY7qhFd3TrwA--
+</code></pre>
+
+<p>这个例子稍微复杂点。首先生成了一个 boundary 用于分割不同的字段，为了避免与正文内容重复，boundary 很长很复杂。然后 Content-Type 里指明了数据是以 mutipart/form-data 来编码，本次请求的 boundary 是什么内容。消息主体里按照字段个数又分为多个结构类似的部分，每部分都是以 &ndash;boundary 开始，紧接着内容描述信息，然后是回车，最后是字段具体内容（文本或二进制）。如果传输的是文件，还要包含文件名和文件类型信息。消息主体最后以 &ndash;boundary&ndash; 标示结束。关于 mutipart/form-data 的详细定义，请前往 rfc1867 查看。</p>
+
+<p>这种方式一般用来上传文件，各大服务端语言对它也有着良好的支持。</p>
+
+<p>上面提到的这两种 POST 数据的方式，都是浏览器原生支持的，而且现阶段原生 form 表单也只支持这两种方式。但是随着越来越多的 Web 站点，尤其是 WebApp，全部使用 Ajax 进行数据交互之后，我们完全可以定义新的数据提交方式，给开发带来更多便利。</p>
+
+<h3 id="application-json">application/json</h3>
+
+<p>application/json 这个 Content-Type 作为响应头大家肯定不陌生。实际上，现在越来越多的人把它作为请求头，<span style="color:red;">用来告诉服务端消息主体是序列化后的 JSON 字符串</span>。由于 JSON 规范的流行，除了低版本 IE 之外的各大浏览器都原生支持 JSON.stringify，服务端语言也都有处理 JSON 的函数，使用 JSON 不会遇上什么麻烦。</p>
+
+<p>JSON 格式支持比键值对复杂得多的结构化数据，这一点也很有用。记得我几年前做一个项目时，需要提交的数据层次非常深，我就是把数据 JSON 序列化之后来提交的。不过当时我是把 JSON 字符串作为 val，仍然放在键值对里，以 x-www-form-urlencoded 方式提交。</p>
+
+<blockquote>
+<p>Google 的 AngularJS 中的 Ajax 功能，默认就是提交 JSON 字符串。例如下面这段代码：</p>
+</blockquote>
+
+<pre><code>var data = {'title':'test', 'sub' : [1,2,3]};
+ 
+$http.post(url, data).success(function(result) {
+ 
+...
+ 
+});
+</code></pre>
+
+<p>最终发送的请求是：</p>
+
+<pre><code>POST http://www.example.com HTTP/1.1
+Content-Type: application/json;charset=utf-8
+ 
+{&quot;title&quot;:&quot;test&quot;,&quot;sub&quot;:[1,2,3]}
+</code></pre>
+
+<p>这种方案，可以方便的提交复杂的结构化数据，特别适合 RESTful 的接口。各大抓包工具如 Chrome 自带的开发者工具、Firebug、Fiddler，都会以树形结构展示 JSON 数据，非常友好。但也有些服务端语言还没有支持这种方式，例如 php 就无法通过 $_POST 对象从上面的请求中获得内容。这时候，需要自己动手处理下：在请求头中 Content-Type 为 application/json 时，从 php://input 里获得原始输入流，再 json_decode 成对象。一些 php 框架已经开始这么做了。</p>
+
+<p>当然 AngularJS 也可以配置为使用 x-www-form-urlencoded 方式提交数据。如有需要，<a href="http://victorblog.com/2012/12/20/make-angularjs-http-service-behave-like-jquery-ajax/">可以参考这篇文章</a>。</p>
+
+<h3 id="text-xml">text/xml</h3>
+
+<p>我的博客之前提到过 XML-RPC（XML Remote Procedure Call）。它是一种使用 HTTP 作为传输协议，XML 作为编码方式的远程调用规范。典型的 XML-RPC 请求是这样的：</p>
+
+<p><code>POST http://www.example.com HTTP/1.1</code></p>
+
+<pre><code>Content-Type: text/xml
+&lt;!--?xml version=&quot;1.0&quot;?--&gt;
+&lt;methodcall&gt;
+&lt;methodname&gt;examples.getStateName&lt;/methodname&gt;
+&lt;params&gt;
+&lt;param&gt;
+&lt;value&gt;&lt;i4&gt;41&lt;/i4&gt;&lt;/value&gt;
+&lt;/params&gt;
+ 
+&lt;/methodcall&gt;
+</code></pre>
+
+<p>XML-RPC 协议简单、功能够用，各种语言的实现都有。它的使用也很广泛，如 WordPress 的 XML-RPC Api，搜索引擎的 ping 服务等等。JavaScript 中，也有现成的库支持以这种方式进行数据交互，能很好的支持已有的 XML-RPC 服务。不过，我个人觉得 XML 结构还是过于臃肿，一般场景用 JSON 会更灵活方便。</p>
+
+<hr />
+
+<h2 id="x-www-form-urlencoded与multipart-form-data区别-如何选择">x-www-form-urlencoded与multipart/form-data区别，如何选择？</h2>
+
+<p><code>www-form-urlencoded</code>是POST数据默认编码格式，POST过去的key-value会被编码成QueryString，格式如下:</p>
+
+<p><code>name=test&amp;gender=male&amp;email=iefreer@live.cn</code></p>
+
+<p>服务器端对接受数据的处理也很简单。</p>
+
+<p>json一般更多用来返回数据而不是在提交数据的时候使用，通常Restful服务都会支持json/xml格式的返回数据。</p>
+
+<p>json对象及其编解码在各个平台（无论服务器、电脑还是手机）都有很好的支持。</p>
+
+<p>那么怎么选择这两种方式呢？这不是一个非错即对的选择，但可以参考如下的实践建议：</p>
+
+<ol>
+<li><p>如果数据是简单、平面的key-value数值对，那么使用www-form-urlencoded简单实用，不需要额外的编解码；</p></li>
+
+<li><p>如果数据是复杂的嵌套关系，有多层数据，那么使用json会简化数据的处理，从而更高效。</p></li>
+</ol>
+
+<hr />
+
+<blockquote>
+<p>http请求
+场景：
+前端：SDK通过http发送请求/页面Ajax提交。
+后台：Springboot服务，Rest风格，需在controller层之前拦截请求。</p>
+</blockquote>
+
+<p>Springboot支持Rest风格给编码带来了很好的便捷性，@RequestBody让我们可以直接以application/json请求并在到达controller层获得已反序列化的对象，当有拦截的需求，这种方式却不再奏效。</p>
+
+<p><code>application/x-www-form-urlencoded</code>通过表单提交，在sevlet实现中，mutipart/form-data和application/x-www-form-urlencoded会被特殊处理，请求参数将被放置于request.paramter，这是一个map。我们可以从map中获取参数进行验证，或者其他拦截需求，map的获取类似hibernate的延迟加载，当调用request.getparamter(）方法，servlet才会从请求流中读取请求参数加载入map。InputStream也会存有这份数据，但如果这份数据被读取，那么到了controller层将无法读出数据，同样，拦截之后到达controller层时请求数据已经被加载入了controller层方法实参，实参对象需要有set方法，框架会以反射的方式调用属性的set方法注入数据，数据只会被注入到已有的属性。</p>
+
+<p>当以application/json的content-type传送数据，被传送的对象只需被json序列化。当以application/x-www-form-urlencoded的方式传送数据。请求的内容需要以..=..&amp;..=..的格式提交，在请求体内内容将会以”&amp;”和“ = ”进行拆分。</p>
+
+<pre><code>app.controller('mailController', function($scope, $http) {
+    $scope.guest = {};
+    $scope.authError = null;
+    $scope.send = function() {
+        var req = {
+            method: 'POST',
+            url: '/mail/send',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            data: &quot;from=&quot; + $scope.guest.from + '&amp;' + &quot;subject=&quot; + $scope.guest.subject + '&amp;' + &quot;content=&quot; + $scope.guest.content
+        };
+</code></pre>
+
+<p>将提交数据格式改一下：</p>
+
+<p><code>data:$scope.guest.serialize()</code></p>
+
+<p>request.paramter中将以</p>
+
+<pre><code>key：{&quot;from&quot;:&quot;awtrmml91@163.com&quot;,&quot;subject&quot;:&quot;主题&quot;,&quot;content&quot;:&quot;正文&quot;}
+value：&quot;&quot;
+</code></pre>
+
+<p>的形式出现。</p>
+
+<p><span style="color:red">
+ 但你需要使用content-type=application/json且后台使用@RequestBody，你无法再从paramter中获取请求数据。
+选择application/x-www-form-urlencoded还是application/json，得看你是否有从request.paramter获取请求数据的需求。
+</span></p>
+
+<hr />
+
+<h2 id="个人常使用情况">个人常使用情况：</h2>
+
+<p>第一：</p>
+
+<pre><code>$.ajax({
+    type:&quot;POST&quot;,
+    url:&quot;${basePath}/wechat/food/wxFoodEval_addFoodEval&quot;,
+    async:true,
+    data: $(&quot;#foodEvalForm&quot;).serialize(),
+    dataType:&quot;json&quot;,
+    success: function(data){
+        if(data.state) {
+            layer.open({
+                content: &quot;评价成功&quot;,
+                btn: ['确认'],
+                shadeClose: false,
+                time: 3,
+                yes: function(index){
+                    window.location.href = &quot;${basePath}/wx/food/foodEvalList.jsp?foodId=&quot;;
+                }, end :function(index) {
+                    window.location.href = &quot;${basePath}/wx/food/foodEvalList.jsp?foodId=&quot;;
+                }
+            });
+        } else {
+            alertTips(&quot;系统错误，请联系客服或重新尝试&quot;);
+        }
+        layer.close(layerLoad);
+    }
+});
+</code></pre>
+
+<p>第二：</p>
+
+<pre><code>$.post(&quot;${basePath}/wxBooking/WxBookingTime_getBookingDateAndTime&quot;,null,function(data) {
+    if(data.state) {
+        var dayArrays = data.dayArrays;
+        var timeArr = data.timeList;
+        var daySelect = &quot;&lt;option value='0'&gt;请选择日期&lt;/option&gt;&quot;;
+        var bookingTimeSelect = &quot;&lt;option value='0'&gt;请选择时间&lt;/option&gt;&quot;;
+        if(timeArr != null &amp;&amp; timeArr.length &gt; 0) {
+            for(var i in dayArrays) {
+                daySelect += &quot;&lt;option value='&quot;+dayArrays[i]+&quot;'&gt;&quot;+dayArrays[i]+&quot;&lt;/option&gt;&quot;;
+            }
+            for(var j in timeArr) {
+                bookingTimeSelect += &quot;&lt;option value='&quot;+timeArr[j]+&quot;'&gt;&quot;+timeArr[j]+&quot;&lt;/option&gt;&quot;;
+            }
+        }
+        $(&quot;#chooseDate&quot;).html(daySelect);
+        $(&quot;#chooseTime&quot;).html(bookingTimeSelect);
+    } else {
+        alertTips(&quot;系统错误，请刷新重试&quot;);
+    }
+ 
+});
+</code></pre>
+
+<pre><code>$.post(&quot;${bathPath}/wxBooking/WxAgeInterval_getPublishList&quot;,null,function(data){
+    if(data.state){
+        var ageIntervalList=data.ageIntervalList;
+        if(ageIntervalList !=null&amp;&amp;ageIntervalList.length&gt;0){
+            var html=&quot;&quot;;
+            for(i in ageIntervalList){
+                var ageInterval=ageIntervalList[i];
+                var ageIntervalStr=ageInterval.minAge+&quot;&quot;;
+                if(ageInterval.maxAge !=0){
+                    ageIntervalStr+=&quot;~&quot;+ageInterval.maxAge+&quot;岁&quot;
+                }else{
+                    ageIntervalStr+=&quot;岁以上&quot;
+                }
+                html+=&quot;&lt;li lang='&quot;+ageInterval.id+&quot;'&gt;&lt;a href='javascript:void(0);'&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;&quot;+ageIntervalStr+&quot;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&quot;;
+            }
+            $(&quot;#ageIntervalUl&quot;).append(html);
+        }
+    }
+})
+</code></pre>
+
+<h2 id="2-form表单中的post-与get与ajax中的post-get-作用相同么">2.Form表单中的post 与get与ajax中的post get 作用相同么？</h2>
+
+<p>相同的， ajax,中，，，data传参 ， post 地址栏不可见， 效率稍低。
+get 地址栏可见， 传输速度快，但是不安全。表单提交 同上</p>
+
+<p>**form ajax提交，推荐使用jquery.form.js **</p>
+
+<pre><code>$(&quot;#myForm&quot;).ajaxSubmit(options);
+$(&quot;#myForm&quot;).ajaxForm(options);
+</code></pre>
+
+<pre><code>//示例图片上传
+&lt;form action=&quot;&quot;  method=&quot;post&quot; enctype=&quot;multipart/form-data&quot; &gt;   
+  &lt;input  type=&quot;file&quot; data-id=&quot;${opOrder.merPicIdMap['06']}&quot; name=&quot;Filedata&quot; style=&quot;display:none;&quot; /&gt;
+&lt;/form&gt;
+
+//script
+$(formOjb).ajaxSubmit({
+    url:&quot;attachsUpload&quot;,
+    type:&quot;post&quot;,
+    dataType:'json',
+    timeout: 60000,
+    success:function(data){
+        if(&quot;0000&quot; == data.code &amp;&amp; data.data) {
+            $this.parents(&quot;td&quot;).find(&quot;img&quot;).attr(&quot;src&quot;, getImgPath(data));
+            $this.parents(&quot;td&quot;).find(&quot;.fancybox-buttons&quot;).attr(&quot;href&quot;, getImgPath(data));
+            var url = 'quickorder/updatePicByImgCode.html';
+            var jsonparam = {};
+            jsonparam.imgUrl = data.data.imgPath;
+            jsonparam.id = $this.attr('data-id');
+            var jsonparam = $.toJSON(jsonparam);
+            $.ajax({
+                type:&quot;post&quot;,
+                url:url,
+                data:{jsonparam:jsonparam},
+                success:function(data) {
+                    if (&quot;0000&quot; == data.code) {
+                        alertMsg.correct(&quot;操作成功！&quot;);
+                    } else {
+                        alertMsg.error(&quot;操作失败！&quot;+data.desc);
+                    }
+                }
+            });
+
+        }else{
+            alertMsg.error(data.desc);
+        }
+    },
+    error:function(xhr, ajaxOptions, thrownError){
+        alertMsg.error(&quot;网络异常，请稍后重试！&quot;);
+    }
+
+});
+</code></pre>
+
+<h2 id="form表单插件jquery-form-js-ajaxform和ajaxsubmit">Form表单插件jquery.form.js ajaxForm和ajaxSubmit</h2>
+
+<p>jQuery Form插件是一个优秀的Ajax表单插件，可以非常容易地、无侵入地升级HTML表单以支持Ajax。jQuery Form有两个核心方法 &ndash; ajaxForm() 和 ajaxSubmit()， 它们集合了从控制表单元素到决定如何管理提交进程的功能。另外，插件还包括其他的一些方法： formToArray()、formSerialize()、fieldSerialize()、fieldValue()、clearForm()、clearFields() 和 resetForm()等。
+下载地址： <a href="http://malsup.com/jquery/form/#download">http://malsup.com/jquery/form/#download</a>
+核心方法 &ndash; ajaxForm() 和 ajaxSubmit()
+ajaxsubmit更偏向于处理form表单，而post的方式更全面一些。提交表单自然优先选择ajaxsubmit，如果只是提交下post请求那还是post的方式更实在
+<strong>ajaxsubmit 支持文件上传ajax， 采用自己写的ajax代码。</strong></p>
+
+<pre><code>$('#myForm').ajaxForm(function() {    
+   $('#output1').html(&quot;提交成功！欢迎下次再来！&quot;).show();     
+});   
+ 
+$('#myForm2').submit(function() { 
+   $(this).ajaxSubmit(function() {    
+      $('#output2').html(&quot;提交成功！欢迎下次再来！&quot;).show();     
+   }); 
+   return false; //阻止表单默认提交 
+});  
+</code></pre>
+
+<p>通过Form插件的两个核心方法，都可以在不修改表单的HTML代码结构的情况下，轻易地将表单的提交方式升级为Ajax提交方式
+ajaxForm() 和 ajaxSubmit() 都能接受0个或1个参数，当为单个参数时，该参数既可以是一个回调函数，也可以是一个options对象，上面的例子就是回调函数，下面介绍options对象，使得它们对表单拥有更多的控制权</p>
+
+<pre><code>var options = { 
+   target: '#output',          //把服务器返回的内容放入id为output的元素中     
+   beforeSubmit: showRequest,  //提交前的回调函数 
+   success: showResponse,      //提交后的回调函数 
+   //url: url,                 //默认是form的action， 如果申明，则会覆盖 
+   //type: type,               //默认是form的method（get or post），如果申明，则会覆盖 
+   //dataType: null,           //html(默认), xml, script, json...接受服务端返回的类型 
+   //clearForm: true,          //成功提交后，清除所有表单元素的值 
+   //resetForm: true,          //成功提交后，重置所有表单元素的值 
+   timeout: 3000               //限制请求的时间，当请求大于3秒后，跳出请求 
+} 
+ 
+function showRequest(formData, jqForm, options){ 
+   //formData: 数组对象，提交表单时，Form插件会以Ajax方式自动提交这些数据，格式如：[{name:user,value:val },{name:pwd,value:pwd}] 
+   //jqForm:   jQuery对象，封装了表单的元素    
+   //options:  options对象 
+   var queryString = $.param(formData);   //name=1&amp;address=2 
+   var formElement = jqForm[0];              //将jqForm转换为DOM对象 
+   var address = formElement.address.value;  //访问jqForm的DOM元素 
+   return true;  //只要不返回false，表单都会提交,在这里可以对表单元素进行验证 
+}; 
+ 
+function showResponse(responseText, statusText){ 
+   //dataType=xml 
+   var name = $('name', responseXML).text(); 
+   var address = $('address', responseXML).text(); 
+   $(&quot;#xmlout&quot;).html(name + &quot;  &quot; + address); 
+   //dataType=json 
+   $(&quot;#jsonout&quot;).html(data.name + &quot;  &quot; + data.address); 
+}; 
+ 
+$(&quot;#myForm&quot;).ajaxForm(options); 
+ 
+$(&quot;#myForm2&quot;).submit(funtion(){ 
+   $(this).ajaxSubmit(options); 
+   return false;   //阻止表单默认提交 
+});  
+</code></pre>
+
+<p>表单提交之前进行验证：  beforeSubmit会在表单提交前被调用，如果beforeSubmit返回false，则会阻止表单提交</p>
+
+<pre><code>beforeSubmit: validate 
+function validate(formData, jqForm, options) { //在这里对表单进行验证，如果不符合规则，将返回false来阻止表单提交，直到符合规则为止 
+   //方式一：利用formData参数 
+   for (var i=0; i &lt; formData.length; i++) { 
+       if (!formData[i].value) { 
+            alert('用户名,地址和自我介绍都不能为空!'); 
+            return false; 
+        } 
+    }  
+ 
+   //方式二：利用jqForm对象 
+   var form = jqForm[0]; //把表单转化为dom对象 
+      if (!form.name.value || !form.address.value) { 
+            alert('用户名和地址不能为空，自我介绍可以为空！'); 
+            return false; 
+      } 
+ 
+   //方式三：利用fieldValue()方法，fieldValue 是表单插件的一个方法，它能找出表单中的元素的值，返回一个集合。 
+   var usernameValue = $('input[name=name]').fieldValue(); 
+   var addressValue = $('input[name=address]').fieldValue(); 
+   if (!usernameValue[0] || !addressValue[0]) { 
+      alert('用户名和地址不能为空，自我介绍可以为空！'); 
+      return false; 
+   } 
+ 
+    var queryString = $.param(formData); //组装数据 
+    //alert(queryString); //类似 ： name=1&amp;add=2   
+    return true; 
+}  
+</code></pre>
+
+<h2 id="用html的file控件上传图片-用js判断和限制图片格式-类型-尺寸">用HTML的File控件上传图片，用JS判断和限制图片格式、类型、尺寸</h2>
+
+<pre><code>//判断图片类型  
+        var f=document.getElementById(&quot;File1&quot;).value;  
+        if(f==&quot;&quot;)  
+        { alert(&quot;请上传图片&quot;);return false;}  
+        else  
+        {  
+        if(!/\.(gif|jpg|jpeg|png|GIF|JPG|PNG)$/.test(f))  
+        {  
+          alert(&quot;图片类型必须是.gif,jpeg,jpg,png中的一种&quot;)  
+          return false;  
+        }  
+        }  
+
+</code></pre>
+
+<pre><code>function CheckFile(f,p)  
+{  
+//判断图片尺寸  
+var img=null;  
+img=document.createElement(&quot;img&quot;);  
+document.body.insertAdjacentElement(&quot;beforeend&quot;,img);  
+img.style.visibility=&quot;hidden&quot;;   
+img.src=f;  
+var imgwidth=img.offsetWidth;  
+var imgheight=img.offsetHeight;  
+if(p.name==&quot;UpFile_Photo1&quot;)  
+{  
+if(imgwidth!=68||imgheight!=68)  
+{  
+alert(&quot;小图的尺寸应该是68x68&quot;);  
+}  
+}  
+if(p.name==&quot;UpFile_Photo2&quot;)  
+{  
+if(imgwidth!=257||imgheight!=351)  
+{  
+alert(&quot;中图的尺寸应该是257x351&quot;);  
+}  
+}  
+if(p.name==&quot;UpFile_Photo3&quot;)  
+{  
+if(imgwidth!=800||imgheight!=800)  
+{  
+alert(&quot;大图的尺寸应该是800x800&quot;);  
+}  
+}  
+//判断图片类型  
+if(!/\.(gif|jpg|jpeg|bmp)$/.test(f))  
+{  
+alert(&quot;图片类型必须是.gif,jpeg,jpg,bmp中的一种&quot;)  
+return false;  
+}  
+return true;  
+}  
+
+</code></pre>
+
+<pre><code>&lt;input type=&quot;file&quot; id=&quot;UpFile_Photo1&quot; runat=&quot;server&quot; name=&quot;UpFile_Photo1&quot;   
+size=&quot;35&quot; onpropertychange=&quot;CheckFile(this.value,this)&quot;&gt;小图&lt;br /&gt;  
+&lt;input type=&quot;file&quot; id=&quot;UpFile_Photo2&quot; runat=&quot;server&quot; name=&quot;UpFile_Photo2&quot;   
+size=&quot;35&quot; onpropertychange=&quot;CheckFile(this.value,this)&quot;&gt;中图&lt;br /&gt;  
+&lt;input type=&quot;file&quot; id=&quot;UpFile_Photo3&quot; runat=&quot;server&quot; name=&quot;UpFile_Photo3&quot;   
+size=&quot;35&quot; onpropertychange=&quot;CheckFile(this.value,this)&quot;&gt;大图&lt;br /&gt;  
+
+</code></pre>
+
+                </article>
+
+              </div>
+              
+              <div class="card-action card-action-links">
+                
+                <a class="btn btn-secondary" href="/tags/ajax">ajax</a> 
+              </div>
+              
+              <div class="card-action">
+                
+              </div>
+
+              
+              <div class="pagination-single">
+                 
+                <span class="pagination-item previous">
+                  <i class="material-icons">navigate_before</i>
+                  <a href="/posts/code-term/" rel="prev">个人编码名词整理</a>
+                </span>  
+                
+                
+                <span class="pagination-item next">
+                  <a href="/posts/hugo/creating-a-new-theme/" rel="next">Creating a New Theme</a>
+                  <i class="material-icons">navigate_next</i>
+                </span> 
+              </div>
+              
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer">
+  <div class="container">
+    <div class="inner">
+      <div class="wrapper">
+        <div class="group group-slink">
+          <h5>wuxingtao Blog</h5>
+          
+            
+            
+          <ul class='slink'>
+             
+            <li>
+              <a href="https://github.com/wuxingtao" target="_blank" title="Github">
+                <svg class='svg-icons svg-icons-github'><use xlink:href='#svg-icons-github'></use></svg>
+              </a>
+            </li>
+            
+            <li>
+              <a href="https://twitter.com/wuxingtao" target="_blank" title="Twitter">
+                <svg class='svg-icons svg-icons-twitter'><use xlink:href='#svg-icons-twitter'></use></svg>
+              </a>
+            </li>
+             
+          </ul>
+        </div>
+        <div class="group group-flink">
+          <h5>My Friends</h5>
+          <ul>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="inner">Copyleft@wuxingtao</div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<script type="text/javascript" async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/typescript.min.js"></script>
+<script>
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.registerLanguage("graphql", function (e) { return { aliases: ["gql"], k: { keyword: "query mutation subscription|10 type interface union scalar fragment|10 enum on ...", literal: "true false null" }, c: [e.HCM, e.QSM, e.NM, { cN: "type", b: "[^\\w][A-Z][a-z]", e: "\\W", eE: !0 }, { cN: "literal", b: "[^\\w][A-Z][A-Z]", e: "\\W", eE: !0 }, { cN: "variable", b: "\\$", e: "\\W", eE: !0 }, { cN: "keyword", b: "[.]{2}", e: "\\." }, { cN: "meta", b: "@", e: "\\W", eE: !0 }], i: /([;<']|BEGIN)/ } });
+  hljs.initHighlightingOnLoad();
+  
+</script>
+
+
+<script type="text/javascript" src="/js/polyfill.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
+
+
+</body>
+
+</html>

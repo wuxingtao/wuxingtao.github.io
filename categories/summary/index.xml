@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Summary on wuxingtao Blog</title>
+    <link>/categories/summary/</link>
+    <description>Recent content in Summary on wuxingtao Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 02 Aug 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/summary/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Node开发整理</title>
+      <link>/posts/summary/node-documents/</link>
+      <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/summary/node-documents/</guid>
+      <description>[toc] 前言 总结了8点： 使用JavaScript运行于服务端的平台上，自然继承了JavaScript语言的一些特性； Node.js基于单线程、基于</description>
+    </item>
+    
+  </channel>
+</rss>

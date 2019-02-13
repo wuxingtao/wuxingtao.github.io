@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ajax on wuxingtao Blog</title>
+    <link>/tags/ajax/</link>
+    <description>Recent content in Ajax on wuxingtao Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 Oct 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ajax/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ajax 个人整理</title>
+      <link>/posts/summary/summary-ajax-learn/</link>
+      <pubDate>Sat, 11 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/summary/summary-ajax-learn/</guid>
+      <description>[toc] 简单应用 1.$.ajax默认为异步请求，async:true, 2..post 方法是异步的 https://api.jquery.com/jQuery.post/ http://stackoverflow.com/questions/5821380/how-to-make-a-jquery-post-request-synchronous $.post(url,{jsonparam:json},function(data){ console.log(data) }).error(function(xhr,errorText,errorType){ alert(errorText) }) $.post只是简化版的ajax是异步的 HTML 标签的</description>
+    </item>
+    
+  </channel>
+</rss>

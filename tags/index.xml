@@ -6,10 +6,19 @@
     <description>Recent content in Tags on wuxingtao Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 28 Jul 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Oct 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ajax</title>
+      <link>/tags/ajax/</link>
+      <pubDate>Sat, 11 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ajax/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Development</title>
@@ -17,6 +26,24 @@
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Express</title>
+      <link>/tags/express/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/express/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>/tags/git/</link>
+      <pubDate>Thu, 07 Apr 2016 11:13:13 +0800</pubDate>
+      
+      <guid>/tags/git/</guid>
       <description></description>
     </item>
     
@@ -39,11 +66,83 @@
     </item>
     
     <item>
+      <title>Hack</title>
+      <link>/tags/hack/</link>
+      <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Html</title>
+      <link>/tags/html/</link>
+      <pubDate>Fri, 08 Apr 2016 11:13:13 +0800</pubDate>
+      
+      <guid>/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hugo</title>
       <link>/tags/hugo/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>/tags/javascript/</link>
+      <pubDate>Thu, 08 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mongodb</title>
+      <link>/tags/mongodb/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mongodb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Node</title>
+      <link>/tags/node/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regexp</title>
+      <link>/tags/regexp/</link>
+      <pubDate>Wed, 04 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/regexp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seajs</title>
+      <link>/tags/seajs/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/seajs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Summary</title>
+      <link>/tags/summary/</link>
+      <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/summary/</guid>
       <description></description>
     </item>
     
@@ -71,6 +170,24 @@
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>/tags/themes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vscode</title>
+      <link>/tags/vscode/</link>
+      <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webstorm</title>
+      <link>/tags/webstorm/</link>
+      <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/webstorm/</guid>
       <description></description>
     </item>
     

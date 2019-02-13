@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on wuxingtao Blog</title>
+    <link>/tags/javascript/</link>
+    <description>Recent content in Javascript on wuxingtao Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 08 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>javascript 【窗口】的offset、client、scroll使用方法详解</title>
+      <link>/posts/summary/javascript-window-explain/</link>
+      <pubDate>Thu, 08 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/summary/javascript-window-explain/</guid>
+      <description>[toc] 在不同的DTD下，获取页面属性的方法是不同的 在设计页面时可能经常会用到固定层的位置，这就需要获取一些html对象的坐标以更灵活的设置目标层</description>
+    </item>
+    
+    <item>
+      <title>数学函数</title>
+      <link>/posts/summary/js-mathfunction/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/summary/js-mathfunction/</guid>
+      <description>弧度 //弧度 = π/180×角度 //角度 = 180/π×弧度 var hd = Math.PI / 180 * 30 ; var jd = 180/Math.PI * hd; //角度 = 180/Math.PI * Math.asin(1/2) console.log(Math.sin(Math.PI/180*30)); 圆周长 圆周长 = 直径× Pi //js Math.Pi()*2r //scss Pi*2r</description>
+    </item>
+    
+  </channel>
+</rss>

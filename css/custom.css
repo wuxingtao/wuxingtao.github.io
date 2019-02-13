@@ -7,6 +7,9 @@
     width: 100%;
     padding: 0 20px;
 }
+.card-content .article{
+    word-break: break-word;
+}
 
 .toc-panel nav>ul>li:first-child a {
     height: 25px;
