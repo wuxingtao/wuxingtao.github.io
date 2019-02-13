@@ -1,0 +1,20 @@
+.container {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.toc-panel nav>ul>li:first-child a {
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.toc-panel nav>ul{
+    white-space: nowrap;
+}

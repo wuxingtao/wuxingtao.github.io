@@ -24,6 +24,8 @@
   <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/ocean.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://wuxingtao.github.io/css/index.css">
   
+  <link rel="stylesheet" href="https://wuxingtao.github.io/css/custom.css">
+  
   <link href="https://wuxingtao.github.io/index.xml" rel="alternate" type="application/rss+xml" title="wuxingtao Blog" />
   <link href="https://wuxingtao.github.io/index.xml" rel="feed" type="application/rss+xml" title="wuxingtao Blog" />
 
@@ -260,7 +262,8 @@
           <div class="toc-panel">
             <nav id="TableOfContents">
 <ul>
-<li><a href="#前言">前言</a></li>
+<li><a href="#前言">前言</a>
+<ul>
 <li><a href="#基本知识">基本知识</a></li>
 <li><a href="#清除矩形区域-context-clearrect-x-y-width-height">清除矩形区域 context.clearRect(x,y,width,height)</a></li>
 <li><a href="#圆弧context-arc-x-y-radius-starangle-endangle-anticlockwise">圆弧context.arc(x, y, radius, starAngle,endAngle, anticlockwise)</a></li>
@@ -269,6 +272,7 @@
 <li><a href="#绘制贝塞尔曲线-贝济埃-bezier-context-beziercurveto-cp1x-cp1y-cp2x-cp2y-x-y">绘制贝塞尔曲线（贝济埃、bezier） context.bezierCurveTo(cp1x,cp1y,cp2x,cp2y,x,y)</a></li>
 <li><a href="#径向渐变-发散-var-rg-context-createradialgradient-xstart-ystart-radiusstart-xend-yend-radiusend">径向渐变（发散）var rg=context.createRadialGradient(xStart,yStart,radiusStart,xEnd,yEnd,radiusEnd)</a></li>
 <li><a href="#图形变形">图形变形</a></li>
+</ul></li>
 </ul>
 </nav>
           </div>
@@ -309,6 +313,12 @@
                   </time>
                 </div>
                 
+                <div class="group">
+                  <i class="material-icons">mode_edit</i>
+                  <time>修改：2019年02月13日
+                  </time>
+                </div>
+                
                 
 
               </div>
@@ -327,7 +337,7 @@
  温馨提示：以下所有实验请使用最新版的opera
 </code></pre>
 
-<h1 id="基本知识">基本知识</h1>
+<h2 id="基本知识">基本知识</h2>
 
 <p>context:一直觉得这个翻译成“上下文”真够蛋疼的，context是一个封装了很多绘图功能的对象，获取这个对象的方法是
 <code>var context =canvas.getContext(&quot;2d&quot;);</code>
@@ -399,7 +409,7 @@ context.lineWidth//图形边框宽度
 </code></pre></li>
 </ul>
 
-<h1 id="清除矩形区域-context-clearrect-x-y-width-height">清除矩形区域 context.clearRect(x,y,width,height)</h1>
+<h2 id="清除矩形区域-context-clearrect-x-y-width-height">清除矩形区域 context.clearRect(x,y,width,height)</h2>
 
 <ul>
 <li><p>x:清除矩形起点横坐标</p></li>
@@ -436,7 +446,7 @@ context.lineWidth//图形边框宽度
         }
 </code></pre>
 
-<h1 id="圆弧context-arc-x-y-radius-starangle-endangle-anticlockwise">圆弧context.arc(x, y, radius, starAngle,endAngle, anticlockwise)</h1>
+<h2 id="圆弧context-arc-x-y-radius-starangle-endangle-anticlockwise">圆弧context.arc(x, y, radius, starAngle,endAngle, anticlockwise)</h2>
 
 <ul>
 <li><p>x:圆心的x坐标</p></li>
@@ -469,7 +479,7 @@ context.lineWidth//图形边框宽度
 
 <p>一不小心画了小日本的国旗&hellip;赶紧调下颜色和大小，绿色倒是挺合适的~</p>
 
-<h1 id="路径-context-beginpath-context-closepath">路径  context.beginPath()    context.closePath()</h1>
+<h2 id="路径-context-beginpath-context-closepath">路径  context.beginPath()    context.closePath()</h2>
 
 <p>细心的朋友会发现上面的画圆并不单单是直接用arc还用到了context的 beginPath   和closePath方法，参考书不愧是参考书，例子给得太简单了，实话说一开始我凌乱了，耐心下来做了几个实验才舒缓蛋疼的心情</p>
 
@@ -517,7 +527,7 @@ ps：书本的结论是   如果没有closePath那么前面的路劲会保留，
 ps1：如果你真心凌乱了，那么记住每次画路径都在前后加context.beginPath()   和context.closePath()就行
 </code></pre>
 
-<h1 id="绘制线段-context-moveto-x-y-context-lineto-x-y">绘制线段 context.moveTo(x,y)  context.lineTo(x,y)</h1>
+<h2 id="绘制线段-context-moveto-x-y-context-lineto-x-y">绘制线段 context.moveTo(x,y)  context.lineTo(x,y)</h2>
 
 <ul>
 <li><p>x:x坐标</p></li>
@@ -581,7 +591,7 @@ ps1：如果你真心凌乱了，那么记住每次画路径都在前后加conte
         }
 </code></pre>
 
-<h1 id="绘制贝塞尔曲线-贝济埃-bezier-context-beziercurveto-cp1x-cp1y-cp2x-cp2y-x-y">绘制贝塞尔曲线（贝济埃、bezier） context.bezierCurveTo(cp1x,cp1y,cp2x,cp2y,x,y)</h1>
+<h2 id="绘制贝塞尔曲线-贝济埃-bezier-context-beziercurveto-cp1x-cp1y-cp2x-cp2y-x-y">绘制贝塞尔曲线（贝济埃、bezier） context.bezierCurveTo(cp1x,cp1y,cp2x,cp2y,x,y)</h2>
 
 <p>绘制二次样条曲线 context.quadraticCurveTo(qcpx,qcpy,qx,qy)</p>
 
@@ -656,7 +666,7 @@ ps1：如果你真心凌乱了，那么记住每次画路径都在前后加conte
 
 <p>关于贝塞尔曲线可以参考百度百科和<a href="http://blog.csdn.net/zhangci226/article/details/4018449这篇文章">http://blog.csdn.net/zhangci226/article/details/4018449这篇文章</a></p>
 
-<p># 线性渐变 var lg= context.createLinearGradient(xStart,yStart,xEnd,yEnd), 线性渐变颜色lg.addColorStop(offset,color)</p>
+<p>## 线性渐变 var lg= context.createLinearGradient(xStart,yStart,xEnd,yEnd), 线性渐变颜色lg.addColorStop(offset,color)</p>
 
 <ul>
 <li><p>xstart:渐变开始点x坐标</p></li>
@@ -691,7 +701,7 @@ ps1：如果你真心凌乱了，那么记住每次画路径都在前后加conte
         }
 </code></pre>
 
-<h1 id="径向渐变-发散-var-rg-context-createradialgradient-xstart-ystart-radiusstart-xend-yend-radiusend">径向渐变（发散）var rg=context.createRadialGradient(xStart,yStart,radiusStart,xEnd,yEnd,radiusEnd)</h1>
+<h2 id="径向渐变-发散-var-rg-context-createradialgradient-xstart-ystart-radiusstart-xend-yend-radiusend">径向渐变（发散）var rg=context.createRadialGradient(xStart,yStart,radiusStart,xEnd,yEnd,radiusEnd)</h2>
 
 <p>径向渐变（发散）颜色rg.addColorStop(offset,color)</p>
 
@@ -747,7 +757,7 @@ ps1：如果你真心凌乱了，那么记住每次画路径都在前后加conte
         }
 </code></pre>
 
-<h1 id="图形变形">图形变形</h1>
+<h2 id="图形变形">图形变形</h2>
 
 <p>1、平移context.translate(x,y)</p>
 
