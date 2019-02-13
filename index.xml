@@ -6,10 +6,19 @@
     <description>Recent content on wuxingtao Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 12 Feb 2019 17:08:51 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 13 Feb 2019 11:13:13 +0800</lastBuildDate>
     
 	<atom:link href="https://wuxingtao.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>玩转canvas</title>
+      <link>https://wuxingtao.github.io/posts/play-canvas/</link>
+      <pubDate>Wed, 13 Feb 2019 11:13:13 +0800</pubDate>
+      
+      <guid>https://wuxingtao.github.io/posts/play-canvas/</guid>
+      <description>[toc] 前言 &amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt;是html5出现的新标签，像所有的dom对象一样它有自己本身的属性、方法和事</description>
+    </item>
     
     <item>
       <title>从Hexo迁移到Hugo 及Hugo差别</title>
@@ -53,7 +62,7 @@
       <pubDate>Sat, 19 Aug 2017 20:09:28 +0800</pubDate>
       
       <guid>https://wuxingtao.github.io/about/</guid>
-      <description> Hello World! { &amp;quot;Name&amp;quot;: &amp;quot;Kevin Tan&amp;quot;, &amp;quot;Hobbies&amp;quot;: [&amp;quot;Coding&amp;quot;, &amp;quot;Movie&amp;quot;, &amp;quot;Piano&amp;quot;, &amp;quot;Linux&amp;quot;], &amp;quot;Location&amp;quot;: &amp;quot;Hangzhou&amp;quot;, &amp;quot;Company&amp;quot;: &amp;quot;Netease&amp;quot;, &amp;quot;School&amp;quot;: &amp;quot;Zhejiang University&amp;quot;, &amp;quot;Contacts&amp;quot;: { &amp;quot;Email&amp;quot;: &amp;quot;stkevintan@zju.edu.cn&amp;quot;, &amp;quot;Telegram&amp;quot;: &amp;quot;@kevinsfork&amp;quot;, &amp;quot;Weibo&amp;quot;: &amp;quot;@kevinclasky&amp;quot; } }  </description>
+      <description> Hello World! { &amp;quot;Name&amp;quot;: &amp;quot;Wu Xing Tao&amp;quot;, &amp;quot;Hobbies&amp;quot;: [&amp;quot;Coding&amp;quot;, &amp;quot;Movie&amp;quot;, &amp;quot;Piano&amp;quot;, &amp;quot;Linux&amp;quot;], &amp;quot;Location&amp;quot;: &amp;quot;ShenZhen&amp;quot;, &amp;quot;Contacts&amp;quot;: { &amp;quot;Email&amp;quot;: &amp;quot;540850871@qq.com&amp;quot;, &amp;quot;Weibo&amp;quot;: &amp;quot;@Wyatt_Ng&amp;quot; } }  </description>
     </item>
     
     <item>

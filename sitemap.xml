@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://wuxingtao.github.io/posts/play-canvas/</loc>
+    <lastmod>2019-02-13T11:13:13+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wuxingtao.github.io/posts/from-hexo-to-hugo/</loc>
     <lastmod>2019-02-12T17:46:05+08:00</lastmod>
   </url>
@@ -68,7 +73,7 @@
   
   <url>
     <loc>https://wuxingtao.github.io/posts/</loc>
-    <lastmod>2019-02-12T17:46:05+08:00</lastmod>
+    <lastmod>2019-02-13T11:13:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -110,7 +115,7 @@
   
   <url>
     <loc>https://wuxingtao.github.io/</loc>
-    <lastmod>2019-02-12T17:46:05+08:00</lastmod>
+    <lastmod>2019-02-13T11:13:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
