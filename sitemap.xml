@@ -3,119 +3,119 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/play-canvas/</loc>
-    <lastmod>2019-02-13T13:45:02+08:00</lastmod>
+    <loc>/posts/play-canvas/</loc>
+    <lastmod>2019-02-13T17:23:56+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/from-hexo-to-hugo/</loc>
+    <loc>/posts/from-hexo-to-hugo/</loc>
     <lastmod>2019-02-12T17:46:05+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/bb/</loc>
+    <loc>/posts/bb/</loc>
     <lastmod>2019-02-12T17:46:05+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/test-categories/</loc>
+    <loc>/posts/test-categories/</loc>
     <lastmod>2019-02-12T17:46:05+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/archive/</loc>
+    <loc>/archive/</loc>
     <lastmod>2019-02-12T14:25:05+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2019-02-13T13:45:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/creating-a-new-theme/</loc>
+    <loc>/posts/creating-a-new-theme/</loc>
     <lastmod>2019-02-12T14:25:05+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/goisforlovers/</loc>
+    <loc>/posts/goisforlovers/</loc>
     <lastmod>2019-02-12T17:46:05+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/development/</loc>
-    <lastmod>2019-02-12T17:46:05+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/tags/go/</loc>
+    <loc>/tags/development/</loc>
     <lastmod>2019-02-12T17:46:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/golang/</loc>
+    <loc>/tags/go/</loc>
     <lastmod>2019-02-12T17:46:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/hugo/</loc>
-    <lastmod>2019-02-12T14:25:05+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/posts/</loc>
-    <lastmod>2019-02-13T13:45:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/categories/private/</loc>
+    <loc>/tags/golang/</loc>
     <lastmod>2019-02-12T17:46:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/</loc>
-    <lastmod>2019-02-12T17:46:05+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/categories/tao/</loc>
-    <lastmod>2019-02-12T17:46:05+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/tags/templates/</loc>
-    <lastmod>2019-02-12T17:46:05+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/tags/theme/</loc>
+    <loc>/tags/hugo/</loc>
     <lastmod>2019-02-12T14:25:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/themes/</loc>
+    <loc>/posts/</loc>
+    <lastmod>2019-02-13T17:23:56+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/private/</loc>
     <lastmod>2019-02-12T17:46:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/</loc>
-    <lastmod>2019-02-13T13:45:02+08:00</lastmod>
+    <loc>/tags/</loc>
+    <lastmod>2019-02-12T17:46:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/tao/</loc>
+    <lastmod>2019-02-12T17:46:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/templates/</loc>
+    <lastmod>2019-02-12T17:46:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/theme/</loc>
+    <lastmod>2019-02-12T14:25:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/themes/</loc>
+    <lastmod>2019-02-12T17:46:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-02-13T17:23:56+08:00</lastmod>
     <priority>0</priority>
   </url>
   

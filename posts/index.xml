@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on wuxingtao Blog</title>
-    <link>https://wuxingtao.github.io/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on wuxingtao Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 13 Feb 2019 11:13:13 +0800</lastBuildDate>
     
-	<atom:link href="https://wuxingtao.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>玩转canvas</title>
-      <link>https://wuxingtao.github.io/posts/play-canvas/</link>
+      <link>/posts/play-canvas/</link>
       <pubDate>Wed, 13 Feb 2019 11:13:13 +0800</pubDate>
       
-      <guid>https://wuxingtao.github.io/posts/play-canvas/</guid>
+      <guid>/posts/play-canvas/</guid>
       <description>[toc] 前言 &amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt;是html5出现的新标签，像所有的dom对象一样它有自己本身的属性、方法和事</description>
     </item>
     
     <item>
       <title>从Hexo迁移到Hugo 及Hugo差别</title>
-      <link>https://wuxingtao.github.io/posts/from-hexo-to-hugo/</link>
+      <link>/posts/from-hexo-to-hugo/</link>
       <pubDate>Tue, 12 Feb 2019 17:08:51 +0800</pubDate>
       
-      <guid>https://wuxingtao.github.io/posts/from-hexo-to-hugo/</guid>
+      <guid>/posts/from-hexo-to-hugo/</guid>
       <description>从Hexo迁移到Hugo-送漂亮的Hugo Theme主题 自从Hugo出来后，作为Go语言（golang）的重度用户的重度用户，一直想把自己的</description>
     </item>
     
     <item>
       <title>Bb</title>
-      <link>https://wuxingtao.github.io/posts/bb/</link>
+      <link>/posts/bb/</link>
       <pubDate>Tue, 12 Feb 2019 15:30:05 +0800</pubDate>
       
-      <guid>https://wuxingtao.github.io/posts/bb/</guid>
+      <guid>/posts/bb/</guid>
       <description>  Document   Plus Size Blouses Long Sleeves Tank Tops   MEN  Tops Bottoms   </description>
     </item>
     
     <item>
       <title>Test11</title>
-      <link>https://wuxingtao.github.io/posts/test-categories/</link>
+      <link>/posts/test-categories/</link>
       <pubDate>Tue, 12 Feb 2019 15:27:38 +0800</pubDate>
       
-      <guid>https://wuxingtao.github.io/posts/test-categories/</guid>
+      <guid>/posts/test-categories/</guid>
       <description>ccccc test 11</description>
     </item>
     
     <item>
       <title>Creating a New Theme</title>
-      <link>https://wuxingtao.github.io/posts/creating-a-new-theme/</link>
+      <link>/posts/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/posts/creating-a-new-theme/</guid>
+      <guid>/posts/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>https://wuxingtao.github.io/posts/goisforlovers/</link>
+      <link>/posts/goisforlovers/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/posts/goisforlovers/</guid>
+      <guid>/posts/goisforlovers/</guid>
       <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
 This document is a brief primer on using go templates.</description>
     </item>
