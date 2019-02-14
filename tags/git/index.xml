@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on wuxingtao Blog</title>
-    <link>./tags/git/</link>
+    <link>https://wuxingtao.github.io/tags/git/</link>
     <description>Recent content in Git on wuxingtao Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 07 Apr 2016 11:13:13 +0800</lastBuildDate>
     
-	<atom:link href="./tags/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wuxingtao.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GIT【个人整理】</title>
-      <link>./posts/summary/summary-git-learn/</link>
+      <link>https://wuxingtao.github.io/posts/summary/summary-git-learn/</link>
       <pubDate>Thu, 07 Apr 2016 11:13:13 +0800</pubDate>
       
-      <guid>./posts/summary/summary-git-learn/</guid>
+      <guid>https://wuxingtao.github.io/posts/summary/summary-git-learn/</guid>
       <description>[toc] Git ssh 生成 ssh-keygen -t rsa -C &amp;quot;wuxingtao@jlpay.com&amp;quot; -f &amp;quot;jlpayPro&amp;quot; ssh-keygen - 生成、管理和转换认证密钥 ssh-keygen [-q] [-b bits] -t type [-N new_passphrase] [-C comment] [-foutput_keyfile] ssh-keygen -p [-P old_passphrase] [-N new_passphrase] [-f keyfile] ssh-keygen -i [-f input_keyfile] ssh-keygen -e [-f input_keyfile] ssh-keygen -y [-f input_keyfile] ssh-keygen -c [-P passphrase] [-C comment] [-f keyfile] ssh-keygen -l [-f input_keyfile] ssh-keygen</description>
     </item>
     
