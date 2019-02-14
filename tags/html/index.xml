@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Html on wuxingtao Blog</title>
-    <link>/tags/html/</link>
+    <link>./tags/html/</link>
     <description>Recent content in Html on wuxingtao Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 08 Apr 2016 11:13:13 +0800</lastBuildDate>
     
-	<atom:link href="/tags/html/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="./tags/html/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>HTML5整理总结</title>
-      <link>/posts/summary/summary-html5-learn/</link>
+      <link>./posts/summary/summary-html5-learn/</link>
       <pubDate>Fri, 08 Apr 2016 11:13:13 +0800</pubDate>
       
-      <guid>/posts/summary/summary-html5-learn/</guid>
+      <guid>./posts/summary/summary-html5-learn/</guid>
       <description>[toc] HTML5中类jQuery选择器querySelector的使用 简介 HTML5向Web API新引入了document.querySelec</description>
     </item>
     

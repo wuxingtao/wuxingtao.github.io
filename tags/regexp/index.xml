@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Regexp on wuxingtao Blog</title>
-    <link>/tags/regexp/</link>
+    <link>./tags/regexp/</link>
     <description>Recent content in Regexp on wuxingtao Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 04 May 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/regexp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="./tags/regexp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>【正则-个人整理】</title>
-      <link>/posts/summary/summary-regexp-learn/</link>
+      <link>./posts/summary/summary-regexp-learn/</link>
       <pubDate>Wed, 04 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>/posts/summary/summary-regexp-learn/</guid>
+      <guid>./posts/summary/summary-regexp-learn/</guid>
       <description>[toc] 【1】部分语法 - 【语法】 构造函数RegExp 对象 new RegExp(&amp;lsquo;ab+c&amp;rsquo;, &amp;lsquo;i&amp;rsquo;); new RegExp(/ab+c/, &amp;lsquo;i&amp;rsquo;); 直接量语法 var re = /**/gi 构造函数正则可直接使用变量 正则表达式的() [] {}有不同的意思</description>
     </item>
     

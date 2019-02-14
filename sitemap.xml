@@ -3,262 +3,262 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/posts/hugo/from-hexo-to-hugo/</loc>
+    <loc>./posts/hugo/from-hexo-to-hugo/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/bb/</loc>
+    <loc>./posts/bb/</loc>
     <lastmod>2019-02-12T17:46:05+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/archive/</loc>
+    <loc>./archive/</loc>
     <lastmod>2019-02-12T14:25:05+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>./about/</loc>
     <lastmod>2019-02-13T13:45:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/summary/javascript-window-explain/</loc>
+    <loc>./posts/summary/javascript-window-explain/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/summary/js-mathfunction/</loc>
+    <loc>./posts/summary/js-mathfunction/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/play-canvas/</loc>
+    <loc>./posts/play-canvas/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/summary/vscode-webstorm-sublime-eclipe_setting/</loc>
+    <loc>./posts/summary/vscode-webstorm-sublime-eclipe_setting/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/summary/summary-hack-person-setting/</loc>
+    <loc>./posts/summary/summary-hack-person-setting/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/server/mongodb_mongoose-person-setting/</loc>
+    <loc>./posts/server/mongodb_mongoose-person-setting/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/summary/node-express-params/</loc>
+    <loc>./posts/summary/node-express-params/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/seajs-learn/</loc>
+    <loc>./posts/seajs-learn/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/summary/node-documents/</loc>
+    <loc>./posts/summary/node-documents/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/summary/summary-regexp-learn/</loc>
+    <loc>./posts/summary/summary-regexp-learn/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/summary/summary-html5-learn/</loc>
+    <loc>./posts/summary/summary-html5-learn/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/summary/summary-git-learn/</loc>
+    <loc>./posts/summary/summary-git-learn/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/code-term/</loc>
+    <loc>./posts/code-term/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/summary/summary-ajax-learn/</loc>
+    <loc>./posts/summary/summary-ajax-learn/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/hugo/creating-a-new-theme/</loc>
+    <loc>./posts/hugo/creating-a-new-theme/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/hugo/goisforlovers/</loc>
+    <loc>./posts/hugo/goisforlovers/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ajax/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/development/</loc>
-    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/express/</loc>
-    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/git/</loc>
+    <loc>./tags/ajax/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/go/</loc>
+    <loc>./categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>./tags/development/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/golang/</loc>
+    <loc>./tags/express/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/hack/</loc>
+    <loc>./tags/git/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/html/</loc>
+    <loc>./tags/go/</loc>
+    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>./tags/golang/</loc>
+    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>./tags/hack/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/hugo/</loc>
-    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/javascript/</loc>
+    <loc>./tags/html/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/mongodb/</loc>
+    <loc>./tags/hugo/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/node/</loc>
-    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/node/</loc>
-    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/regexp/</loc>
+    <loc>./tags/javascript/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/seajs/</loc>
+    <loc>./tags/mongodb/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/summary/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/summary/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/tao/</loc>
+    <loc>./tags/node/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/templates/</loc>
+    <loc>./categories/node/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/theme/</loc>
+    <loc>./posts/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/themes/</loc>
-    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/vscode/</loc>
+    <loc>./tags/regexp/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/webstorm/</loc>
+    <loc>./tags/seajs/</loc>
+    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>./tags/summary/</loc>
     <lastmod>2019-02-13T18:52:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>./categories/summary/</loc>
+    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>./tags/</loc>
+    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>./categories/tao/</loc>
+    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>./tags/templates/</loc>
+    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>./tags/theme/</loc>
+    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>./tags/themes/</loc>
+    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>./tags/vscode/</loc>
+    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>./tags/webstorm/</loc>
+    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>./</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
