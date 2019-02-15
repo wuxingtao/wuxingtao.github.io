@@ -6,7 +6,7 @@
   
   <meta charset="UTF-8">
   <title>
-    个人编码名词整理 | wuxingtao Blog
+    编码名词整理 | wuxingtao Blog
   </title>
 
 
@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
 
   
-  <link rel="canonical" href="https://wuxingtao.github.io/posts/code-term/" />
+  <link rel="canonical" href="https://wuxingtao.github.io/posts/summary/summary-javascript-term/" />
 
   
   
@@ -168,7 +168,7 @@
                 
               <li>
                 <a class="btn btn-secondary" href='https://wuxingtao.github.io/tags/summary'> summary
-                  <span class="badge">6</span>
+                  <span class="badge">5</span>
                 </a>
               </li>
               
@@ -351,14 +351,31 @@
 <li><a href="#为什么在编写代码的时候要使用unicode来表示中文">为什么在编写代码的时候要使用unicode来表示中文?</a>
 <ul>
 <li><a href="#为什么不直接用中文写出来-而使用unicode表示">为什么不直接用中文写出来，而使用unicode表示。</a></li>
-<li><a href="#unicode-在字体中应用">unicode 在字体中应用：</a>
+<li><a href="#unicode-在字体中应用">unicode 在字体中应用：</a></li>
+<li><a href="#单精度浮点数-双精度浮点数">单精度浮点数 双精度浮点数</a></li>
+<li><a href="#平方根-自然对数">平方根， 自然对数</a></li>
+</ul></li>
+<li><a href="#项目">项目</a>
 <ul>
+<li><a href="#b-s-web项目">B/S web项目</a></li>
+</ul></li>
+<li><a href="#javascript-核心">javascript 核心</a>
+<ul>
+<li><a href="#javascript同步和异步的区别与实现方式">javascript同步和异步的区别与实现方式</a>
+<ul>
+<li><a href="#1-回调函数callback">1.回调函数callback</a></li>
 <li><a href="#2-事件驱动">2.事件驱动</a></li>
 <li><a href="#3-发布-订阅">3.发布/订阅</a></li>
 <li><a href="#4-promise模式">4.promise模式</a></li>
 </ul></li>
 <li><a href="#javascript面向对象编程">javascript面向对象编程</a></li>
-<li><a href="#b-s-web项目">B/S web项目</a></li>
+</ul></li>
+<li><a href="#编程思想">编程思想</a>
+<ul>
+<li><a href="#函数式编程">函数式编程</a></li>
+<li><a href="#纯函数">纯函数</a></li>
+<li><a href="#函数柯里化">函数柯里化</a></li>
+<li><a href="#函数式组合">函数式组合</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -382,7 +399,11 @@
         
     
       
-    <span class="breadcrumb">个人编码名词整理</span>
+    <a class="breadcrumb" href='https://wuxingtao.github.io/posts/summary/'>Summary</a>
+        
+    
+      
+    <span class="breadcrumb">编码名词整理</span>
 
         
     
@@ -391,19 +412,21 @@
 </section>
               
               <div class="card-header postinfo">
-                <span class="card-title">个人编码名词整理 </span>
+                <span class="card-title">编码名词整理 </span>
               </div>
               <div class="card-header date">
                 
                 <div class="group">
-                  <i class="material-icons">flag</i>
-                  <time>创建：2016年04月 6日
-                  </time>
+                  <i class="material-icons">book</i>
+                  <address>
+                    归档：
+                    <a href="https://wuxingtao.github.io/categories/summary">Summary</a>&nbsp; 
+                  </address>
                 </div>
                 
                 <div class="group">
-                  <i class="material-icons">mode_edit</i>
-                  <time>修改：2019年02月13日
+                  <i class="material-icons">flag</i>
+                  <time>创建：2014年10月 2日
                   </time>
                 </div>
                 
@@ -442,116 +465,124 @@ setText(&quot;\u5BFC\u5165\u8DEF\u5F84&quot;)
 ## 数值 Number
 ### 安全整数和Number.isSafeInteger()
 JavaScript能够准确表示的整数范围在`-2^53到2^53`之间（不含两个端点），超过这个范围，无法精确表示这个值。
-</code></pre>
-
-<p>Math.pow(2, 53) // 9007199254740992</p>
-
-<p>9007199254740992  // 9007199254740992
-9007199254740993  // 9007199254740992</p>
-
-<p>Math.pow(2, 53) === Math.pow(2, 53) + 1
-// true</p>
-
-<pre><code>上面代码中，超出2的53次方之后，一个数就不精确了。
+```js
+Math.pow(2, 53) // 9007199254740992
  
-ES6引入了`Number.MAX_SAFE_INTEGER`和`Number.MIN_SAFE_INTEGER`这两个常量，用来表示这个范围的上下限。
-
-
-***
-
-### 单精度浮点数 双精度浮点数
-ES6 Math.fround方法返回一个数的单精度浮点数形式。
-对于没有部署这个方法的环境，可以用下面的代码模拟。
-
+9007199254740992  // 9007199254740992
+9007199254740993  // 9007199254740992
+ 
+Math.pow(2, 53) === Math.pow(2, 53) + 1
+// true
 </code></pre>
 
-<p>Math.fround(1.337) // 1.3370000123977661
+<p>上面代码中，超出2的53次方之后，一个数就不精确了。</p>
+
+<p>ES6引入了<code>Number.MAX_SAFE_INTEGER</code>和<code>Number.MIN_SAFE_INTEGER</code>这两个常量，用来表示这个范围的上下限。</p>
+
+<h3 id="单精度浮点数-双精度浮点数">单精度浮点数 双精度浮点数</h3>
+
+<p>ES6 Math.fround方法返回一个数的单精度浮点数形式。
+对于没有部署这个方法的环境，可以用下面的代码模拟。</p>
+
+<pre><code>Math.fround(1.337) // 1.3370000123977661
 Math.fround = Math.fround || function(x) {
   return new Float32Array([x])[0];
-};</p>
+};
+</code></pre>
 
-<pre><code>
-1、单精度浮点数(Single)
+<p>1、单精度浮点数(Single)
 　　用来表示带有小数部分的实数，一般用于科学计算。占用4个字节（32位）存储空间，包括符号位1位，阶码8位，尾数23位。其数值范为-3.4E38～3.4E38，单精度浮点数最多有7位十进制有效数字，单精度浮点数的指数用“E”或“e”表示。
 　　单精度浮点数有多种表示形式：±n.n(小数形式) ±n E ±m(指数形式) ±n.n E ±m (指数形式)
-　　如果某个数的有效数字位数超过7位，当把它定义为单精度变量时，超出的部分会自动四舍五入。
+　　如果某个数的有效数字位数超过7位，当把它定义为单精度变量时，超出的部分会自动四舍五入。</p>
 
-2、双精度浮点数(double)
-　用8个字节（64位）存储空间，包括符号位1位，阶码11位，尾数52位。
+<p>2、双精度浮点数(double)
+　用8个字节（64位）存储空间，包括符号位1位，阶码11位，尾数52位。</p>
 
-***
+<h3 id="平方根-自然对数">平方根， 自然对数</h3>
 
-### 平方根， 自然对数
-**1. 平方根**
+<p><strong>1. 平方根</strong>
 平方根，又叫二次方根，表示为〔√￣〕，其中属于非负数的平方根称之为算术平方根。一个正数有两个实平方根，它们互为相反数；0只有一个平方根，就是0本身；负数有两个共轭的纯虚平方根。一般地，“√￣”仅用来表示算术平方根，即非负的平方根。如：√16=4。
-`Math.sqrt() 返回数字的平方根`            Math.sqrt('16') // 4
-`Math.cbrt() 计算一个数的立方根`        Math.cbrt('8') // 2
+<code>Math.sqrt() 返回数字的平方根</code>            Math.sqrt(&lsquo;16&rsquo;) // 4
+<code>Math.cbrt() 计算一个数的立方根</code>        Math.cbrt(&lsquo;8&rsquo;) // 2</p>
 
-**2. 自然对数** 
+<p><strong>2. 自然对数</strong>
 Math.log() 可返回一个数的自然对数。
-Math.log(2.7183)     //1.0000066849139877
+Math.log(2.7183)     //1.0000066849139877</p>
 
-*自然对数*：以常数e为底数的对数叫做自然对数，记作lnN(N&gt;0)。自然对数在物理学，生物学等自然科学中有重要的意义。
-e是一个无限不循环小数，其值约等于`2.718281828459…`，它是一个超越数。
+<p>*自然对数*：以常数e为底数的对数叫做自然对数，记作lnN(N&gt;0)。自然对数在物理学，生物学等自然科学中有重要的意义。
+e是一个无限不循环小数，其值约等于<code>2.718281828459…</code>，它是一个超越数。</p>
 
-*对数*，是一个数学名词，也是一种数学方法！
-&lt;span style=&quot;color:red&quot;&gt;如果a的n次方等于b（a大于0，且a不等于1），那么数n叫做以a为底b的对数&lt;/span&gt;，记做n=loga的b次方
-，也可以说log（a）b=n。其中，a叫做“底数”，b叫做“真数”，n叫做“以a为底b的对数”。 
+<p>*对数*，是一个数学名词，也是一种数学方法！
+<span style="color:red">如果a的n次方等于b（a大于0，且a不等于1），那么数n叫做以a为底b的对数</span>，记做n=loga的b次方
+，也可以说log（a）b=n。其中，a叫做“底数”，b叫做“真数”，n叫做“以a为底b的对数”。</p>
 
-数学表示法
-自然对数的一般表示方法为lnx。数学中也常见以logx表示自然对数。若为了避免与基为10的常用对数lgx混淆，可用“全写”㏒ex。[1] 
+<p>数学表示法
+自然对数的一般表示方法为lnx。数学中也常见以logx表示自然对数。若为了避免与基为10的常用对数lgx混淆，可用“全写”㏒ex。[1]</p>
 
-e的级数展开式
-易证明：函数展开为x的幂级数(Maclaurin级数)是 
+<p>e的级数展开式
+易证明：函数展开为x的幂级数(Maclaurin级数)是</p>
 
-## javascript 核心
-### javascript同步和异步的区别与实现方式
-javascript语言是单线程机制。所谓单线程就是按次序执行，执行完一个任务再执行下一个。
+<h2 id="项目">项目</h2>
 
-对于浏览器来说，也就是无法在渲染页面的同时执行代码。
+<h3 id="b-s-web项目">B/S web项目</h3>
 
-单线程机制的优点在于实现起来较为简单，运行环境相对简单。缺点在于，如果中间有任务需要响应时间过长，经常会导致
+<p>B/S指的是browser/server，就是说是浏览器与服务端模式，WEB开发基本都是基于这种模式的</p>
 
-页面加载错误或者浏览器无响应的状况。这就是所谓的“同步模式”，程序执行顺序与任务排列顺序一致。对于浏览器来说，
+<p>B/S系统，说白点就是Web开发或网站开发吧。
+三大主流技术及基本特征
+1、asp.net (+sql server)  基本运行在widows平台
+2、php (+mysql)      跨平台
+3、jsp （+oracle）      安全性要求高的站点</p>
 
-同步模式效率较低，耗时长的任务都应该使用异步模式；而在服务器端，异步模式则是唯一的模式，如果采用同步模式个人认为
+<h2 id="javascript-核心">javascript 核心</h2>
 
-服务器很快就会出现12306在高峰期的表现。。。。
+<h3 id="javascript同步和异步的区别与实现方式">javascript同步和异步的区别与实现方式</h3>
 
-**异步模式的四种方式：**
+<p>javascript语言是单线程机制。所谓单线程就是按次序执行，执行完一个任务再执行下一个。</p>
 
-#### 1.回调函数callback
+<p>对于浏览器来说，也就是无法在渲染页面的同时执行代码。</p>
 
-所谓回调函数，就是将函数作为参数传到需要回调的函数内部再执行。
+<p>单线程机制的优点在于实现起来较为简单，运行环境相对简单。缺点在于，如果中间有任务需要响应时间过长，经常会导致</p>
 
-典型的例子就是发送ajax请求。例如：
+<p>页面加载错误或者浏览器无响应的状况。这就是所谓的“同步模式”，程序执行顺序与任务排列顺序一致。对于浏览器来说，</p>
+
+<p>同步模式效率较低，耗时长的任务都应该使用异步模式；而在服务器端，异步模式则是唯一的模式，如果采用同步模式个人认为</p>
+
+<p>服务器很快就会出现12306在高峰期的表现。。。。</p>
+
+<p><strong>异步模式的四种方式：</strong></p>
+
+<h4 id="1-回调函数callback">1.回调函数callback</h4>
+
+<p>所谓回调函数，就是将函数作为参数传到需要回调的函数内部再执行。</p>
+
+<p>典型的例子就是发送ajax请求。例如：</p>
+
+<pre><code>
+     $.ajax({
+
+    async: false, 
+
+    cache: false,
+
+    dataType: 'json',
+
+    url: &quot;url&quot;,
+
+    success: function(data) {
+
+      console.log('success');
+
+    },
+
+    error: function(data) {
+
+     console.log('error');
+
+    }
+
+  })
 </code></pre>
-
-<pre><code> $.ajax({
-
-async: false, 
-
-cache: false,
-
-dataType: 'json',
-
-url: &quot;url&quot;,
-
-success: function(data) {
-
-  console.log('success');
-
-},
-
-error: function(data) {
-
- console.log('error');
-
-}
-</code></pre>
-
-<p>})
-```</p>
 
 <p>当发送ajax请求后，等待回应的过程不会堵塞程序运行，耗时的操作相当于延后执行。</p>
 
@@ -607,15 +638,83 @@ error: function(data) {
 
 <p>《JavaScript面向对象编程指南》着重介绍JavaScript在面向对象方面的特性，展示如何构建强健的、可维护的、功能强大的应用程序及程序库。</p>
 
-<h3 id="b-s-web项目">B/S web项目</h3>
+<h2 id="编程思想">编程思想</h2>
 
-<p>B/S指的是browser/server，就是说是浏览器与服务端模式，WEB开发基本都是基于这种模式的</p>
+<h3 id="函数式编程">函数式编程</h3>
 
-<p>B/S系统，说白点就是Web开发或网站开发吧。
-三大主流技术及基本特征
-1、asp.net (+sql server)  基本运行在widows平台
-2、php (+mysql)      跨平台
-3、jsp （+oracle）      安全性要求高的站点</p>
+<blockquote>
+<p><strong>维基定义</strong>函数式编程（英语：functional programming），又称泛函编程，是一种编程范式，它将电脑运算视为数学上的函数计算，并且避免使用程序状态以及易变对象。</p>
+</blockquote>
+
+<p>函数式编程的历史已经很悠久了，但是最近几年却频繁的出现在大众的视野，很多不支持函数式编程的语言也在积极加入闭包，匿名函数等非常典型的函数式编程特性。大量的前端框架也标榜自己使用了函数式编程的特性，好像一旦跟函数式编程沾边，就很高大上一样，而且还有一些专门针对函数式编程的框架和库，比如：RxJS、cycleJS、ramdaJS、lodashJS、underscoreJS等。函数式编程变得越来越流行，掌握这种编程范式对书写高质量和易于维护的代码都大有好处，所以我们有必要掌握它。</p>
+
+<p>参考：<a href="https://www.cnblogs.com/fengyuqing/p/functional_programming_1.html">函数式编程一</a></p>
+
+<h3 id="纯函数">纯函数</h3>
+
+<pre><code class="language-js">//纯函数：
+
+Array.prototype.slice
+
+Array.prototype.map
+
+String.prototype.toUpperCase
+
+//非纯函数：
+
+Math.random
+
+Date.now
+
+Array.ptototype.splice
+</code></pre>
+
+<h3 id="函数柯里化">函数柯里化</h3>
+
+<blockquote>
+<p>curry 的概念很简单：将一个低阶函数转换为高阶函数的过程就叫柯里化。</p>
+</blockquote>
+
+<p>这表明函数柯里化是一种“预加载”函数的能力，通过传递一到两个参数调用函数，就能得到一个记住了这些参数的新函数。从某种意义上来讲，这是一种对参数的缓存，是一种非常高效的编写函数的方法：</p>
+
+<pre><code class="language-js">//纯函数checkAge
+var checkAge = function(age) {
+  var minimum = 21;
+  return age &gt;= minimum;
+};
+//curry checkAge
+var checkage = min =&gt; (age =&gt; age &gt; min);
+var checkage18 = checkage(18);
+checkage18(20);
+// =&gt;true
+</code></pre>
+
+<h3 id="函数式组合">函数式组合</h3>
+
+<pre><code class="language-js">var toUpperCase = function(x) { return x.toUpperCase(); };
+var exclaim = function(x) { return x + '!'; };
+
+var shout = function(x){
+  return exclaim(toUpperCase(x));
+};
+
+shout(&quot;send in the clowns&quot;);
+//=&gt; &quot;SEND IN THE CLOWNS!&quot;
+</code></pre>
+
+<p><em>使用组合，我们可以这样定义我们的shout函数</em></p>
+
+<pre><code class="language-js">//定义compose
+var compose = (...args) =&gt; x =&gt; args.reduceRight((value, item) =&gt; item(value), x);
+
+var toUpperCase = function(x) { return x.toUpperCase(); };
+var exclaim = function(x) { return x + '!'; };
+
+var shout = compose(exclaim, toUpperCase);
+
+shout(&quot;send in the clowns&quot;);
+//=&gt; &quot;SEND IN THE CLOWNS!&quot;
+</code></pre>
 
                 </article>
 
@@ -623,7 +722,7 @@ error: function(data) {
               
               <div class="card-action card-action-links">
                 
-                <a class="btn btn-secondary" href="https://wuxingtao.github.io/tags/summary">Summary</a> 
+                <a class="btn btn-secondary" href="https://wuxingtao.github.io/tags/javascript">Javascript</a> 
               </div>
               
               <div class="card-action">
@@ -635,12 +734,12 @@ error: function(data) {
                  
                 <span class="pagination-item previous">
                   <i class="material-icons">navigate_before</i>
-                  <a href="https://wuxingtao.github.io/posts/summary/summary-git-learn/" rel="prev">GIT【个人整理】</a>
+                  <a href="https://wuxingtao.github.io/posts/summary/summary-ajax-learn/" rel="prev">ajax 个人整理</a>
                 </span>  
                 
                 
                 <span class="pagination-item next">
-                  <a href="https://wuxingtao.github.io/posts/summary/summary-ajax-learn/" rel="next">ajax 个人整理</a>
+                  <a href="https://wuxingtao.github.io/posts/hugo/creating-a-new-theme/" rel="next">Creating a New Theme</a>
                   <i class="material-icons">navigate_next</i>
                 </span> 
               </div>

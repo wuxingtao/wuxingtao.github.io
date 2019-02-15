@@ -56,14 +56,5 @@
       <description>[toc] Git ssh 生成 ssh-keygen -t rsa -C &amp;quot;wuxingtao@jlpay.com&amp;quot; -f &amp;quot;jlpayPro&amp;quot; ssh-keygen - 生成、管理和转换认证密钥 ssh-keygen [-q] [-b bits] -t type [-N new_passphrase] [-C comment] [-foutput_keyfile] ssh-keygen -p [-P old_passphrase] [-N new_passphrase] [-f keyfile] ssh-keygen -i [-f input_keyfile] ssh-keygen -e [-f input_keyfile] ssh-keygen -y [-f input_keyfile] ssh-keygen -c [-P passphrase] [-C comment] [-f keyfile] ssh-keygen -l [-f input_keyfile] ssh-keygen</description>
     </item>
     
-    <item>
-      <title>个人编码名词整理</title>
-      <link>https://wuxingtao.github.io/posts/code-term/</link>
-      <pubDate>Wed, 06 Apr 2016 11:13:13 +0800</pubDate>
-      
-      <guid>https://wuxingtao.github.io/posts/code-term/</guid>
-      <description>[toc] 为什么在编写代码的时候要使用unicode来表示中文? 看别人的代码，有这样的片段。 setText(&amp;quot;\u5BFC\u5165\u8DEF\u5F84&amp;quot;) 为什么不直接用中文写出来，而使用unicode表示。 两</description>
-    </item>
-    
   </channel>
 </rss>
