@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+
+  
+  <meta charset="UTF-8">
+  <title>
+    【正则-个人整理】 | wuxingtao Blog
+  </title>
+
+
+  
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
+
+  
+  <link rel="canonical" href="https://www.wuxingtao.club/posts/summary-regexp-learn/" />
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.loli.net/icon?family=Material+Icons">
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/ocean.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.wuxingtao.club/css/index.css">
+  
+  <link rel="stylesheet" href="https://www.wuxingtao.club/css/custom.css">
+  
+  <link href="https://www.wuxingtao.club/index.xml" rel="alternate" type="application/rss+xml" title="wuxingtao Blog" />
+  <link href="https://www.wuxingtao.club/index.xml" rel="feed" type="application/rss+xml" title="wuxingtao Blog" />
+
+  
+  <link href="https://www.wuxingtao.club/favicon.ico" rel="shortcut icon">
+
+  <script>
+    window.baseURL = 'https:\/\/www.wuxingtao.club';
+  </script>
+</head>
+
+
+
+
+
+
+
+<body>
+  <div class="navbar-fixed">
+    <nav class="navbar">
+      <div class="nav-container container">
+        <div class="nav-wrapper inner">
+          <a href="javascript:void(0)" data-activates="sidebar" class="button-collapse hide-on-large-only">
+            <i class="material-icons">menu</i>
+          </a>
+          <a href="https://www.wuxingtao.club" class="brand-logo">
+            <i class="material-icons hide-on-med-and-down">restaurant_menu</i>
+            wuxingtao Blog
+          </a>
+          
+          <ul class=" nav-menu tabs tabs-transparent hide-on-med-and-down">
+            
+            <li class="tab">
+              <a href="https://www.wuxingtao.club/" class=''>
+                Home
+              </a>
+            </li>
+            
+            <li class="tab">
+              <a href="https://www.wuxingtao.club/archive/" class=''>
+                Archive
+              </a>
+            </li>
+            
+            <li class="tab">
+              <a href="https://www.wuxingtao.club/about/" class=''>
+                About
+              </a>
+            </li>
+            
+          </ul>
+          
+
+          <form class="nav-form hide-on-small-and-down">
+            <div class="form-group">
+              <i class="material-icons">search</i>
+              <input type='text' placeholder="输入搜索关键字" />
+            </div>
+            <div class="form-popout">
+              <div class="search-result">
+                <label>暂无搜索结果</label>
+                <ul>
+                </ul>
+              </div>
+            </div>
+          </form>
+
+
+          <ul class=" nav-menu apps">
+            
+            <li>
+              <a class="search-btn hide-on-med-and-up" href='#search-panel'>
+                <i class="material-icons">search</i>
+              </a>
+            </li>
+            <li>
+              <a class="term-btn hide-on-small-and-down" href='#term-panel'>
+                <i class="material-icons">apps</i>
+              </a>
+            </li>
+            <li>
+              <a class="rss-btn hide-on-small-and-down" href='https://www.wuxingtao.club/index.xml' target="_blank">
+                <i class="material-icons">rss_feed</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  
+  <div class="mobile-search hide-on-med-and-up">
+  <div class="header">
+    
+    <i class="material-icons">search</i>
+    <input type='text' placeholder="输入搜索关键字" />
+    <i class="material-icons mobile-search-close">cancel</i>
+  </div>
+  <div class="content">
+    <label>暂无搜索结果</label>
+    <ul></ul>
+  </div>
+</div>
+  
+
+  <div class="taxonomy">
+    <div class="container">
+      <div class="inner">
+        <div class="taxonomy-panel">
+          
+          <div class='group'>
+            <label>Category</label>
+            <ul>
+                
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/categories/summary'> summary
+                  <span class="badge">10</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/categories/node'> node
+                  <span class="badge">2</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/categories/tao'> tao
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          <div class='group'>
+            <label>Tag</label>
+            <ul>
+                
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/summary'> summary
+                  <span class="badge">5</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/javascript'> javascript
+                  <span class="badge">3</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/node'> node
+                  <span class="badge">2</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/ajax'> ajax
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/development'> development
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/express'> express
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/git'> git
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/go'> go
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/golang'> golang
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/hack'> hack
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/html'> html
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/hugo'> hugo
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/mongodb'> mongodb
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/regexp'> regexp
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/seajs'> seajs
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/templates'> templates
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/theme'> theme
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/themes'> themes
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/vscode'> vscode
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/webstorm'> webstorm
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <ul class="side-nav" id="sidebar">
+    
+    <li>
+      <a href="https://www.wuxingtao.club/" class=''>
+        Home
+      </a>
+    </li>
+    
+    <li>
+      <a href="https://www.wuxingtao.club/archive/" class=''>
+        Archive
+      </a>
+    </li>
+    
+    <li>
+      <a href="https://www.wuxingtao.club/about/" class=''>
+        About
+      </a>
+    </li>
+    
+    <li>
+      <a class="term-btn-mobile hide-on-med-only" href='https://www.wuxingtao.club/categories/'>
+        Categories
+      </a>
+    </li>
+    <li>
+      <a class="term-btn-mobile hide-on-med-only" href='https://www.wuxingtao.club/tags/'>
+        Tags
+      </a>
+    </li>
+    <li>
+      <a class="rss-btn-mobile hide-on-med-only" href='https://www.wuxingtao.club/index.xml' target="_blank">
+        Rss
+      </a>
+    </li>
+  </ul>
+  
+
+
+
+
+
+<main id="single" role="main" class="main-panel">
+  <div class="page-content">
+    <div class="container container-ex">
+      <div class="inner">
+        <section class="post-wrapper">
+          
+          <div class="toc-panel">
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#1-部分语法-语法">【1】部分语法 - 【语法】</a></li>
+<li><a href="#获取url">获取URL</a></li>
+<li><a href="#邮箱匹配">邮箱匹配</a></li>
+<li><a href="#手机号码">手机号码</a></li>
+<li><a href="#隐藏手机号码-手机号码中间部分替换成星号">隐藏手机号码,手机号码中间部分替换成星号</a>
+<ul>
+<li><a href="#方法-①-字符串截取-拼接">方法 ① ：字符串截取+拼接</a></li>
+<li><a href="#正则表达式替换">正则表达式替换</a></li>
+</ul></li>
+<li><a href="#判断图片">判断图片</a></li>
+<li><a href="#js利用正则配合replace替换指定字符">JS利用正则配合replace替换指定字符</a></li>
+<li><a href="#正则对象属性按序列取出">正则对象属性按序列取出</a></li>
+<li><a href="#正则匹配金额-限制一个小数点-两个小数">正则匹配金额(限制一个小数点，两个小数)</a></li>
+<li><a href="#javascript采用正则表达式实现startwith-endwith效果函数">JavaScript采用正则表达式实现startWith、endWith效果函数</a></li>
+<li><a href="#匹配小数点-金额字体区分">匹配小数点，金额字体区分</a></li>
+<li><a href="#浏览器内核版本判断">浏览器内核版本判断</a></li>
+<li><a href="#客户端手机端判断">客户端手机端判断</a></li>
+<li><a href="#微信浏览器判断">微信浏览器判断</a></li>
+<li><a href="#js-数字-金额-用逗号-隔开-数字格式化">JS 数字，金额 用逗号 隔开（数字格式化）</a></li>
+<li><a href="#匹配图片文件">匹配图片文件</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+          <div class="post reveal ">
+            <div class="card">
+              <section class="breadcrumb-root">
+  <div class="breadcrumbs" role="navigation" aria-label="breadcrumbs navigation">
+     
+
+    <a class="breadcrumb" href="https://www.wuxingtao.club">
+      <i class="material-icons">location_on</i>Home</a>
+      
+    
+        
+    
+      
+    
+        
+    
+      
+    <span class="breadcrumb">【正则-个人整理】</span>
+
+        
+    
+      
+  </div>
+</section>
+              
+              <div class="card-header postinfo">
+                <span class="card-title">【正则-个人整理】 </span>
+              </div>
+              <div class="card-header date">
+                
+                <div class="group">
+                  <i class="material-icons">book</i>
+                  <address>
+                    归档：
+                    <a href="https://www.wuxingtao.club/categories/summary">Summary</a>&nbsp; 
+                  </address>
+                </div>
+                
+                <div class="group">
+                  <i class="material-icons">flag</i>
+                  <time>创建：2016年05月 4日
+                  </time>
+                </div>
+                
+                
+
+              </div>
+              
+              <div class="card-content">
+
+                <article class="article">
+                  
+
+<p>[toc]</p>
+
+<h3 id="1-部分语法-语法">【1】部分语法 - 【语法】</h3>
+
+<p><strong>构造函数RegExp 对象</strong>
+new RegExp(&lsquo;ab+c&rsquo;, &lsquo;i&rsquo;);
+new RegExp(/ab+c/, &lsquo;i&rsquo;);
+<strong>直接量语法</strong>
+var re = /**/gi</p>
+
+<blockquote>
+<p>构造函数正则可直接使用变量</p>
+</blockquote>
+
+<p>正则表达式的() [] {}有不同的意思。</p>
+
+<pre><code>() 是为了提取匹配的字符串。表达式中有几个()就有几个相应的匹配字符串。
+(\s*)表示连续空格的字符串。
+[]是定义匹配的字符范围。比如 [a-zA-Z0-9] 表示相应位置的字符要匹配英文字符和数字。[\s*]表示空格或者*号。
+{}一般用来表示匹配的长度，比如 \s{3} 表示匹配三个空格，\s[1,3]表示匹配一到三个空格。
+(0-9) 匹配 '0-9′ 本身。 [0-9]* 匹配数字（注意后面有 *，可以为空）[0-9]+ 匹配数字（注意后面有 +，不可以为空）{1-9} 写法错误。
+[0-9]{0,9} 表示长度为 0 到 9 的数字字符串。
+</code></pre>
+
+<pre><code>//构造函数正则需要转义--（匹配元字符，单词边界）
+&quot;never&quot;.match(new RegExp(&quot;ver\\b&quot;,'i'))
+&quot;never&quot;.match(/ver\b/,'i')
+</code></pre>
+
+<p><strong>正则表达式全部符号解释</strong></p>
+
+<pre><code>&lt;style&gt;
+table th:first-child {
+    width: 100px;
+}
+&lt;/style&gt;
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>字符符号对照说明111111111111111  11111</td>
+<td align="left">描述</td>
+</tr>
+
+<tr>
+<td></td>
+<td align="left">将下一个字符标记为一个特殊字符、或一个原义字符、或一个 向后引用、或一个八进制转义符。例如，&rsquo;n&rsquo; 匹配字符 &ldquo;n&rdquo;。&rsquo;\n&rsquo; 匹配一个换行符。序列 &lsquo;\&rsquo; 匹配 &ldquo;\&rdquo; 而 &ldquo;(&rdquo; 则匹配 &ldquo;(&ldquo;。</td>
+</tr>
+
+<tr>
+<td>^</td>
+<td align="left">匹配输入字符串的开始位置。如果设置了 RegExp 对象的 Multiline 属性，^ 也匹配 &lsquo;\n&rsquo; 或 &lsquo;\r&rsquo; 之后的位置。</td>
+</tr>
+
+<tr>
+<td>$</td>
+<td align="left">匹配输入字符串的结束位置。如果设置了RegExp 对象的 Multiline 属性，$ 也匹配 &lsquo;\n&rsquo; 或 &lsquo;\r&rsquo; 之前的位置。</td>
+</tr>
+
+<tr>
+<td>*</td>
+<td align="left">匹配前面的子表达式零次或多次。例如，zo* 能匹配 &ldquo;z&rdquo; 以及 &ldquo;zoo&rdquo;。* 等价于{0,}。</td>
+</tr>
+
+<tr>
+<td>+</td>
+<td align="left">匹配前面的子表达式一次或多次。例如，&rsquo;zo+&rsquo; 能匹配 &ldquo;zo&rdquo; 以及 &ldquo;zoo&rdquo;，但不能匹配 &ldquo;z&rdquo;。+ 等价于 {1,}。</td>
+</tr>
+
+<tr>
+<td>?</td>
+<td align="left">匹配前面的子表达式零次或一次。例如，&rdquo;do(es)?&rdquo; 可以匹配 &ldquo;do&rdquo; 或 &ldquo;does&rdquo; 中的&rdquo;do&rdquo; 。? 等价于 {0,1}。</td>
+</tr>
+
+<tr>
+<td>{n}</td>
+<td align="left">n 是一个非负整数。匹配确定的 n 次。例如，&rsquo;o{2}&rsquo; 不能匹配 &ldquo;Bob&rdquo; 中的 &lsquo;o&rsquo;，但是能匹配 &ldquo;food&rdquo; 中的两个 o。</td>
+</tr>
+
+<tr>
+<td>{n,}</td>
+<td align="left">n 是一个非负整数。至少匹配n 次。例如，&rsquo;o{2,}&rsquo; 不能匹配 &ldquo;Bob&rdquo; 中的 &lsquo;o&rsquo;，但能匹配 &ldquo;foooood&rdquo; 中的所有 o。&rsquo;o{1,}&rsquo; 等价于 &lsquo;o+&lsquo;。&rsquo;o{0,}&rsquo; 则等价于 &lsquo;o*&lsquo;。</td>
+</tr>
+
+<tr>
+<td>{n,m}</td>
+<td align="left">m 和 n 均为非负整数，其中n &lt;= m。最少匹配 n 次且最多匹配 m 次。例如，&rdquo;o{1,3}&rdquo; 将匹配 &ldquo;fooooood&rdquo; 中的前三个 o。&rsquo;o{0,1}&rsquo; 等价于 &lsquo;o?&lsquo;。请注意在逗号和两个数之间不能有空格。</td>
+</tr>
+
+<tr>
+<td>?</td>
+<td align="left">当该字符紧跟在任何一个其他限制符 (*, +, ?, {n}, {n,}, {n,m}) 后面时，匹配模式是非贪婪的。非贪婪模式尽可能少的匹配所搜索的字符串，而默认的贪婪模式则尽可能多的匹配所搜索的字符串。例如，对于字符串 &ldquo;oooo&rdquo;，&rsquo;o+?&rsquo; 将匹配单个 &ldquo;o&rdquo;，而 &lsquo;o+&rsquo; 将匹配所有 &lsquo;o&rsquo;。</td>
+</tr>
+
+<tr>
+<td>.</td>
+<td align="left">匹配除 &ldquo;\n&rdquo; 之外的任何单个字符。要匹配包括 &lsquo;\n&rsquo; 在内的任何字符，请使用象 &lsquo;[.\n]&rsquo; 的模式。</td>
+</tr>
+
+<tr>
+<td>(pattern)</td>
+<td align="left">匹配 pattern 并获取这一匹配。所获取的匹配可以从产生的 Matches 集合得到，在VBScript 中使用 SubMatches 集合，在JScript 中则使用 $0…$9 属性。要匹配圆括号字符，请使用 &lsquo;(&rsquo; 或 &lsquo;)&lsquo;。</td>
+</tr>
+
+<tr>
+<td>(?:pattern)</td>
+<td align="left">匹配 pattern 但不获取匹配结果，它是一个非捕获匹配，不进行存储供以后使用。这在使用 &ldquo;或&rdquo; 字符(|) 来组合一个模式的各个部分是很有用。例如， &lsquo;industr(?:y|ies) 就是一个比 &lsquo;industry|industries&rsquo; 更简略的表达式。</td>
+</tr>
+
+<tr>
+<td>(?=pattern)</td>
+<td align="left">正向预查，在任何匹配 pattern 的字符串开始处匹配查找字符串。这是一个非获取匹配，也就是说，该匹配不需要获取供以后使用。例如，&rsquo;Windows (?=95|98|NT|2000)&rsquo; 能匹配 &ldquo;Windows 2000&rdquo; 中的 &ldquo;Windows&rdquo; ，但不能匹配 &ldquo;Windows 3.1&rdquo; 中的 &ldquo;Windows&rdquo;。预查不消耗字符，也就是说，在一个匹配发生后，在最后一次匹配之后立即开始下一次匹配的搜索，而不是从包含预查的字符之后开始。</td>
+</tr>
+
+<tr>
+<td>(?!pattern)</td>
+<td align="left">负向预查，在任何不匹配 pattern 的字符串开始处匹配查找字符串。这是一个非获取匹配，也就是说，该匹配不需要获取供以后使用。例如&rsquo;Windows (?!95|98|NT|2000)&rsquo; 能匹配 &ldquo;Windows 3.1&rdquo; 中的 &ldquo;Windows&rdquo;，但不能匹配 &ldquo;Windows 2000&rdquo; 中的 &ldquo;Windows&rdquo;。预查不消耗字符，也就是说，在一个匹配发生后，在最后一次匹配之后立即开始下一次匹配的搜索，而不是从包含预查的字符之后开始</td>
+</tr>
+
+<tr>
+<td>x|y</td>
+<td align="left">匹配 x 或 y。例如，&rsquo;z|food&rsquo; 能匹配 &ldquo;z&rdquo; 或 &ldquo;food&rdquo;。&rsquo;(z|f)ood&rsquo; 则匹配 &ldquo;zood&rdquo; 或 &ldquo;food&rdquo;。</td>
+</tr>
+
+<tr>
+<td>[xyz]</td>
+<td align="left">字符集合。匹配所包含的任意一个字符。例如， &lsquo;[abc]&rsquo; 可以匹配 &ldquo;plain&rdquo; 中的 &lsquo;a&rsquo;。例如：</td>
+</tr>
+
+<tr>
+<td>[^xyz]</td>
+<td align="left">负值字符集合。匹配未包含的任意字符。例如， &lsquo;[^abc]&rsquo; 可以匹配 &ldquo;plain&rdquo; 中的&rsquo;p&rsquo;。</td>
+</tr>
+
+<tr>
+<td>[a-z]</td>
+<td align="left">字符范围。匹配指定范围内的任意字符。例如，&rsquo;[a-z]&rsquo; 可以匹配 &lsquo;a&rsquo; 到 &lsquo;z&rsquo; 范围内的任意小写字母字符。</td>
+</tr>
+
+<tr>
+<td>[^a-z]</td>
+<td align="left">负值字符范围。匹配任何不在指定范围内的任意字符。例如，&rsquo;[^a-z]&rsquo; 可以匹配任何不在 &lsquo;a&rsquo; 到 &lsquo;z&rsquo; 范围内的任意字符。</td>
+</tr>
+
+<tr>
+<td>[A-z]</td>
+<td align="left">等于 [a-zA-Z] 表示匹配所有大小写字母</td>
+</tr>
+
+<tr>
+<td>\b</td>
+<td align="left">匹配一个单词边界，也就是指单词和空格间的位置。例如， &lsquo;er\b&rsquo; 可以匹配&rdquo;never&rdquo; 中的 &lsquo;er&rsquo;，但不能匹配 &ldquo;verb&rdquo; 中的 &lsquo;er&rsquo;。</td>
+</tr>
+
+<tr>
+<td>\B</td>
+<td align="left">匹配非单词边界。&rsquo;er\B&rsquo; 能匹配 &ldquo;verb&rdquo; 中的 &lsquo;er&rsquo;，但不能匹配 &ldquo;never&rdquo; 中的 &lsquo;er&rsquo;。</td>
+</tr>
+
+<tr>
+<td>\cx</td>
+<td align="left">匹配由 x 指明的控制字符。例如， \cM 匹配一个 Control-M 或回车符。x 的值必须为 A-Z 或 a-z 之一。否则，将 c 视为一个原义的 &lsquo;c&rsquo; 字符。</td>
+</tr>
+
+<tr>
+<td>\d</td>
+<td align="left">匹配一个数字字符。等价于 [0-9]。</td>
+</tr>
+
+<tr>
+<td>\D</td>
+<td align="left">匹配一个非数字字符。等价于 [^0-9]。</td>
+</tr>
+
+<tr>
+<td>\f</td>
+<td align="left">匹配一个换页符。等价于 \x0c 和 \cL。</td>
+</tr>
+
+<tr>
+<td>\n</td>
+<td align="left">匹配一个换行符。等价于 \x0a 和 \cJ。</td>
+</tr>
+
+<tr>
+<td>\r</td>
+<td align="left">匹配一个回车符。等价于 \x0d 和 \cM。</td>
+</tr>
+
+<tr>
+<td>\s</td>
+<td align="left">匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [ \f\n\r\t\v]。</td>
+</tr>
+
+<tr>
+<td>\S</td>
+<td align="left">匹配任何非空白字符。等价于 [^ \f\n\r\t\v]。</td>
+</tr>
+
+<tr>
+<td>\t</td>
+<td align="left">匹配一个制表符。等价于 \x09 和 \cI。</td>
+</tr>
+
+<tr>
+<td>\v</td>
+<td align="left">匹配一个垂直制表符。等价于 \x0b 和 \cK。</td>
+</tr>
+
+<tr>
+<td>\w</td>
+<td align="left">匹配包括下划线的任何单词字符。等价于&rsquo;[A-Za-z0-9_]&lsquo;。</td>
+</tr>
+
+<tr>
+<td>\W</td>
+<td align="left">匹配任何非单词字符。等价于 &lsquo;[^A-Za-z0-9_]&lsquo;。</td>
+</tr>
+
+<tr>
+<td>\xn</td>
+<td align="left">匹配 n，其中 n 为十六进制转义值。十六进制转义值必须为确定的两个数字长。例如，&rsquo;\x41&rsquo; 匹配 &ldquo;A&rdquo;。&rsquo;\x041&rsquo; 则等价于 &lsquo;\x04&rsquo; &amp; &ldquo;1&rdquo;。正则表达式中可以使用 ASCII 编码。.</td>
+</tr>
+
+<tr>
+<td>\num</td>
+<td align="left">匹配 num，其中 num 是一个正整数。对所获取的匹配的引用。例如，&rsquo;(.)\1&rsquo; 匹配两个连续的相同字符。</td>
+</tr>
+
+<tr>
+<td>\n</td>
+<td align="left">标识一个八进制转义值或一个向后引用。如果 \n 之前至少 n 个获取的子表达式，则 n 为向后引用。否则，如果 n 为八进制数字 (0-7)，则 n 为一个八进制转义值。</td>
+</tr>
+
+<tr>
+<td>\nm</td>
+<td align="left">标识一个八进制转义值或一个向后引用。如果 \nm 之前至少有 nm 个获得子表达式，则 nm 为向后引用。如果 \nm 之前至少有 n 个获取，则 n 为一个后跟文字 m 的向后引用。如果前面的条件都不满足，若 n 和 m 均为八进制数字 (0-7)，则 \nm 将匹配八进制转义值 nm。</td>
+</tr>
+
+<tr>
+<td>\nml</td>
+<td align="left">如果 n 为八进制数字 (0-3)，且 m 和 l 均为八进制数字 (0-7)，则匹配八进制转义值 nml。</td>
+</tr>
+
+<tr>
+<td>\un</td>
+<td align="left">匹配 n，其中 n 是一个用四个十六进制数字表示的 Unicode 字符。例如， \u00A9 匹配版权符号 (?)。</td>
+</tr>
+
+<tr>
+<td>$1,$2,$3&hellip;$9,$&amp;</td>
+<td align="left">$&amp; 所有匹配结果, $1-$9存放着正则表达式中最近的9个正则表达式的匹配结果，分为第一个结果 第二个结果</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>表2.常用的反义代码</strong>
+|字符 |  描述        |
+| &mdash;&mdash;&mdash;&mdash;- |:&mdash;&mdash;&mdash;&mdash;-|
+| \W            | 匹配任意不是字母，数字，下划线，汉字的字符|
+| \S            | 匹配任意不是空白符的字符|
+| \D            | 匹配任意非数字的字符|
+| \B            | 匹配不是单词开头或结束的位置|
+| [^x]          | 匹配除了x以外的任意字符|
+| [^aeiou]      | 匹配除了aeiou这几个字母以外的任意字符|</p>
+
+<p><strong>注意事项</strong>
+》正则使用RegExp 反义字符串双引号需要使用双斜杠,</p>
+
+<pre><code>/(\%|\+|\&amp;|=)/
+new RegExp(&quot;(\\%|\\+|\\&amp;|=)&quot;)
+</code></pre>
+
+<pre><code>/([A-Za-z_]+[A-Za-z0-9_]*)/g  //匹配字母大小写和下划线
+
+&quot;op/orderDetail.html?orderId={orderId}&amp;flag=update&quot;.match(/([A-Za-z_]+[A-Za-z0-9_]*)/g)
+//输出 [&quot;op&quot;, &quot;orderDetail&quot;, &quot;html&quot;, &quot;orderId&quot;, &quot;orderId&quot;, &quot;flag&quot;, &quot;update&quot;]
+</code></pre>
+
+<p><strong>RegExp.$1</strong></p>
+
+<blockquote>
+<p>RegExp.$1是RegExp的一个属性,指的是与正则表达式匹配的第一个 子匹配(以括号为标志)字符串，以此类推，RegExp.$2，RegExp.$3，..RegExp.$99总共可以有99个匹配</p>
+</blockquote>
+
+<p><strong>示例应用：匹配url变量</strong>
+//RegExp(&ldquo;({[A-Za-z<em>]+[A-Za-z0-9</em>]*})&ldquo;,&ldquo;g&rdquo;)</p>
+
+<pre><code>var url = &quot;op/orderDetail.html?orderId={orderId}&amp;flag=update&quot;;
+url.replace(RegExp(&quot;({[A-Za-z_]+[A-Za-z0-9_]*})&quot;,&quot;g&quot;),function($1){
+    console.log($1) //{orderId}
+	//var $input = $parent.find(&quot;#&quot;+$1.replace(/[{}]+/g, &quot;&quot;));
+	//return $input.val() ? $input.val() : $1;
+    
+})
+</code></pre>
+
+<pre><code>需求：table 列表选中 获取id,填入到动态链接中; target指向更改的属性,rel未值,table数据获取时会自动生成target对应的input[name=orderId]
+选中tr会更改 input[name=orderId],点击选项li 会{orderId}会替换为相应的值。
+
+//js 生成table
+   	    	var trHtml=&quot;&lt;tr target=\&quot;orderId\&quot;  rel='&quot;+data.id+&quot;' &gt;&quot;;
+   	    	if(0==((i + 1) % 2) ){
+   	    		trHtml=&quot;&lt;tr class=\&quot;trbg\&quot; target=\&quot;orderId\&quot;  rel='&quot;+data.id+&quot;' &gt;&quot;;
+   	    	}
+//html 选项
+&lt;li&gt;&lt;a class=&quot;edit&quot; href=&quot;op/orderDetail.html?orderId={orderId}&amp;flag=update&quot; target=&quot;navTab&quot;  width='750' height='530' rel='orderInfo' title='修改订单详情'&gt;&lt;span&gt;修改&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+   	    	
+</code></pre>
+
+<pre><code>//触发选项
+
+    $(&quot;a[target=navTab]&quot;, $p).each(function() {
+        $(this).click(function(event) {
+            var url = unescape($this.attr(&quot;href&quot;)).replaceTmById($(event.target).parents(&quot;.unitBox:first&quot;));
+            DWZ.debug('[target=navTab]: ' + url);
+            ...
+            ...
+            navTab.openTab(tabid, url, { title: title, fresh: fresh, external: external });
+
+            event.preventDefault();
+        });
+    });
+    
+    
+</code></pre>
+
+<pre><code>		function replaceTmById(_box){
+			var $parent = _box || $(document);
+			return this.replace(RegExp(&quot;({[A-Za-z_]+[A-Za-z0-9_]*})&quot;,&quot;g&quot;), function($1){
+				var $input = $parent.find(&quot;#&quot;+$1.replace(/[{}]+/g, &quot;&quot;));
+				return $input.val() ? $input.val() : $1;
+			});
+		}
+</code></pre>
+
+<hr />
+
+<h3 id="获取url">获取URL</h3>
+
+<pre><code class="language-cpp">function GetQueryString(name) {
+     var reg = new RegExp(&quot;(^|&amp;)&quot; + name + &quot;=([^&amp;]*)(&amp;|$)&quot;,&quot;i&quot;);
+     var r = window.location.search.substr(1).match(reg);
+      if (r!=null) return unescape(r[2]); return null;
+ }
+</code></pre>
+
+<p>这个正则是寻找&amp;+url参数名字=值+&amp;[object Object]
+&amp;可以不存在。</p>
+
+<pre><code class="language-cpp">例如：RegExp(&quot;(^|&amp;)logo_url=([^&amp;]*)(&amp;|$)&quot;)
+匹配这样的字符串
+logo_url=不是&amp;的任意字符&amp;
+logo_url=不是&amp;的任意字符
+&amp;logo_url=不是&amp;的任意字符&amp;
+&amp;logo_url=不是&amp;的任意字符
+([^&amp;]*) 非&amp; 零个或多个
+
+//例2  支持 ?saleid=111&amp;mm=22?elid=aaa
+var reg = new RegExp(&quot;(^|&amp;)&quot; + name + &quot;=([^&amp;]*)(&amp;|$)&quot;,&quot;i&quot;);
+</code></pre>
+
+<p>其实就是匹配URL中logo_url这个参数</p>
+
+<h3 id="邮箱匹配">邮箱匹配</h3>
+
+<p>虽然没有统一的邮箱账号格式，但是所有邮箱都符合“名称@域名”的规律。对于名称和域名的字符限制，我们可以根据项目的情况定义一个，比如只允许有英文、数字、下划线等组成。下面举例实现一些验证邮箱格式的正则表达式。</p>
+
+<p><strong>实例1、只允许英文字母、数字、下划线、英文句号、以及中划线组成</strong>
+举例：zhangsan-001@gmail.com
+分析邮件名称部分：</p>
+
+<p>26个大小写英文字母表示为a-zA-Z
+数字表示为0-9
+下划线表示为_
+中划线表示为-
+由于名称是由若干个字母、数字、下划线和中划线组成，所以需要用到+表示多次出现
+根据以上条件得出邮件名称表达式：[a-zA-Z0-9_-]+</p>
+
+<p>分析域名部分：</p>
+
+<p>一般域名的规律为“[N级域名][三级域名.]二级域名.顶级域名”，比如“qq.com”、“www.qq.com”、“mp.weixin.qq.com”、“12-34.com.cn”，分析可得域名类似“** .** .** .**”组成。</p>
+
+<p>“**”部分可以表示为[a-zA-Z0-9_-]+</p>
+
+<p>“.**”部分可以表示为.[a-zA-Z0-9_-]+</p>
+
+<p>多个“.**”可以表示为(.[a-zA-Z0-9_-]+)+</p>
+
+<p>综上所述，域名部分可以表示为[a-zA-Z0-9<em>-]+(.[a-zA-Z0-9</em>-]+)+</p>
+
+<p>最终表达式：
+由于邮箱的基本格式为“名称@域名”，需要使用“^”匹配邮箱的开始部分，用“$”匹配邮箱结束部分以保证邮箱前后不能有其他字符，所以最终邮箱的正则表达式为：</p>
+
+<p><code>^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$</code></p>
+
+<p><strong>实例2、名称允许汉字、字母、数字，域名只允许英文域名</strong>
+举例：杨元庆001Abc@lenovo.com.cn</p>
+
+<p>分析邮件名称部分：</p>
+
+<p>汉字在正则表示为[\u4e00-\u9fa5]
+字母和数字表示为A-Za-z0-9</p>
+
+<pre><code>通过分析得出邮件名称部分表达式为[A-Za-z0-9\u4e00-\u9fa5]+
+</code></pre>
+
+<p>分析邮件域名部分</p>
+
+<pre><code>邮件部分可以参考实例1中的分析域名部分。 
+得出域名部分的表达式为[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+。
+</code></pre>
+
+<p>最终表达式：</p>
+
+<pre><code>我们用@符号将邮箱的名称和域名拼接起来，因此完整的邮箱表达式为
+
+`^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$`
+</code></pre>
+
+<h3 id="手机号码">手机号码</h3>
+
+<pre><code class="language-cpp">if(!/^(((13[0-9]{1})|15[0-9]|17[0-9]|18[0-9])+\d{8})$/.test(tel)){
+   $(&quot;.form-box input[name='tel']&quot;).after(errorTip.format(&quot;手机号码格式不对&quot;))
+           return
+}else{
+    window.location.href=&quot;bindSuccess.html&quot;
+ }
+</code></pre>
+
+<h3 id="隐藏手机号码-手机号码中间部分替换成星号">隐藏手机号码,手机号码中间部分替换成星号</h3>
+
+<pre><code>// 匹配手机号首尾，以类似“123****8901”的形式输出
+'12345678901'.replace(/(\d{3})\d{4}(\d{4})/, '$1****$2');
+
+// 匹配连续11位数字，并替换其中的前7位为*号
+'15110280327'.replace(/\d{7}(\d{4})/, '*******$1');
+</code></pre>
+
+<h4 id="方法-①-字符串截取-拼接">方法 ① ：字符串截取+拼接</h4>
+
+<pre><code>function formatPhone(phone) {
+        if (typeof phone == 'number') {
+            phone = phone.toString();
+        }
+        return phone.substr(0, 3) + '****' + phone.substr(7, 11);
+    }
+</code></pre>
+
+<h4 id="正则表达式替换">正则表达式替换</h4>
+
+<pre><code>function formatPhone(phone) {
+    return phone.replace(/(\d{3})\d{4}(\d{4})/, &quot;$1****$2&quot;);
+}
+
+原理是先匹配前3个数字，将匹配到的值给$1，然后匹配中间4个数字，再匹配最后4个数字给$2。
+
+</code></pre>
+
+<p>小结：中间4位替换成*号，为什么不是其他位置呢，首先你要知道手机号的规则，我国使用的手机号码是11位的，前3位是号码段，中间4位是地区编码，最后4位是用户编码。你要替换多少位都没关系，至少让人知道这是个手机号码就可以了，不过替换中间4位，是约定俗成的哦。</p>
+
+<h3 id="判断图片">判断图片</h3>
+
+<pre><code>isImage: function (str) {
+    return isString(str) &amp;&amp; str.match(/(^data:image\/.*,)|(\.(jp(e|g|eg)|gif|png|bmp|webp|svg)((\?|#).*)?$)/i);
+},
+isSWF: function (str) {
+    return isString(str) &amp;&amp; str.match(/\.(swf)((\?|#).*)?$/i);        //匹配?或者&quot;#&quot;结尾的的行。
+},
+</code></pre>
+
+<h3 id="js利用正则配合replace替换指定字符">JS利用正则配合replace替换指定字符</h3>
+
+<p>replace() 方法用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。</p>
+
+<p><strong>语法</strong></p>
+
+<p>stringObject.replace(regexp,replacement)</p>
+
+<p><strong>参数　　描述</strong>
+regexp　必需。规定了要替换的模式的 RegExp 对象。请注意，如果该值是一个字符串，则将它作为要检索的直接量文本模式，而不是首先被转换为 RegExp 对象。
+replacement　必需。一个字符串值。规定了替换文本或生成替换文本的函数。</p>
+
+<pre><code>var s = &quot;123abc456xayz890&quot;;
+var re = /(abc|xyz)/gi;
+console.log( s.replace(re,'') ) 
+</code></pre>
+
+<p><strong>返回值</strong></p>
+
+<p>一个新的字符串，是用 replacement 替换了 regexp 的第一次匹配或所有匹配之后得到的。</p>
+
+<p><strong>说明</strong></p>
+
+<p>字符串 stringObject 的 replace() 方法执行的是查找并替换的操作。它将在 stringObject 中查找与 regexp 相匹配的子字符串，然后用 replacement 来替换这些子串。如果 regexp 具有全局标志 g，那么 replace() 方法将替换所有匹配的子串。否则，它只替换第一个匹配子串。</p>
+
+<p>replacement 可以是字符串，也可以是函数。如果它是字符串，那么没有匹配都将由字符串替换。但是 replacement 中的 $ 字符具有特定的含义。如下表所示，它说明从模式匹配得到的字符串将用于替换。
+字符　　替换文本
+$1、$2、&hellip;、$99　　与 regexp 中的第 1 到第 99 个子表达式相匹配的文本。</p>
+
+<h3 id="正则对象属性按序列取出">正则对象属性按序列取出</h3>
+
+<pre><code>var data = {
+    &quot;222&quot;: &quot;1111&quot;,
+    &quot;555&quot;: &quot;4444&quot;,
+    &quot;1010&quot;: &quot;9999&quot;,
+    &quot;8&quot;: &quot;bbb&quot;,
+    &quot;111&quot;: &quot;asdfj&quot;,
+}
+Object.keys(JSON.parse(JSON.stringify(data).replace(/[^&quot;]+(?=&quot;:)/g,&quot;0$&amp;&quot;)))
+
+Object.keys(JSON.parse('{&quot;343&quot;:33,&quot;133&quot;:322,&quot;233&quot;:43}'.replace(/[^&quot;]+(?=&quot;:)/g,&quot;0$&amp;&quot;)))
+//[&quot;0343&quot;, &quot;0133&quot;, &quot;0233&quot;]
+</code></pre>
+
+<h3 id="正则匹配金额-限制一个小数点-两个小数">正则匹配金额(限制一个小数点，两个小数)</h3>
+
+<pre><code>//要求为空（&quot;&quot;）或1到16位的纯数字（0123456789）
+^(|[0-9]{1,16})$
+
+// 金额，限制一个小数点，两个小数
+//给输入的密码框添加新值
+function addValue(newValue) {
+    var reg = /^(\d*((\.)?(\d{0,1})?))?$/;
+    if(reg.test($(&quot;.input_cur&quot;).val())){
+        if($(&quot;.shuru&quot;).val().indexOf(&quot;.&quot;)&gt;=1 &amp;&amp; newValue==&quot;.&quot;){
+            newValue = &quot;&quot;;
+        }
+        CapsLockValue == 0 ? $(&quot;.input_cur&quot;).val($(&quot;.shuru&quot;).val() + newValue) : $(&quot;.input_cur&quot;).val($(&quot;.shuru&quot;).val() + newValue.toUpperCase())
+    }
+ 
+}
+</code></pre>
+
+<h3 id="javascript采用正则表达式实现startwith-endwith效果函数">JavaScript采用正则表达式实现startWith、endWith效果函数</h3>
+
+<pre><code>String.prototype.startWith=function(str){    
+  var reg=new RegExp(&quot;^&quot;+str);    
+  return reg.test(this);       
+} 
+ 
+String.prototype.endWith=function(str){    
+  var reg=new RegExp(str+&quot;$&quot;);    
+  return reg.test(this);       
+}
+
+//indexOf() 实现
+ 
+var index = str.indexOf('abc');
+if(index==0){
+//以'abc'开头
+}
+</code></pre>
+
+<h3 id="匹配小数点-金额字体区分">匹配小数点，金额字体区分</h3>
+
+<p><code>new RegExp(/(([1-9]\d*))(\.\d*[0-9])/)</code></p>
+
+<pre><code>//html
+&lt;div class=&quot;item present-price&quot;&gt;&lt;span&gt;59.60&lt;/span&gt;&lt;sub&gt;元/台&lt;/sub&gt;&lt;/div&gt;
+//js
+window.onload = function(){
+  var company = document.querySelector(&quot;.present-price sub&quot;).innerHTML;
+  var $parsePrice = document.querySelector(&quot;.present-price span&quot;);
+  var oldParse = parseFloat($parsePrice.innerHTML).toFixed(2);
+
+  var reg = new RegExp(/(([1-9]\d*))(\.\d*[0-9])/)
+  if(reg.test(oldParse)){
+    var circle = &quot;.&quot;+(oldParse.split(&quot;.&quot;))[1] + company;
+    $parsePrice.innerHTML = (oldParse.split(&quot;.&quot;)[0]);
+    document.querySelector(&quot;.present-price sub&quot;).innerHTML = circle;
+  }else{
+    $parsePrice.innerHTML = (oldParse.split(&quot;.&quot;)[0]);
+    document.querySelector.innerHTML = &quot;.00&quot; +company;
+  }
+}
+</code></pre>
+
+<p>indexOf匹配</p>
+
+<pre><code>&lt;body&gt;
+&lt;p class=&quot;num&quot;&gt;1234567.45678&lt;/p&gt;
+&lt;p class=&quot;num&quot;&gt;0&lt;/p&gt;
+&lt;p class=&quot;num&quot;&gt;123&lt;/p&gt;
+&lt;p class=&quot;num&quot;&gt;3.1415926&lt;/p&gt;
+&lt;script&gt;
+  var tags = document.getElementsByTagName('p');
+  for(var i = 0, len = tags.length; i &lt; len; i++) {
+   var num = tags[i].innerHTML;
+   if(num.indexOf('.') == -1) {
+    tags[i].innerHTML = '&lt;span class=&quot;integral&quot;&gt;' + num + '&lt;\/span&gt;';
+   } else {
+    var integral = num.substring(0, num.indexOf('.'));
+    var decimal = num.substring(num.indexOf('.'));
+    tags[i].innerHTML = '&lt;span class=&quot;integral&quot;&gt;' + integral + '&lt;\/span&gt;&lt;span class=&quot;decimal&quot;&gt;' + decimal + '&lt;\/span&gt;';
+   }
+  }
+&lt;/script&gt;
+&lt;/body&gt;
+
+</code></pre>
+
+<h3 id="浏览器内核版本判断">浏览器内核版本判断</h3>
+
+<pre><code>//判断IE 版本
+var browser = navigator.appName
+var b_version = navigator.appVersion
+var version = b_version.split(&quot;;&quot;);
+var trim_Version = version[1].replace(/[ ]/g, &quot;&quot;);
+if (browser == &quot;Microsoft Internet Explorer&quot; &amp;&amp; trim_Version == &quot;MSIE6.0&quot;) {
+    alert(&quot;IE 6.0&quot;);
+} else if (browser == &quot;Microsoft Internet Explorer&quot; &amp;&amp; trim_Version == &quot;MSIE7.0&quot;) {
+    alert(&quot;IE 7.0&quot;);
+    window.location.href = &quot;http://xxxx.com&quot;;
+} else if (browser == &quot;Microsoft Internet Explorer&quot; &amp;&amp; trim_Version == &quot;MSIE8.0&quot;) {
+    alert(&quot;IE 8.0&quot;);
+} else if (browser == &quot;Microsoft Internet Explorer&quot; &amp;&amp; trim_Version == &quot;MSIE9.0&quot;) {
+    alert(&quot;IE 9.0&quot;);
+}&lt;/script&gt;
+</code></pre>
+
+<h3 id="客户端手机端判断">客户端手机端判断</h3>
+
+<pre><code> var os = function () {
+            var ua = navigator.userAgent,
+                    isWindowsPhone = /(?:Windows Phone)/.test(ua),
+                    isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+                    isAndroid = /(?:Android)/.test(ua),
+                    isFireFox = /(?:Firefox)/.test(ua),
+                    isChrome = /(?:Chrome|CriOS)/.test(ua),
+                    isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid &amp;&amp; !/(?:Mobile)/.test(ua)) || (isFireFox &amp;&amp; /(?:Tablet)/.test(ua)),
+                    isPhone = /(?:iPhone)/.test(ua) &amp;&amp; !isTablet,
+                    isPc = !isPhone &amp;&amp; !isAndroid &amp;&amp; !isSymbian;
+            return {
+                isTablet: isTablet,
+                isPhone: isPhone,
+                isAndroid: isAndroid,
+                isPc: isPc
+            };
+        }();
+//测试
+if(os.isAndroid || os.isIphone)
+</code></pre>
+
+<h3 id="微信浏览器判断">微信浏览器判断</h3>
+
+<pre><code>&lt;!DOCTYPE HTML&gt; 
+&lt;html lang=&quot;en&quot;&gt; 
+&lt;head&gt; 
+&lt;meta charset=&quot;utf-8&quot;/&gt; 
+&lt;title&gt;判断是否是微信内置浏览器&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;h1&gt;如果用微信浏览器打开可以看到下面的文字&lt;/h1&gt; 
+&lt;p&gt;&lt;/p&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; 
+&lt;script type=&quot;text/javascript&quot;&gt; 
+window.onload = function(){ 
+if(isWeiXin()){ 
+var p = document.getElementsByTagName('p'); 
+p[0].innerHTML = window.navigator.userAgent; 
+} 
+} 
+function isWeiXin(){ 
+var ua = window.navigator.userAgent.toLowerCase(); 
+if(ua.match(/MicroMessenger/i) == 'micromessenger'){ 
+return true; 
+}else{ 
+return false; 
+} 
+} 
+&lt;/script&gt; 
+</code></pre>
+
+<h3 id="js-数字-金额-用逗号-隔开-数字格式化">JS 数字，金额 用逗号 隔开（数字格式化）</h3>
+
+<p>例如：
+12345格式化为12,345.00
+12345.6格式化为12,345.60
+12345.67格式化为 12,345.67
+只留两位小数。
+回来后写了个格式化函数。可以控制小数位数，自动四舍五入。 代码如下：</p>
+
+<pre><code>function fmoney(s, n) { 
+    n = n &gt; 0 &amp;&amp; n &lt;= 20 ? n : 2; 
+    s = parseFloat((s + &quot;&quot;).replace(/[^\d\.-]/g, &quot;&quot;)).toFixed(n) + &quot;&quot;; 
+    var l = s.split(&quot;.&quot;)[0].split(&quot;&quot;).reverse(), r = s.split(&quot;.&quot;)[1]; 
+    t = &quot;&quot;; 
+    for (i = 0; i &lt; l.length; i++) { 
+        t += l[i] + ((i + 1) % 3 == 0 &amp;&amp; (i + 1) != l.length ? &quot;,&quot; : &quot;&quot;); 
+    } 
+    return t.split(&quot;&quot;).reverse().join(&quot;&quot;) + &quot;.&quot; + r; 
+} 
+</code></pre>
+
+<p>调用：fmoney(&ldquo;12345.675910&rdquo;, 3)，返回12,345.676
+还原函数：</p>
+
+<pre><code>function rmoney(s) { 
+    return parseFloat(s.replace(/[^\d\.-]/g, &quot;&quot;));    //匹配 既不是数字，也不是点的字符
+} 
+</code></pre>
+
+<p>示例（可保存一下代码为html文件，运行查看效果）：</p>
+
+<pre><code>&lt;SCRIPT&gt; 
+function fmoney(s, n) { 
+    n = n &gt; 0 &amp;&amp; n &lt;= 20 ? n : 2; 
+    s = parseFloat((s + &quot;&quot;).replace(/[^\d\.-]/g, &quot;&quot;)).toFixed(n) + &quot;&quot;; 
+    var l = s.split(&quot;.&quot;)[0].split(&quot;&quot;).reverse(), r = s.split(&quot;.&quot;)[1]; 
+    t = &quot;&quot;; 
+    for (i = 0; i &lt; l.length; i++) { 
+        t += l[i] + ((i + 1) % 3 == 0 &amp;&amp; (i + 1) != l.length ? &quot;,&quot; : &quot;&quot;); 
+    } 
+    return t.split(&quot;&quot;).reverse().join(&quot;&quot;) + &quot;.&quot; + r; 
+} 
+function rmoney(s) { 
+    return parseFloat(s.replace(/[^\d\.-]/g, &quot;&quot;)); 
+} 
+function g(id) { 
+    return document.getElementById(id); 
+} 
+window.onload = function() { 
+    var num, txt = g(&quot;txt&quot;), txt2 = g(&quot;txt2&quot;), btn = g(&quot;btn&quot;), btn2 = g(&quot;btn2&quot;), span = g(&quot;span&quot;); 
+    btn.onclick = function() { 
+        num = parseInt(g(&quot;num&quot;).value); 
+        txt.value = fmoney(txt.value, num); 
+        txt2.value = fmoney(txt2.value, num); 
+    }; 
+    btn2.onclick = function() { 
+        num = parseInt(g(&quot;num&quot;).value); 
+        span.innerHTML = &quot;=&quot; 
+                + fmoney(rmoney(txt.value) + rmoney(txt2.value), num); 
+    }; 
+}; 
+&lt;/SCRIPT&gt;    
+小数点位数：    
+&lt;select id=&quot;num&quot;&gt;    
+&lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;    
+&lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;    
+&lt;option value=&quot;4&quot;&gt;4&lt;/option&gt;    
+&lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;    
+&lt;/select&gt;    
+&lt;input type=&quot;text&quot; id=&quot;txt&quot; value=&quot;12345.675910&quot;&gt; +    
+&lt;input type=&quot;text&quot; id=&quot;txt2&quot; value=&quot;1223&quot;&gt; &lt;span id=&quot;span&quot;&gt;&lt;/span&gt;    
+&lt;br&gt;    
+&lt;input type=&quot;button&quot; id=&quot;btn&quot; value=&quot;格式化&quot;&gt;    
+&lt;input type=&quot;button&quot; id=&quot;btn2&quot; value=&quot;相加&quot;&gt;  
+</code></pre>
+
+<p>附：</p>
+
+<pre><code>/*
+* formatMoney(s,type)
+* 功能：金额按千位逗号分割
+* 参数：s，需要格式化的金额数值.
+* 参数：type,判断格式化后的金额是否需要小数位.
+* 返回：返回格式化后的数值字符串.
+ */ 
+function formatMoney(s, type) { 
+    if (/[^0-9\.]/.test(s)) 
+        return &quot;0&quot;; 
+    if (s == null || s == &quot;&quot;) 
+        return &quot;0&quot;; 
+    s = s.toString().replace(/^(\d*)$/, &quot;$1.&quot;); 
+    s = (s + &quot;00&quot;).replace(/(\d*\.\d\d)\d*/, &quot;$1&quot;); 
+    s = s.replace(&quot;.&quot;, &quot;,&quot;); 
+    var re = /(\d)(\d{3},)/; 
+    while (re.test(s)) 
+        s = s.replace(re, &quot;$1,$2&quot;); 
+    s = s.replace(/,(\d\d)$/, &quot;.$1&quot;); 
+    if (type == 0) {// 不带小数位(默认是有小数位) 
+        var a = s.split(&quot;.&quot;); 
+        if (a[1] == &quot;00&quot;) { 
+            s = a[0]; 
+        } 
+    } 
+    return s; 
+} 
+/*
+* 通用DateAdd(interval,number,date) 功能:实现javascript的日期相加功能.
+* 参数:interval,字符串表达式，表示要添加的时间间隔. 参数:number,数值表达式，表示要添加的时间间隔的个数. 参数:date,时间对象.
+* 返回:新的时间对象. var now = new Date(); var newDate = DateAdd(&quot;day&quot;,5,now);
+* author:devinhua(从○开始) update:2010-5-5 20:35
+ */ 
+function DateAdd(interval, number, date) { 
+    if (date == null) 
+        return &quot;&quot;; 
+    switch (interval) { 
+    case &quot;day&quot;: 
+        date = new Date(date); 
+        date = date.valueOf(); 
+        date += number * 24 * 60 * 60 * 1000; 
+        date = new Date(date); 
+        return date; 
+        break; 
+    default: 
+        return &quot;&quot;; 
+        break; 
+    } 
+}  
+</code></pre>
+
+<h3 id="匹配图片文件">匹配图片文件</h3>
+
+<pre><code>1.
+/\.(jpg|jpeg|gif|png|bmp|GIF|JPG|PNG|BMP)$/.test(src)
+
+
+2.
+let files = e.target.files || e.dataTransfer.files;
+/^image/.test(file.type)
+</code></pre>
+
+                </article>
+
+              </div>
+              
+              <div class="card-action card-action-links">
+                
+                <a class="btn btn-secondary" href="https://www.wuxingtao.club/tags/regexp">regexp</a> 
+                <a class="btn btn-secondary" href="https://www.wuxingtao.club/tags/summary">Summary</a> 
+              </div>
+              
+              <div class="card-action">
+                
+              </div>
+
+              
+              <div class="pagination-single">
+                 
+                <span class="pagination-item previous">
+                  <i class="material-icons">navigate_before</i>
+                  <a href="https://www.wuxingtao.club/posts/summary-node-documents/" rel="prev">Node开发整理</a>
+                </span>  
+                
+                
+                <span class="pagination-item next">
+                  <a href="https://www.wuxingtao.club/posts/summary-html5-learn/" rel="next">HTML5整理总结</a>
+                  <i class="material-icons">navigate_next</i>
+                </span> 
+              </div>
+              
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer">
+  <div class="container">
+    <div class="inner">
+      <div class="wrapper">
+        <div class="group group-slink">
+          <h5>wuxingtao Blog</h5>
+          
+            
+            
+          <ul class='slink'>
+             
+            <li>
+              <a href="https://github.com/wuxingtao" target="_blank" title="Github">
+                <svg class='svg-icons svg-icons-github'><use xlink:href='#svg-icons-github'></use></svg>
+              </a>
+            </li>
+            
+            <li>
+              <a href="https://twitter.com/wuxingtao" target="_blank" title="Twitter">
+                <svg class='svg-icons svg-icons-twitter'><use xlink:href='#svg-icons-twitter'></use></svg>
+              </a>
+            </li>
+             
+          </ul>
+        </div>
+        <div class="group group-flink">
+          <h5>My Friends</h5>
+          <ul>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="inner">Copyleft@wuxingtao</div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<script type="text/javascript" async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/typescript.min.js"></script>
+<script>
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.registerLanguage("graphql", function (e) { return { aliases: ["gql"], k: { keyword: "query mutation subscription|10 type interface union scalar fragment|10 enum on ...", literal: "true false null" }, c: [e.HCM, e.QSM, e.NM, { cN: "type", b: "[^\\w][A-Z][a-z]", e: "\\W", eE: !0 }, { cN: "literal", b: "[^\\w][A-Z][A-Z]", e: "\\W", eE: !0 }, { cN: "variable", b: "\\$", e: "\\W", eE: !0 }, { cN: "keyword", b: "[.]{2}", e: "\\." }, { cN: "meta", b: "@", e: "\\W", eE: !0 }], i: /([;<']|BEGIN)/ } });
+  hljs.initHighlightingOnLoad();
+  
+</script>
+
+
+<script type="text/javascript" src="https://www.wuxingtao.club/js/polyfill.js"></script>
+<script type="text/javascript" src="https://www.wuxingtao.club/js/index.js"></script>
+
+
+
+</body>
+
+</html>

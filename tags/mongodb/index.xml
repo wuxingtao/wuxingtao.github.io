@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mongodb on wuxingtao Blog</title>
-    <link>https://wuxingtao.github.io/tags/mongodb/</link>
+    <link>https://www.wuxingtao.club/tags/mongodb/</link>
     <description>Recent content in Mongodb on wuxingtao Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://wuxingtao.github.io/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.wuxingtao.club/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MongoDb &#43; mongoose 个人整理</title>
-      <link>https://wuxingtao.github.io/posts/server/mongodb_mongoose-person-setting/</link>
+      <link>https://www.wuxingtao.club/posts/server-mongodb_mongoose-person-setting/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/posts/server/mongodb_mongoose-person-setting/</guid>
+      <guid>https://www.wuxingtao.club/posts/server-mongodb_mongoose-person-setting/</guid>
       <description>连接mongodb var mongoose = require(&#39;mongoose&#39;); mongoose.connect(&#39;mongodb://admin:password@host:port/dbname&#39;); //test connectionString = &#39;mongodb://localhost/Node-tao&#39;, 定义一个schema new Schema({..}, options); ###Note that if the resulting record is converted to an object or JSON, virtuals are not included by default. Passvirtuals : true to either toObject() or to toJSON() to have them returned. // 虚拟属性开关</description>
     </item>
     

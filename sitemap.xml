@@ -3,262 +3,257 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/hugo/from-hexo-to-hugo/</loc>
+    <loc>https://www.wuxingtao.club/posts/hugo/from-hexo-to-hugo/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/bb/</loc>
-    <lastmod>2019-02-12T17:46:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/archive/</loc>
+    <loc>https://www.wuxingtao.club/archive/</loc>
     <lastmod>2019-02-12T14:25:05+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/about/</loc>
+    <loc>https://www.wuxingtao.club/about/</loc>
     <lastmod>2019-02-13T13:45:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/summary/javascript-window-explain/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
+    <loc>https://www.wuxingtao.club/posts/summary-javascript-window-explain/</loc>
+    <lastmod>2017-06-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/summary/js-mathfunction/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
+    <loc>https://www.wuxingtao.club/posts/summary-js-mathfunction/</loc>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/play-canvas/</loc>
+    <loc>https://www.wuxingtao.club/posts/play-canvas/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/summary/vscode-webstorm-sublime-eclipe_setting/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
+    <loc>https://www.wuxingtao.club/posts/summary-vscode-webstorm-sublime-eclipe_setting/</loc>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/summary/summary-hack-person-setting/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
+    <loc>https://www.wuxingtao.club/posts/summary-hack-person-setting/</loc>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/server/mongodb_mongoose-person-setting/</loc>
+    <loc>https://www.wuxingtao.club/posts/server-mongodb_mongoose-person-setting/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/posts/summary-node-express-params/</loc>
+    <lastmod>2017-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/posts/seajs-learn/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/summary/node-express-params/</loc>
+    <loc>https://www.wuxingtao.club/posts/summary-node-documents/</loc>
+    <lastmod>2016-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/posts/summary-regexp-learn/</loc>
+    <lastmod>2016-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/posts/summary-html5-learn/</loc>
+    <lastmod>2016-04-08T11:13:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/posts/summary-git-learn/</loc>
+    <lastmod>2016-04-07T11:13:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/posts/summary-ajax-learn/</loc>
+    <lastmod>2014-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/posts/summary-javascript-term/</loc>
+    <lastmod>2014-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/posts/hugo/creating-a-new-theme/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/seajs-learn/</loc>
+    <loc>https://www.wuxingtao.club/posts/hugo/goisforlovers/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/summary/node-documents/</loc>
-    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/posts/summary/summary-regexp-learn/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/posts/summary/summary-html5-learn/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/posts/summary/summary-git-learn/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/posts/summary/summary-ajax-learn/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/posts/summary/summary-javascript-term/</loc>
-    <lastmod>2019-02-15T18:33:49+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/posts/hugo/creating-a-new-theme/</loc>
-    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/posts/hugo/goisforlovers/</loc>
-    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/tags/ajax/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
+    <loc>https://www.wuxingtao.club/tags/ajax/</loc>
+    <lastmod>2014-10-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/categories/</loc>
+    <loc>https://www.wuxingtao.club/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/development/</loc>
-    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/tags/express/</loc>
+    <loc>https://www.wuxingtao.club/tags/development/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/git/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
+    <loc>https://www.wuxingtao.club/tags/express/</loc>
+    <lastmod>2017-01-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/go/</loc>
+    <loc>https://www.wuxingtao.club/tags/git/</loc>
+    <lastmod>2016-04-07T11:13:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/tags/go/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/golang/</loc>
+    <loc>https://www.wuxingtao.club/tags/golang/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/hack/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
+    <loc>https://www.wuxingtao.club/tags/hack/</loc>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/html/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
+    <loc>https://www.wuxingtao.club/tags/html/</loc>
+    <lastmod>2016-04-08T11:13:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/hugo/</loc>
+    <loc>https://www.wuxingtao.club/tags/hugo/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/javascript/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
+    <loc>https://www.wuxingtao.club/tags/javascript/</loc>
+    <lastmod>2017-06-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/mongodb/</loc>
+    <loc>https://www.wuxingtao.club/tags/mongodb/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/tags/node/</loc>
+    <lastmod>2017-01-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/categories/node/</loc>
+    <lastmod>2017-01-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/posts/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/node/</loc>
+    <loc>https://www.wuxingtao.club/tags/regexp/</loc>
+    <lastmod>2016-05-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/tags/seajs/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/categories/node/</loc>
+    <loc>https://www.wuxingtao.club/tags/summary/</loc>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/categories/summary/</loc>
+    <lastmod>2017-06-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/tags/</loc>
+    <lastmod>2014-10-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/categories/tao/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/posts/</loc>
+    <loc>https://www.wuxingtao.club/tags/templates/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/regexp/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/tags/seajs/</loc>
+    <loc>https://www.wuxingtao.club/tags/theme/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/summary/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/categories/summary/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/tags/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/categories/tao/</loc>
+    <loc>https://www.wuxingtao.club/tags/themes/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/templates/</loc>
-    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
+    <loc>https://www.wuxingtao.club/tags/vscode/</loc>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/theme/</loc>
-    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
+    <loc>https://www.wuxingtao.club/tags/webstorm/</loc>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wuxingtao.github.io/tags/themes/</loc>
-    <lastmod>2019-02-13T18:48:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/tags/vscode/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/tags/webstorm/</loc>
-    <lastmod>2019-02-13T18:52:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wuxingtao.github.io/</loc>
+    <loc>https://www.wuxingtao.club/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
     <priority>0</priority>
   </url>

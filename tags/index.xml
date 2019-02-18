@@ -2,192 +2,192 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on wuxingtao Blog</title>
-    <link>https://wuxingtao.github.io/tags/</link>
+    <link>https://www.wuxingtao.club/tags/</link>
     <description>Recent content in Tags on wuxingtao Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 11 Oct 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://wuxingtao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.wuxingtao.club/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ajax</title>
-      <link>https://wuxingtao.github.io/tags/ajax/</link>
+      <link>https://www.wuxingtao.club/tags/ajax/</link>
       <pubDate>Sat, 11 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/ajax/</guid>
+      <guid>https://www.wuxingtao.club/tags/ajax/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>https://wuxingtao.github.io/tags/development/</link>
+      <link>https://www.wuxingtao.club/tags/development/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/development/</guid>
+      <guid>https://www.wuxingtao.club/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Express</title>
-      <link>https://wuxingtao.github.io/tags/express/</link>
+      <link>https://www.wuxingtao.club/tags/express/</link>
       <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/express/</guid>
+      <guid>https://www.wuxingtao.club/tags/express/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://wuxingtao.github.io/tags/git/</link>
+      <link>https://www.wuxingtao.club/tags/git/</link>
       <pubDate>Thu, 07 Apr 2016 11:13:13 +0800</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/git/</guid>
+      <guid>https://www.wuxingtao.club/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>https://wuxingtao.github.io/tags/go/</link>
+      <link>https://www.wuxingtao.club/tags/go/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/go/</guid>
+      <guid>https://www.wuxingtao.club/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>https://wuxingtao.github.io/tags/golang/</link>
+      <link>https://www.wuxingtao.club/tags/golang/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/golang/</guid>
+      <guid>https://www.wuxingtao.club/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hack</title>
-      <link>https://wuxingtao.github.io/tags/hack/</link>
+      <link>https://www.wuxingtao.club/tags/hack/</link>
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/hack/</guid>
+      <guid>https://www.wuxingtao.club/tags/hack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Html</title>
-      <link>https://wuxingtao.github.io/tags/html/</link>
+      <link>https://www.wuxingtao.club/tags/html/</link>
       <pubDate>Fri, 08 Apr 2016 11:13:13 +0800</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/html/</guid>
+      <guid>https://www.wuxingtao.club/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://wuxingtao.github.io/tags/hugo/</link>
+      <link>https://www.wuxingtao.club/tags/hugo/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/hugo/</guid>
+      <guid>https://www.wuxingtao.club/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>https://wuxingtao.github.io/tags/javascript/</link>
+      <link>https://www.wuxingtao.club/tags/javascript/</link>
       <pubDate>Thu, 08 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/javascript/</guid>
+      <guid>https://www.wuxingtao.club/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mongodb</title>
-      <link>https://wuxingtao.github.io/tags/mongodb/</link>
+      <link>https://www.wuxingtao.club/tags/mongodb/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/mongodb/</guid>
+      <guid>https://www.wuxingtao.club/tags/mongodb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Node</title>
-      <link>https://wuxingtao.github.io/tags/node/</link>
+      <link>https://www.wuxingtao.club/tags/node/</link>
       <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/node/</guid>
+      <guid>https://www.wuxingtao.club/tags/node/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Regexp</title>
-      <link>https://wuxingtao.github.io/tags/regexp/</link>
+      <link>https://www.wuxingtao.club/tags/regexp/</link>
       <pubDate>Wed, 04 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/regexp/</guid>
+      <guid>https://www.wuxingtao.club/tags/regexp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seajs</title>
-      <link>https://wuxingtao.github.io/tags/seajs/</link>
+      <link>https://www.wuxingtao.club/tags/seajs/</link>
       <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/seajs/</guid>
+      <guid>https://www.wuxingtao.club/tags/seajs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Summary</title>
-      <link>https://wuxingtao.github.io/tags/summary/</link>
+      <link>https://www.wuxingtao.club/tags/summary/</link>
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/summary/</guid>
+      <guid>https://www.wuxingtao.club/tags/summary/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Templates</title>
-      <link>https://wuxingtao.github.io/tags/templates/</link>
+      <link>https://www.wuxingtao.club/tags/templates/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/templates/</guid>
+      <guid>https://www.wuxingtao.club/tags/templates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Theme</title>
-      <link>https://wuxingtao.github.io/tags/theme/</link>
+      <link>https://www.wuxingtao.club/tags/theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/theme/</guid>
+      <guid>https://www.wuxingtao.club/tags/theme/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Themes</title>
-      <link>https://wuxingtao.github.io/tags/themes/</link>
+      <link>https://www.wuxingtao.club/tags/themes/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/themes/</guid>
+      <guid>https://www.wuxingtao.club/tags/themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vscode</title>
-      <link>https://wuxingtao.github.io/tags/vscode/</link>
+      <link>https://www.wuxingtao.club/tags/vscode/</link>
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/vscode/</guid>
+      <guid>https://www.wuxingtao.club/tags/vscode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Webstorm</title>
-      <link>https://wuxingtao.github.io/tags/webstorm/</link>
+      <link>https://www.wuxingtao.club/tags/webstorm/</link>
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://wuxingtao.github.io/tags/webstorm/</guid>
+      <guid>https://www.wuxingtao.club/tags/webstorm/</guid>
       <description></description>
     </item>
     

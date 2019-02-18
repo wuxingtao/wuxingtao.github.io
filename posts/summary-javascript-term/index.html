@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+
+  
+  <meta charset="UTF-8">
+  <title>
+    编码名词整理 | wuxingtao Blog
+  </title>
+
+
+  
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
+
+  
+  <link rel="canonical" href="https://www.wuxingtao.club/posts/summary-javascript-term/" />
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.loli.net/icon?family=Material+Icons">
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/ocean.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.wuxingtao.club/css/index.css">
+  
+  <link rel="stylesheet" href="https://www.wuxingtao.club/css/custom.css">
+  
+  <link href="https://www.wuxingtao.club/index.xml" rel="alternate" type="application/rss+xml" title="wuxingtao Blog" />
+  <link href="https://www.wuxingtao.club/index.xml" rel="feed" type="application/rss+xml" title="wuxingtao Blog" />
+
+  
+  <link href="https://www.wuxingtao.club/favicon.ico" rel="shortcut icon">
+
+  <script>
+    window.baseURL = 'https:\/\/www.wuxingtao.club';
+  </script>
+</head>
+
+
+
+
+
+
+
+<body>
+  <div class="navbar-fixed">
+    <nav class="navbar">
+      <div class="nav-container container">
+        <div class="nav-wrapper inner">
+          <a href="javascript:void(0)" data-activates="sidebar" class="button-collapse hide-on-large-only">
+            <i class="material-icons">menu</i>
+          </a>
+          <a href="https://www.wuxingtao.club" class="brand-logo">
+            <i class="material-icons hide-on-med-and-down">restaurant_menu</i>
+            wuxingtao Blog
+          </a>
+          
+          <ul class=" nav-menu tabs tabs-transparent hide-on-med-and-down">
+            
+            <li class="tab">
+              <a href="https://www.wuxingtao.club/" class=''>
+                Home
+              </a>
+            </li>
+            
+            <li class="tab">
+              <a href="https://www.wuxingtao.club/archive/" class=''>
+                Archive
+              </a>
+            </li>
+            
+            <li class="tab">
+              <a href="https://www.wuxingtao.club/about/" class=''>
+                About
+              </a>
+            </li>
+            
+          </ul>
+          
+
+          <form class="nav-form hide-on-small-and-down">
+            <div class="form-group">
+              <i class="material-icons">search</i>
+              <input type='text' placeholder="输入搜索关键字" />
+            </div>
+            <div class="form-popout">
+              <div class="search-result">
+                <label>暂无搜索结果</label>
+                <ul>
+                </ul>
+              </div>
+            </div>
+          </form>
+
+
+          <ul class=" nav-menu apps">
+            
+            <li>
+              <a class="search-btn hide-on-med-and-up" href='#search-panel'>
+                <i class="material-icons">search</i>
+              </a>
+            </li>
+            <li>
+              <a class="term-btn hide-on-small-and-down" href='#term-panel'>
+                <i class="material-icons">apps</i>
+              </a>
+            </li>
+            <li>
+              <a class="rss-btn hide-on-small-and-down" href='https://www.wuxingtao.club/index.xml' target="_blank">
+                <i class="material-icons">rss_feed</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  
+  <div class="mobile-search hide-on-med-and-up">
+  <div class="header">
+    
+    <i class="material-icons">search</i>
+    <input type='text' placeholder="输入搜索关键字" />
+    <i class="material-icons mobile-search-close">cancel</i>
+  </div>
+  <div class="content">
+    <label>暂无搜索结果</label>
+    <ul></ul>
+  </div>
+</div>
+  
+
+  <div class="taxonomy">
+    <div class="container">
+      <div class="inner">
+        <div class="taxonomy-panel">
+          
+          <div class='group'>
+            <label>Category</label>
+            <ul>
+                
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/categories/summary'> summary
+                  <span class="badge">10</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/categories/node'> node
+                  <span class="badge">2</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/categories/tao'> tao
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          <div class='group'>
+            <label>Tag</label>
+            <ul>
+                
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/summary'> summary
+                  <span class="badge">5</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/javascript'> javascript
+                  <span class="badge">3</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/node'> node
+                  <span class="badge">2</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/ajax'> ajax
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/development'> development
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/express'> express
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/git'> git
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/go'> go
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/golang'> golang
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/hack'> hack
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/html'> html
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/hugo'> hugo
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/mongodb'> mongodb
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/regexp'> regexp
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/seajs'> seajs
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/templates'> templates
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/theme'> theme
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/themes'> themes
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/vscode'> vscode
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+              <li>
+                <a class="btn btn-secondary" href='https://www.wuxingtao.club/tags/webstorm'> webstorm
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <ul class="side-nav" id="sidebar">
+    
+    <li>
+      <a href="https://www.wuxingtao.club/" class=''>
+        Home
+      </a>
+    </li>
+    
+    <li>
+      <a href="https://www.wuxingtao.club/archive/" class=''>
+        Archive
+      </a>
+    </li>
+    
+    <li>
+      <a href="https://www.wuxingtao.club/about/" class=''>
+        About
+      </a>
+    </li>
+    
+    <li>
+      <a class="term-btn-mobile hide-on-med-only" href='https://www.wuxingtao.club/categories/'>
+        Categories
+      </a>
+    </li>
+    <li>
+      <a class="term-btn-mobile hide-on-med-only" href='https://www.wuxingtao.club/tags/'>
+        Tags
+      </a>
+    </li>
+    <li>
+      <a class="rss-btn-mobile hide-on-med-only" href='https://www.wuxingtao.club/index.xml' target="_blank">
+        Rss
+      </a>
+    </li>
+  </ul>
+  
+
+
+
+
+
+<main id="single" role="main" class="main-panel">
+  <div class="page-content">
+    <div class="container container-ex">
+      <div class="inner">
+        <section class="post-wrapper">
+          
+          <div class="toc-panel">
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#为什么在编写代码的时候要使用unicode来表示中文">为什么在编写代码的时候要使用unicode来表示中文?</a>
+<ul>
+<li><a href="#为什么不直接用中文写出来-而使用unicode表示">为什么不直接用中文写出来，而使用unicode表示。</a></li>
+<li><a href="#unicode-在字体中应用">unicode 在字体中应用：</a></li>
+<li><a href="#单精度浮点数-双精度浮点数">单精度浮点数 双精度浮点数</a></li>
+<li><a href="#平方根-自然对数">平方根， 自然对数</a></li>
+</ul></li>
+<li><a href="#项目">项目</a>
+<ul>
+<li><a href="#b-s-web项目">B/S web项目</a></li>
+</ul></li>
+<li><a href="#javascript-核心">javascript 核心</a>
+<ul>
+<li><a href="#javascript同步和异步的区别与实现方式">javascript同步和异步的区别与实现方式</a>
+<ul>
+<li><a href="#1-回调函数callback">1.回调函数callback</a></li>
+<li><a href="#2-事件驱动">2.事件驱动</a></li>
+<li><a href="#3-发布-订阅">3.发布/订阅</a></li>
+<li><a href="#4-promise模式">4.promise模式</a></li>
+</ul></li>
+<li><a href="#javascript面向对象编程">javascript面向对象编程</a></li>
+</ul></li>
+<li><a href="#编程思想">编程思想</a>
+<ul>
+<li><a href="#函数式编程">函数式编程</a></li>
+<li><a href="#纯函数">纯函数</a></li>
+<li><a href="#函数柯里化">函数柯里化</a></li>
+<li><a href="#函数式组合">函数式组合</a></li>
+<li><a href="#声明式和命令式代码">声明式和命令式代码</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+          </div>
+          
+          <div class="post reveal ">
+            <div class="card">
+              <section class="breadcrumb-root">
+  <div class="breadcrumbs" role="navigation" aria-label="breadcrumbs navigation">
+     
+
+    <a class="breadcrumb" href="https://www.wuxingtao.club">
+      <i class="material-icons">location_on</i>Home</a>
+      
+    
+        
+    
+      
+    
+        
+    
+      
+    <span class="breadcrumb">编码名词整理</span>
+
+        
+    
+      
+  </div>
+</section>
+              
+              <div class="card-header postinfo">
+                <span class="card-title">编码名词整理 </span>
+              </div>
+              <div class="card-header date">
+                
+                <div class="group">
+                  <i class="material-icons">book</i>
+                  <address>
+                    归档：
+                    <a href="https://www.wuxingtao.club/categories/summary">Summary</a>&nbsp; 
+                  </address>
+                </div>
+                
+                <div class="group">
+                  <i class="material-icons">flag</i>
+                  <time>创建：2014年10月 2日
+                  </time>
+                </div>
+                
+                
+
+              </div>
+              
+              <div class="card-content">
+
+                <article class="article">
+                  
+
+<p>[toc]</p>
+
+<h2 id="为什么在编写代码的时候要使用unicode来表示中文">为什么在编写代码的时候要使用unicode来表示中文?</h2>
+
+<pre><code>看别人的代码，有这样的片段。
+setText(&quot;\u5BFC\u5165\u8DEF\u5F84&quot;)
+</code></pre>
+
+<h3 id="为什么不直接用中文写出来-而使用unicode表示">为什么不直接用中文写出来，而使用unicode表示。</h3>
+
+<p>两种方式有什么区别有什么利弊？</p>
+
+<p>1.第一种也是&rdquo;国际化&rdquo;的内容,一般都定义在资源文件里面,好处是,在任何环境下,他都不会输出乱码.
+2.第二种,在一般的情况下,如:我们国内的使用环境是没有问题的,但是如国外的网站访问,可能会有乱码.</p>
+
+<p>不过一般日本人喜欢用第一种方式.但是工作效率低,他们的想法就是:宁可在实现过程中繁琐,不在应用过程中找麻烦.
+而我们国内的一般都直接用第二种了,我们的想法是:先实现了功能,有问题再改</p>
+
+<h3 id="unicode-在字体中应用">unicode 在字体中应用：</h3>
+
+<pre><code class="language-font:">
+***
+
+## 数值 Number
+### 安全整数和Number.isSafeInteger()
+JavaScript能够准确表示的整数范围在`-2^53到2^53`之间（不含两个端点），超过这个范围，无法精确表示这个值。
+```js
+Math.pow(2, 53) // 9007199254740992
+ 
+9007199254740992  // 9007199254740992
+9007199254740993  // 9007199254740992
+ 
+Math.pow(2, 53) === Math.pow(2, 53) + 1
+// true
+</code></pre>
+
+<p>上面代码中，超出2的53次方之后，一个数就不精确了。</p>
+
+<p>ES6引入了<code>Number.MAX_SAFE_INTEGER</code>和<code>Number.MIN_SAFE_INTEGER</code>这两个常量，用来表示这个范围的上下限。</p>
+
+<h3 id="单精度浮点数-双精度浮点数">单精度浮点数 双精度浮点数</h3>
+
+<p>ES6 Math.fround方法返回一个数的单精度浮点数形式。
+对于没有部署这个方法的环境，可以用下面的代码模拟。</p>
+
+<pre><code>Math.fround(1.337) // 1.3370000123977661
+Math.fround = Math.fround || function(x) {
+  return new Float32Array([x])[0];
+};
+</code></pre>
+
+<p>1、单精度浮点数(Single)
+　　用来表示带有小数部分的实数，一般用于科学计算。占用4个字节（32位）存储空间，包括符号位1位，阶码8位，尾数23位。其数值范为-3.4E38～3.4E38，单精度浮点数最多有7位十进制有效数字，单精度浮点数的指数用“E”或“e”表示。
+　　单精度浮点数有多种表示形式：±n.n(小数形式) ±n E ±m(指数形式) ±n.n E ±m (指数形式)
+　　如果某个数的有效数字位数超过7位，当把它定义为单精度变量时，超出的部分会自动四舍五入。</p>
+
+<p>2、双精度浮点数(double)
+　用8个字节（64位）存储空间，包括符号位1位，阶码11位，尾数52位。</p>
+
+<h3 id="平方根-自然对数">平方根， 自然对数</h3>
+
+<p><strong>1. 平方根</strong>
+平方根，又叫二次方根，表示为〔√￣〕，其中属于非负数的平方根称之为算术平方根。一个正数有两个实平方根，它们互为相反数；0只有一个平方根，就是0本身；负数有两个共轭的纯虚平方根。一般地，“√￣”仅用来表示算术平方根，即非负的平方根。如：√16=4。
+<code>Math.sqrt() 返回数字的平方根</code>            Math.sqrt(&lsquo;16&rsquo;) // 4
+<code>Math.cbrt() 计算一个数的立方根</code>        Math.cbrt(&lsquo;8&rsquo;) // 2</p>
+
+<p><strong>2. 自然对数</strong>
+Math.log() 可返回一个数的自然对数。
+Math.log(2.7183)     //1.0000066849139877</p>
+
+<p>*自然对数*：以常数e为底数的对数叫做自然对数，记作lnN(N&gt;0)。自然对数在物理学，生物学等自然科学中有重要的意义。
+e是一个无限不循环小数，其值约等于<code>2.718281828459…</code>，它是一个超越数。</p>
+
+<p>*对数*，是一个数学名词，也是一种数学方法！
+<span style="color:red">如果a的n次方等于b（a大于0，且a不等于1），那么数n叫做以a为底b的对数</span>，记做n=loga的b次方
+，也可以说log（a）b=n。其中，a叫做“底数”，b叫做“真数”，n叫做“以a为底b的对数”。</p>
+
+<p>数学表示法
+自然对数的一般表示方法为lnx。数学中也常见以logx表示自然对数。若为了避免与基为10的常用对数lgx混淆，可用“全写”㏒ex。[1]</p>
+
+<p>e的级数展开式
+易证明：函数展开为x的幂级数(Maclaurin级数)是</p>
+
+<h2 id="项目">项目</h2>
+
+<h3 id="b-s-web项目">B/S web项目</h3>
+
+<p>B/S指的是browser/server，就是说是浏览器与服务端模式，WEB开发基本都是基于这种模式的</p>
+
+<p>B/S系统，说白点就是Web开发或网站开发吧。
+三大主流技术及基本特征
+1、asp.net (+sql server)  基本运行在widows平台
+2、php (+mysql)      跨平台
+3、jsp （+oracle）      安全性要求高的站点</p>
+
+<h2 id="javascript-核心">javascript 核心</h2>
+
+<h3 id="javascript同步和异步的区别与实现方式">javascript同步和异步的区别与实现方式</h3>
+
+<p>javascript语言是单线程机制。所谓单线程就是按次序执行，执行完一个任务再执行下一个。</p>
+
+<p>对于浏览器来说，也就是无法在渲染页面的同时执行代码。</p>
+
+<p>单线程机制的优点在于实现起来较为简单，运行环境相对简单。缺点在于，如果中间有任务需要响应时间过长，经常会导致</p>
+
+<p>页面加载错误或者浏览器无响应的状况。这就是所谓的“同步模式”，程序执行顺序与任务排列顺序一致。对于浏览器来说，</p>
+
+<p>同步模式效率较低，耗时长的任务都应该使用异步模式；而在服务器端，异步模式则是唯一的模式，如果采用同步模式个人认为</p>
+
+<p>服务器很快就会出现12306在高峰期的表现。。。。</p>
+
+<p><strong>异步模式的四种方式：</strong></p>
+
+<h4 id="1-回调函数callback">1.回调函数callback</h4>
+
+<p>所谓回调函数，就是将函数作为参数传到需要回调的函数内部再执行。</p>
+
+<p>典型的例子就是发送ajax请求。例如：</p>
+
+<pre><code>
+     $.ajax({
+
+    async: false, 
+
+    cache: false,
+
+    dataType: 'json',
+
+    url: &quot;url&quot;,
+
+    success: function(data) {
+
+      console.log('success');
+
+    },
+
+    error: function(data) {
+
+     console.log('error');
+
+    }
+
+  })
+</code></pre>
+
+<p>当发送ajax请求后，等待回应的过程不会堵塞程序运行，耗时的操作相当于延后执行。</p>
+
+<p>回调函数的优点在于简单，容易理解，但是可读性较差，耦合度较高，不易于维护。</p>
+
+<h4 id="2-事件驱动">2.事件驱动</h4>
+
+<p>javascript可以称之为是基于对象的语言，而基于对象的基本特征就是事件驱动（Event-Driven）。</p>
+
+<p>事件驱动，指的是由鼠标和热键的动作引发的一连串的程序操作。</p>
+
+<p>例如，为页面上的某个绑定click事件；</p>
+
+<p>$(&lsquo;#btn&rsquo;).onclick(function(){</p>
+
+<p>console.log(&lsquo;click button&rsquo;);</p>
+
+<p>});</p>
+
+<p>绑定事件相当于在元素上进行监听，是否执行注册的事件代码取决于事件是否发生。</p>
+
+<p>优点在于容易理解，一个元素上可以绑定多个事件，有利于实现模块化；但是缺点在于称为事件驱动的模型后，流程不清晰。</p>
+
+<h4 id="3-发布-订阅">3.发布/订阅</h4>
+
+<p>发布订阅模式（publish-subscribe pattern）又称为观察者模式(Observer pattern)。</p>
+
+<p>该模式中，有两类对象：观察者和目标对象。目标对象中存在着一份观察者的列表，当目标对象</p>
+
+<p>的状态发生改变时，主动通知观察者，从而建立一种发布/订阅的关系。</p>
+
+<p>jquery有相关的插件，在这不是重点不细说了。。。。回头写个实现贴上来</p>
+
+<h4 id="4-promise模式">4.promise模式</h4>
+
+<p>promise对象是CommonJS工作组提供的一种规范，用于异步编程的统一接口。</p>
+
+<p>promise对象通常实现一种then的方法，用来在注册状态发生改变时作为对应的回调函数。</p>
+
+<p>promise模式在任何时刻都处于以下三种状态之一：未完成（unfulfilled）、已完成（resolved）和拒绝（rejected）。以CommonJS Promise/A 标准为例，promise对象上的then方法负责添加针对已完成和拒绝状态下的处理函数。then方法会返回另一个promise对象，以便于形成promise管道，这种返回promise对象的方式能够支持开发人员把异步操作串联起来，如then(resolvedHandler, rejectedHandler); 。resolvedHandler 回调函数在promise对象进入完成状态时会触发，并传递结果；rejectedHandler函数会在拒绝状态下调用。</p>
+
+<p>Jquery在1.5的版本中引入了一个新的概念叫Deferred，就是CommonJS promise A标准的一种衍生。可以在jQuery中创建</p>
+
+<p>$.Deferref的对象。同时也对发送ajax请求以及数据类型有了新的修改，参考JQuery API。</p>
+
+<hr />
+
+<p>除了以上四种，javascript中还可以利用各种函数模拟异步方式，更有诡异的诸如用同步调用异步的case</p>
+
+<h3 id="javascript面向对象编程">javascript面向对象编程</h3>
+
+<p>《JavaScript面向对象编程指南》内容包括：JavaScript作为一门浏览器语言的核心思想；面向对象编程的基础知识及其在JavaScript中的运用；数据类型、操作符以及流程控制语句；函数、闭包、对象和原型等概念，以代码重用为目的的继承模式；BOM、DOM、浏览器事件、AJAX和JSON；如何实现JavaScript中缺失的面向对象特性，如对象的私有成员与私有方法；如何应用适当的编程模式，发挥JavaScript语言特有的优势；如何应用设计模式解决常见问题等。</p>
+
+<p>《JavaScript面向对象编程指南》着重介绍JavaScript在面向对象方面的特性，展示如何构建强健的、可维护的、功能强大的应用程序及程序库。</p>
+
+<h2 id="编程思想">编程思想</h2>
+
+<h3 id="函数式编程">函数式编程</h3>
+
+<blockquote>
+<p><strong>维基定义</strong>函数式编程（英语：functional programming），又称泛函编程，是一种编程范式，它将电脑运算视为数学上的函数计算，并且避免使用程序状态以及易变对象。</p>
+</blockquote>
+
+<p>函数式编程的历史已经很悠久了，但是最近几年却频繁的出现在大众的视野，很多不支持函数式编程的语言也在积极加入闭包，匿名函数等非常典型的函数式编程特性。大量的前端框架也标榜自己使用了函数式编程的特性，好像一旦跟函数式编程沾边，就很高大上一样，而且还有一些专门针对函数式编程的框架和库，比如：RxJS、cycleJS、ramdaJS、lodashJS、underscoreJS等。函数式编程变得越来越流行，掌握这种编程范式对书写高质量和易于维护的代码都大有好处，所以我们有必要掌握它。</p>
+
+<p>参考：<a href="https://www.cnblogs.com/fengyuqing/p/functional_programming_1.html">函数式编程一</a></p>
+
+<h3 id="纯函数">纯函数</h3>
+
+<pre><code class="language-js">//纯函数：
+
+Array.prototype.slice
+
+Array.prototype.map
+
+String.prototype.toUpperCase
+
+//非纯函数：
+
+Math.random
+
+Date.now
+
+Array.ptototype.splice
+</code></pre>
+
+<h3 id="函数柯里化">函数柯里化</h3>
+
+<blockquote>
+<p>curry 的概念很简单：将一个低阶函数转换为高阶函数的过程就叫柯里化。</p>
+</blockquote>
+
+<p>这表明函数柯里化是一种“预加载”函数的能力，通过传递一到两个参数调用函数，就能得到一个记住了这些参数的新函数。从某种意义上来讲，这是一种对参数的缓存，是一种非常高效的编写函数的方法：</p>
+
+<pre><code class="language-js">//纯函数checkAge
+var checkAge = function(age) {
+  var minimum = 21;
+  return age &gt;= minimum;
+};
+//curry checkAge
+var checkage = min =&gt; (age =&gt; age &gt; min);
+var checkage18 = checkage(18);
+checkage18(20);
+// =&gt;true
+</code></pre>
+
+<h3 id="函数式组合">函数式组合</h3>
+
+<pre><code class="language-js">var toUpperCase = function(x) { return x.toUpperCase(); };
+var exclaim = function(x) { return x + '!'; };
+
+var shout = function(x){
+  return exclaim(toUpperCase(x));
+};
+
+shout(&quot;send in the clowns&quot;);
+//=&gt; &quot;SEND IN THE CLOWNS!&quot;
+</code></pre>
+
+<p><em>使用组合，我们可以这样定义我们的shout函数</em></p>
+
+<pre><code class="language-js">//定义compose
+var compose = (...args) =&gt; x =&gt; args.reduceRight((value, item) =&gt; item(value), x);
+
+var toUpperCase = function(x) { return x.toUpperCase(); };
+var exclaim = function(x) { return x + '!'; };
+
+var shout = compose(exclaim, toUpperCase);
+
+shout(&quot;send in the clowns&quot;);
+//=&gt; &quot;SEND IN THE CLOWNS!&quot;
+</code></pre>
+
+<h3 id="声明式和命令式代码">声明式和命令式代码</h3>
+
+<blockquote>
+<p>命令式代码：命令“机器”如何去做事情(how)，这样不管你想要的是什么(what)，它都会按照你的命令实现。</p>
+
+<p>声明式代码：告诉“机器”你想要的是什么(what)，让机器想出如何去做(how)。</p>
+
+<pre><code class="language-js">// 命令式
+var makes = [];
+for (var i = 0; i &lt; cars.length; i++) {
+  makes.push(cars[i].make);
+}
+
+// 声明式
+var makes = cars.map(function(car){ return car.make; });
+</code></pre>
+</blockquote>
+
+                </article>
+
+              </div>
+              
+              <div class="card-action card-action-links">
+                
+                <a class="btn btn-secondary" href="https://www.wuxingtao.club/tags/javascript">Javascript</a> 
+              </div>
+              
+              <div class="card-action">
+                
+              </div>
+
+              
+              <div class="pagination-single">
+                 
+                <span class="pagination-item previous">
+                  <i class="material-icons">navigate_before</i>
+                  <a href="https://www.wuxingtao.club/posts/summary-ajax-learn/" rel="prev">ajax 个人整理</a>
+                </span>  
+                
+                
+                <span class="pagination-item next">
+                  <a href="https://www.wuxingtao.club/posts/hugo/creating-a-new-theme/" rel="next">Creating a New Theme</a>
+                  <i class="material-icons">navigate_next</i>
+                </span> 
+              </div>
+              
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer">
+  <div class="container">
+    <div class="inner">
+      <div class="wrapper">
+        <div class="group group-slink">
+          <h5>wuxingtao Blog</h5>
+          
+            
+            
+          <ul class='slink'>
+             
+            <li>
+              <a href="https://github.com/wuxingtao" target="_blank" title="Github">
+                <svg class='svg-icons svg-icons-github'><use xlink:href='#svg-icons-github'></use></svg>
+              </a>
+            </li>
+            
+            <li>
+              <a href="https://twitter.com/wuxingtao" target="_blank" title="Twitter">
+                <svg class='svg-icons svg-icons-twitter'><use xlink:href='#svg-icons-twitter'></use></svg>
+              </a>
+            </li>
+             
+          </ul>
+        </div>
+        <div class="group group-flink">
+          <h5>My Friends</h5>
+          <ul>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="inner">Copyleft@wuxingtao</div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<script type="text/javascript" async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/typescript.min.js"></script>
+<script>
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.registerLanguage("graphql", function (e) { return { aliases: ["gql"], k: { keyword: "query mutation subscription|10 type interface union scalar fragment|10 enum on ...", literal: "true false null" }, c: [e.HCM, e.QSM, e.NM, { cN: "type", b: "[^\\w][A-Z][a-z]", e: "\\W", eE: !0 }, { cN: "literal", b: "[^\\w][A-Z][A-Z]", e: "\\W", eE: !0 }, { cN: "variable", b: "\\$", e: "\\W", eE: !0 }, { cN: "keyword", b: "[.]{2}", e: "\\." }, { cN: "meta", b: "@", e: "\\W", eE: !0 }], i: /([;<']|BEGIN)/ } });
+  hljs.initHighlightingOnLoad();
+  
+</script>
+
+
+<script type="text/javascript" src="https://www.wuxingtao.club/js/polyfill.js"></script>
+<script type="text/javascript" src="https://www.wuxingtao.club/js/index.js"></script>
+
+
+
+</body>
+
+</html>
