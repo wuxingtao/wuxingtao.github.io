@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>账号绑定</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../../script/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../script/css/iconfont/qiqi-iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../../script/css/global.css">
+    <script src="../../script/js/jquery.min.js"></script>
+    <script src="../../script/plugin/layer/layer.m.js"></script>
+    <script src="../../script/js/total.js"></script>
+    <script>
+    function checkmessage() {
+        var number_pwd = $.trim($("#number_pwd").val());
+    }
+    </script>
+</head>
+
+<body class="card-wrapper mhome">
+    <header class="login-header">
+        <dl class="card-header">
+            <dt><img src="../../script/images/member/card/1_01.png"></dt>
+        </dl>
+    </header>
+    <div class="container">
+        <span class="tips-info">
+            欢迎来到余悦健康<br/>
+            请输入您的身份证号进行身份识别
+        </span>
+        <div class="form-box">
+            <ul>
+                <li>
+                    <input type="tel" name="idCardNum" class=" form-control" placeholder="请输入您的身份证号">
+                </li>
+            </ul>
+        </div>
+        <div class="btn btn-original form-control" id="next_step"><a href="javascript:;">下一步</a></div>
+    </div>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../script/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+    //var xxx = $("#target").val(); 不使用layer
+    // $('.form-box input').on('input propertychange',function(){
+    //     if($(this).val() == ""){
+    //         $("#next_step").on("click",function(){
+    //             event.preventDefault();
+    //             var ident;
+    //             if(ident==undefined){
+    //                 var tip = layer.open({
+    //                     content:'该号码尚未开通余悦服务，请确认您输入的身份证号码正确',
+    //                     btn:['重新输入'],
+    //                     class:'',
+    //                     style:'width:80%;margin:0 auto;text-align: center;'
+
+    //                 })
+    //             }
+    //         })
+    //     }
+    // })
+    //validate
+    var $tipTitle = $(".tips-info");
+    $("#next_step").on("click",function(){
+        event.preventDefault();
+        var idCardNum = $(".form-box input[name='idCardNum']").val();
+        var errorTip = "<span class='error-tip'>{0}</span>"
+        $(".error-tip").remove();
+
+        if(idCardNum ==""){
+            $(".form-box input[name='idCardNum']").after(errorTip.format("请输入您的身份证号"))
+            return
+        }
+        if(!/^([1-9]\d{14}$|^[1-9]\d{17}$|^[1-9]\d{16}(\d|X|x))$/.test(idCardNum)){
+            $tipTitle.html("该号码尚未开通余悦服务<br/>请确认您输入的身份证号码正确")
+            $(".form-box input[name='idCardNum']").after(errorTip.format("请重新输入"))
+            return
+        }else{
+            window.location.href="bindInfo.html"
+        }
+    })
+
+
+    //
+    formBox.notnull($(".form-box li"), $("#next_step"));
+    formBox.clear($('.clear-icon'), "click")
+    </script>
+</body>
+
+</html>

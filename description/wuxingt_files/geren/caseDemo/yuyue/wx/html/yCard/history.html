@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>个人中心</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta nama="full-screen" content="yes">
+    <link rel="stylesheet" type="text/css" href="../../script/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../script/css/iconfont/qiqi-iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../../script/css/global.css">
+    <script src="../../script/js/jquery.min.js"></script>
+<script src="../../script/plugin/layer/layer.m.js"></script>
+    <script src="../../script/js/total.js"></script>
+</head>
+
+<body class="mhome record-wrap">
+    <div class="hot-wrapper">
+        <ul class="topNav">
+            <li class="nav-item">
+                <span class="item">从高到低</span>
+                <em><i class="general-iconfont nav_drowdown-arrow">&#xe60e;</i></em>
+                <div class="select-lump" style="display: none;">
+                    <ul>
+                        <li class="option">从高到低</li>
+                        <li class="option">从低到高</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                消费额
+            </li>
+            <li class="nav-item show-nav">
+                交易类型
+            </li>
+        </ul>
+    </div>
+    <div class="record-lists">
+        <div class="lump-box">
+            <ul>
+                <li class="item1">
+                    <span class="param1">2015-01-02  12:12</span>
+                    <span class="param2">保险公司</span>
+                </li>
+                <li class="item2">
+                    <span class="param1">消费</span>
+                    <span class="param2">500元</span>
+                </li>
+            </ul>
+        </div>
+        <div class="lump-box">
+            <ul>
+                <li class="item1">
+                    <span class="param1">2015-01-02  12:12</span>
+                    <span class="param2">保险公司</span>
+                </li>
+                <li class="item2">
+                    <span class="param1">消费</span>
+                    <span class="param2">500元</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../script/js/ie10-viewport-bug-workaround.js"></script>
+<script>
+//select
+$(".topNav .nav-item").on("click", function() {
+    event.preventDefault();
+    var $this = $(this),
+        $child = $this.find(".select-lump");
+    $this.toggleClass("show-nav")
+
+    $(".select-lump", this).fadeToggle();
+    $this.siblings().find(".select-lump").fadeOut('fast');
+})
+$(".select-lump li").on("click", function() {
+    $(this).addClass("active").siblings().removeClass("active");
+    // $child.fadeOut();
+    $(this).parents(".select-lump").prev().prev(".item").html($(this).html())
+})
+</script>
+
+</html>
