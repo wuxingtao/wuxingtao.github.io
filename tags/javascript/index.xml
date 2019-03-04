@@ -23,7 +23,7 @@
     <item>
       <title>数学函数</title>
       <link>https://www.wuxingtao.club/posts/summary-js-mathfunction/</link>
-      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>https://www.wuxingtao.club/posts/summary-js-mathfunction/</guid>
       <description>弧度 //弧度 = π/180×角度 //角度 = 180/π×弧度 var hd = Math.PI / 180 * 30 ; var jd = 180/Math.PI * hd; //角度 = 180/Math.PI * Math.asin(1/2) console.log(Math.sin(Math.PI/180*30)); 圆周长 圆周长 = 直径× Pi //js Math.Pi()*2r //scss Pi*2r</description>

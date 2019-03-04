@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://www.wuxingtao.club/posts/react-router-link-3way/</loc>
+    <lastmod>2019-03-04T00:03:14+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.wuxingtao.club/archive/</loc>
     <lastmod>2019-02-12T14:25:05+08:00</lastmod>
   </url>
@@ -20,11 +25,6 @@
   <url>
     <loc>https://www.wuxingtao.club/posts/summary-javascript-window-explain/</loc>
     <lastmod>2017-06-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.wuxingtao.club/posts/summary-js-mathfunction/</loc>
-    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -60,6 +60,11 @@
   <url>
     <loc>https://www.wuxingtao.club/posts/summary-node-documents/</loc>
     <lastmod>2016-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/posts/summary-js-mathfunction/</loc>
+    <lastmod>2016-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -183,6 +188,12 @@
   <url>
     <loc>https://www.wuxingtao.club/posts/</loc>
     <lastmod>2019-02-13T18:48:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wuxingtao.club/tags/react/</loc>
+    <lastmod>2019-03-04T00:03:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   

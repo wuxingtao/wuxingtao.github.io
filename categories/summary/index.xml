@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>数学函数</title>
-      <link>https://www.wuxingtao.club/posts/summary-js-mathfunction/</link>
-      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.wuxingtao.club/posts/summary-js-mathfunction/</guid>
-      <description>弧度 //弧度 = π/180×角度 //角度 = 180/π×弧度 var hd = Math.PI / 180 * 30 ; var jd = 180/Math.PI * hd; //角度 = 180/Math.PI * Math.asin(1/2) console.log(Math.sin(Math.PI/180*30)); 圆周长 圆周长 = 直径× Pi //js Math.Pi()*2r //scss Pi*2r</description>
-    </item>
-    
-    <item>
       <title>vscode webstorm sublime Eclipse 配置</title>
       <link>https://www.wuxingtao.club/posts/summary-vscode-webstorm-sublime-eclipe_setting/</link>
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
@@ -54,6 +45,15 @@
       
       <guid>https://www.wuxingtao.club/posts/summary-node-documents/</guid>
       <description>[toc] 前言 总结了8点： 使用JavaScript运行于服务端的平台上，自然继承了JavaScript语言的一些特性； Node.js基于单线程、基于</description>
+    </item>
+    
+    <item>
+      <title>数学函数</title>
+      <link>https://www.wuxingtao.club/posts/summary-js-mathfunction/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.wuxingtao.club/posts/summary-js-mathfunction/</guid>
+      <description>弧度 //弧度 = π/180×角度 //角度 = 180/π×弧度 var hd = Math.PI / 180 * 30 ; var jd = 180/Math.PI * hd; //角度 = 180/Math.PI * Math.asin(1/2) console.log(Math.sin(Math.PI/180*30)); 圆周长 圆周长 = 直径× Pi //js Math.Pi()*2r //scss Pi*2r</description>
     </item>
     
     <item>

@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>react-router4 跳转链接方式汇总</title>
+      <link>https://www.wuxingtao.club/posts/react-router-link-3way/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.wuxingtao.club/posts/react-router-link-3way/</guid>
+      <description>通过&amp;lt;Link&amp;gt; 跳转 &amp;lt;Link to={{ pathname: &amp;quot;/courses&amp;quot;, search: &amp;quot;?sort=name&amp;quot;, hash: &amp;quot;#the-hash&amp;quot;, state: { fromDashboard: true } }} /&amp;gt; 通过&amp;lt;Redirect&amp;gt;进行导航 import { Redirect } form &#39;react-router&#39; Class Login extends React.Component{ render(){ const {loginSucess} = this.props; if(loginSucess){ return</description>
+    </item>
+    
+    <item>
       <title>Archive</title>
       <link>https://www.wuxingtao.club/archive/</link>
       <pubDate>Sat, 19 Aug 2017 21:37:49 +0800</pubDate>
@@ -45,15 +54,6 @@
       
       <guid>https://www.wuxingtao.club/posts/summary-javascript-window-explain/</guid>
       <description>[toc] 在不同的DTD下，获取页面属性的方法是不同的 在设计页面时可能经常会用到固定层的位置，这就需要获取一些html对象的坐标以更灵活的设置目标层</description>
-    </item>
-    
-    <item>
-      <title>数学函数</title>
-      <link>https://www.wuxingtao.club/posts/summary-js-mathfunction/</link>
-      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.wuxingtao.club/posts/summary-js-mathfunction/</guid>
-      <description>弧度 //弧度 = π/180×角度 //角度 = 180/π×弧度 var hd = Math.PI / 180 * 30 ; var jd = 180/Math.PI * hd; //角度 = 180/Math.PI * Math.asin(1/2) console.log(Math.sin(Math.PI/180*30)); 圆周长 圆周长 = 直径× Pi //js Math.Pi()*2r //scss Pi*2r</description>
     </item>
     
     <item>
@@ -117,6 +117,15 @@
       
       <guid>https://www.wuxingtao.club/posts/summary-node-documents/</guid>
       <description>[toc] 前言 总结了8点： 使用JavaScript运行于服务端的平台上，自然继承了JavaScript语言的一些特性； Node.js基于单线程、基于</description>
+    </item>
+    
+    <item>
+      <title>数学函数</title>
+      <link>https://www.wuxingtao.club/posts/summary-js-mathfunction/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.wuxingtao.club/posts/summary-js-mathfunction/</guid>
+      <description>弧度 //弧度 = π/180×角度 //角度 = 180/π×弧度 var hd = Math.PI / 180 * 30 ; var jd = 180/Math.PI * hd; //角度 = 180/Math.PI * Math.asin(1/2) console.log(Math.sin(Math.PI/180*30)); 圆周长 圆周长 = 直径× Pi //js Math.Pi()*2r //scss Pi*2r</description>
     </item>
     
     <item>
