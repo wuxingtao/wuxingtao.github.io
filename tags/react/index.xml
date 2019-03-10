@@ -17,7 +17,7 @@
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.wuxingtao.club/posts/react-router-link-3way/</guid>
-      <description>通过&amp;lt;Link&amp;gt; 跳转 &amp;lt;Link to={{ pathname: &amp;quot;/courses&amp;quot;, search: &amp;quot;?sort=name&amp;quot;, hash: &amp;quot;#the-hash&amp;quot;, state: { fromDashboard: true } }} /&amp;gt; 通过&amp;lt;Redirect&amp;gt;进行导航 import { Redirect } form &#39;react-router&#39; Class Login extends React.Component{ render(){ const {loginSucess} = this.props; if(loginSucess){ return</description>
+      <description>react-router通用导航 通过&amp;lt;Link&amp;gt; 跳转 &amp;lt;Link to={{ pathname: &amp;quot;/courses&amp;quot;, search: &amp;quot;?sort=name&amp;quot;, hash: &amp;quot;#the-hash&amp;quot;, state: { fromDashboard: true } }} /&amp;gt; 通过&amp;lt;Redirect&amp;gt;进行导航 import</description>
     </item>
     
   </channel>
