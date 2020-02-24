@@ -196,9 +196,9 @@
                                     </a>
                                 </div>
                                 <a class="work-img" href="javascript:;">
-                                    <img src="images/demo-pic/mall01.png">
-                                    <img src="images/demo-pic/ainuo_index.png">
-                                    <img src="images/demo-pic/ahreg.png">
+                                    <img class="lazy-img" src="images/icon/lazyload.gif" data-original="images/demo-pic/mall01.png">
+                                    <img class="lazy-img" src="images/icon/lazyload.gif" data-original="images/demo-pic/ainuo_index.png">
+                                    <img class="lazy-img" src="images/icon/lazyload.gif" data-original="images/demo-pic/ahreg.png">
                                 </a>
                             </div>
                             <div class="tip_time">以下为2014年以前项目</div>
@@ -211,9 +211,9 @@
                                     <P>注：这个是原始版本+改版页。</P>
                                 </div>
                                 <a class="work-img" href="../../gdutsu.com/index.htm" target="_blank">
-                                    <img src="images/demo-pic/awing.jpg" alt=" 澳威科技实业有限公司预览版"/>
+                                    <img class="lazy-img" src="images/icon/lazyload.gif" data-original="images/demo-pic/awing.jpg" alt=" 澳威科技实业有限公司预览版"/>
                                     <br>
-                                    <img src="images/demo-pic/awing1.jpg">
+                                    <img class="lazy-img" src="images/icon/lazyload.gif" data-original="images/demo-pic/awing1.jpg">
                                 </a>
                             </div>
                             <div id="work-pando" class="work">
@@ -224,7 +224,7 @@
                                     <p></p>
                                 </div>
                                 <a class="work-img" href="../demo/smartdesign-demo/index.html" target="_blank">
-                                    <img src="images/demo-pic/pando.jpg" alt="艺帜"/>
+                                    <img class="lazy-img" src="images/icon/lazyload.gif" data-original="images/demo-pic/pando.jpg" alt="艺帜"/>
                                 </a>
                             </div>
                             <div id="work-smartdesign" class="work">
@@ -236,7 +236,7 @@
                                     <p></p>
                                 </div>
                                 <a class="work-img" href="../demo/smartdesign-demo/index.html" target="_blank">
-                                    <img src="images/demo-pic/gy.jpg" alt="冠业门窗"/>
+                                    <img class="lazy-img" src="images/icon/lazyload.gif" data-original="images/demo-pic/gy.jpg" alt="冠业门窗"/>
                                 </a>
                             </div>
                             <div id="work-waterfall" class="work">
@@ -248,7 +248,7 @@
                                     <p></p>
                                 </div>
                                 <a class="work-img" href="../demo/smartdesign-demo/index.html" target="_blank">
-                                    <img src="images/demo-pic/waterfall.jpg" alt="艺帜"/>
+                                    <img class="lazy-img" src="images/icon/lazyload.gif" data-original="images/demo-pic/waterfall.jpg" alt="艺帜"/>
                                 </a>
                             </div>
                             <div id="work-ltts" class="work">
@@ -259,7 +259,7 @@
                                     <p>简洁风格的产品展示站点。该站比较取巧，主要应用JS及PHPCMS后台。</p>
                                 </div>
                                 <a class="work-img" href="../../lighthumbs.sinaapp.com/index.htm" target="_blank">
-                                    <img src="images/demo-pic/roro.jpg" alt="罗比罗丹"/>
+                                    <img class="lazy-img" src="images/icon/lazyload.gif" data-original="images/demo-pic/roro.jpg" alt="罗比罗丹"/>
                                 </a>
                             </div>
                             <div id="work-doit" class="work">
@@ -271,7 +271,7 @@
                                         <br/>。</p>
                                 </div>
                                 <a class="work-img" href="../doit/index.htm" target="_blank">
-                                    <img src="images/demo-pic/alg.jpg" alt="Do.It"/>
+                                    <img class="lazy-img" src="images/icon/lazyload.gif" data-original="images/demo-pic/alg.jpg" alt="Do.It"/>
                                 </a>
                             </div>
                             <div id="work-bohui" class="work">
@@ -282,7 +282,7 @@
                                     <p>中英文站点，子站点</p>
                                 </div>
                                 <a class="work-img" href="../../xcig.com.cn/index.htm" target="_blank">
-                                    <img src="images/demo-pic/bohui.jpg" alt=""/>
+                                    <img class="lazy-img" src="images/icon/lazyload.gif" data-original="images/demo-pic/bohui.jpg" alt=""/>
                                 </a>
                             </div>
                             <div id="work-huoli" class="work">
@@ -293,7 +293,7 @@
                                     <p>网页重构的作品，按 Web 标准重构了该公司的官网，改进网站布局，seo ，用户体验。</p>
                                 </div>
                                 <a class="work-img" href="../../xcig.com.cn/index.htm" target="_blank">
-                                    <img src="images/demo-pic/xci.jpg" alt="信成国际集团官网"/>
+                                    <img class="lazy-img" src="images/icon/lazyload.gif" data-original="images/demo-pic/xci.jpg" alt="信成国际集团官网"/>
                                 </a>
                             </div>
                             <div id="work-appfans" class="work">
@@ -383,11 +383,12 @@
     seajs.config({
         alias: {
             "jquery": "jquery.js",
-            "scroll-mouse-hammer": "scroll-mouse-hammer-min.js"
+            "scroll-mouse-hammer": "scroll-mouse-hammer-min.js",
+            "lazyload":"lazyload.min.js"
         }
 
     })
-    seajs.use(['jquery', 'about'], function ($) {
+    seajs.use(['jquery','lazyload', 'about'], function ($) {
         $(function () {
             getJSONList();
         })
@@ -401,10 +402,10 @@
                         var className = v.className ? v.className : "";
                         if (v.photoList.length > 1) {
                             $.each(v.photoList, function (index, value) {
-                                imgList += '<img src="' + value + '" >'
+                                imgList += '<img class="lazy-img" src="images/icon/lazyload.gif" data-original="' + value + '" >'
                             })
                         } else {
-                            imgList = '<img src="' + v.photoList + '" >'
+                            imgList = '<img class="lazy-img" src="images/icon/lazyload.gif" data-original="' + v.photoList + '" >'
                         }
 
                         var targetLink = v.link ? v.link : "javascript:;";
@@ -418,6 +419,16 @@
 
                     })
                     $("#since" + year).append(lists);
+
+                    new LazyLoad({
+                        elements_selector: '.lazy-img',
+                        load_delay: 300,
+                        data_src: "original",
+                        thresholds: "500px",
+                        callback_error: function(e) {
+                        },
+                        callback_loaded: null
+                    })
                 })
 
             })
