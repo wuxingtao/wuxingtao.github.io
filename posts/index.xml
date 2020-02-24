@@ -2,175 +2,175 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on wuxingtao Blog</title>
-    <link>https://www.wuxingtao.club/posts/</link>
+    <link>https://www.xingtao.tk/posts/</link>
     <description>Recent content in Posts on wuxingtao Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 12 Feb 2019 17:08:51 +0800</lastBuildDate>
     
-	<atom:link href="https://www.wuxingtao.club/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xingtao.tk/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>从Hexo迁移到Hugo 及Hugo差别</title>
-      <link>https://www.wuxingtao.club/posts/hugo/from-hexo-to-hugo/</link>
+      <link>https://www.xingtao.tk/posts/hugo/from-hexo-to-hugo/</link>
       <pubDate>Tue, 12 Feb 2019 17:08:51 +0800</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/hugo/from-hexo-to-hugo/</guid>
+      <guid>https://www.xingtao.tk/posts/hugo/from-hexo-to-hugo/</guid>
       <description>从Hexo迁移到Hugo-送漂亮的Hugo Theme主题 自从Hugo出来后，作为Go语言（golang）的重度用户的重度用户，一直想把自己的</description>
     </item>
     
     <item>
       <title>react-router4 跳转链接方式汇总</title>
-      <link>https://www.wuxingtao.club/posts/react-router-link-3way/</link>
+      <link>https://www.xingtao.tk/posts/react-router-link-3way/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/react-router-link-3way/</guid>
+      <guid>https://www.xingtao.tk/posts/react-router-link-3way/</guid>
       <description>react-router通用导航 通过&amp;lt;Link&amp;gt; 跳转 &amp;lt;Link to={{ pathname: &amp;quot;/courses&amp;quot;, search: &amp;quot;?sort=name&amp;quot;, hash: &amp;quot;#the-hash&amp;quot;, state: { fromDashboard: true } }} /&amp;gt; 通过&amp;lt;Redirect&amp;gt;进行导航 import</description>
     </item>
     
     <item>
       <title>javascript 【窗口】的offset、client、scroll使用方法详解</title>
-      <link>https://www.wuxingtao.club/posts/summary-javascript-window-explain/</link>
+      <link>https://www.xingtao.tk/posts/summary-javascript-window-explain/</link>
       <pubDate>Thu, 08 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-javascript-window-explain/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-javascript-window-explain/</guid>
       <description>[toc] 在不同的DTD下，获取页面属性的方法是不同的 在设计页面时可能经常会用到固定层的位置，这就需要获取一些html对象的坐标以更灵活的设置目标层</description>
     </item>
     
     <item>
       <title>玩转canvas</title>
-      <link>https://www.wuxingtao.club/posts/play-canvas/</link>
+      <link>https://www.xingtao.tk/posts/play-canvas/</link>
       <pubDate>Mon, 06 Mar 2017 11:13:13 +0800</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/play-canvas/</guid>
+      <guid>https://www.xingtao.tk/posts/play-canvas/</guid>
       <description>[toc] 前言 &amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt;是html5出现的新标签，像所有的dom对象一样它有自己本身的属性、方法和事</description>
     </item>
     
     <item>
       <title>vscode webstorm sublime Eclipse 配置</title>
-      <link>https://www.wuxingtao.club/posts/summary-vscode-webstorm-sublime-eclipe_setting/</link>
+      <link>https://www.xingtao.tk/posts/summary-vscode-webstorm-sublime-eclipe_setting/</link>
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-vscode-webstorm-sublime-eclipe_setting/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-vscode-webstorm-sublime-eclipe_setting/</guid>
       <description>[toc] vscode 格式化 1.vue格式化——vetur 2.js格式化prettier 3.eslint格式化 (完全格式化) //package.json &amp;quot;eslint&amp;quot;: &amp;quot;^4.19.1&amp;quot;, &amp;quot;eslint-config-standard&amp;quot;: &amp;quot;^11.0.0&amp;quot;, &amp;quot;eslint-friendly-formatter&amp;quot;: &amp;quot;^4.0.1&amp;quot;, &amp;quot;eslint-loader&amp;quot;: &amp;quot;^2.0.0&amp;quot;, &amp;quot;eslint-plugin-import&amp;quot;: &amp;quot;^2.11.0&amp;quot;, &amp;quot;eslint-plugin-node&amp;quot;: &amp;quot;^6.0.1&amp;quot;, &amp;quot;eslint-plugin-promise&amp;quot;: &amp;quot;^3.7.0&amp;quot;, &amp;quot;eslint-plugin-standard&amp;quot;: &amp;quot;^3.0.1&amp;quot;,</description>
     </item>
     
     <item>
       <title>【hack】个人整理</title>
-      <link>https://www.wuxingtao.club/posts/summary-hack-person-setting/</link>
+      <link>https://www.xingtao.tk/posts/summary-hack-person-setting/</link>
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-hack-person-setting/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-hack-person-setting/</guid>
       <description>css 浏览器兼容 1. _ IE6 2. * IE6/7 3. !important IE7/Firefox 4. *+ IE7 5. \9 IE6/7/8 6. \0 IE8 7. 条件hack &amp;lt;!--[if lt IE 7]&amp;gt;&amp;lt;html class=&amp;quot;no-js lt-ie9 lt-ie8 lt-ie7&amp;quot;&amp;gt;&amp;lt;![endif]--&amp;gt; IE7以下版本 &amp;lt;!--[if IE 7]&amp;gt;&amp;lt;html class=&amp;quot;no-js lt-ie9 lt-ie8&amp;quot;&amp;gt;&amp;lt;![endif]--&amp;gt; IE7 &amp;lt;!--[if IE 8]&amp;gt; &amp;lt;html class=&amp;quot;no-js lt-ie9&amp;quot;&amp;gt;&amp;lt;![endif]--&amp;gt; IE8 &amp;lt;!--[if gt IE 8]&amp;gt;&amp;lt;!--&amp;gt;&amp;lt;html class=&amp;quot;no-js&amp;quot;&amp;gt;&amp;lt;!--&amp;lt;![endif]--&amp;gt; IE8以上</description>
     </item>
     
     <item>
       <title>MongoDb &#43; mongoose 个人整理</title>
-      <link>https://www.wuxingtao.club/posts/server-mongodb_mongoose-person-setting/</link>
+      <link>https://www.xingtao.tk/posts/server-mongodb_mongoose-person-setting/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/server-mongodb_mongoose-person-setting/</guid>
+      <guid>https://www.xingtao.tk/posts/server-mongodb_mongoose-person-setting/</guid>
       <description>连接mongodb var mongoose = require(&#39;mongoose&#39;); mongoose.connect(&#39;mongodb://admin:password@host:port/dbname&#39;); //test connectionString = &#39;mongodb://localhost/Node-tao&#39;, 定义一个schema new Schema({..}, options); ###Note that if the resulting record is converted to an object or JSON, virtuals are not included by default. Passvirtuals : true to either toObject() or to toJSON() to have them returned. // 虚拟属性开关</description>
     </item>
     
     <item>
       <title>Node-express 数据传递【个人整理】</title>
-      <link>https://www.wuxingtao.club/posts/summary-node-express-params/</link>
+      <link>https://www.xingtao.tk/posts/summary-node-express-params/</link>
       <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-node-express-params/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-node-express-params/</guid>
       <description>[toc] NODE 环境设置 NODE_ENV=production 环境变量怎么设置 说明 通过NODE_ENV可以来设置环境变量（默认值为development）。 一般我们通过检查这个值来分别对开</description>
     </item>
     
     <item>
       <title>seajs 学习整理</title>
-      <link>https://www.wuxingtao.club/posts/seajs-learn/</link>
+      <link>https://www.xingtao.tk/posts/seajs-learn/</link>
       <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/seajs-learn/</guid>
+      <guid>https://www.xingtao.tk/posts/seajs-learn/</guid>
       <description>疑难 seajs加载jquery时提示$ is not a function该怎么解决 if (typeof define === &amp;quot;function&amp;quot; &amp;amp;&amp;amp; (define.amd)) { define( &amp;quot;jquery&amp;quot;, [], function() { return jQuery; }); } 改成 if (typeof define === &amp;quot;function&amp;quot; &amp;amp;&amp;amp; (define.amd || define.cmd)) { define( &amp;quot;jquery&amp;quot;, [], function() { return</description>
     </item>
     
     <item>
       <title>Node开发整理</title>
-      <link>https://www.wuxingtao.club/posts/summary-node-documents/</link>
+      <link>https://www.xingtao.tk/posts/summary-node-documents/</link>
       <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-node-documents/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-node-documents/</guid>
       <description>[toc] 前言 总结了8点： 使用JavaScript运行于服务端的平台上，自然继承了JavaScript语言的一些特性； Node.js基于单线程、基于</description>
     </item>
     
     <item>
       <title>数学函数</title>
-      <link>https://www.wuxingtao.club/posts/summary-js-mathfunction/</link>
+      <link>https://www.xingtao.tk/posts/summary-js-mathfunction/</link>
       <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-js-mathfunction/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-js-mathfunction/</guid>
       <description>弧度 //弧度 = π/180×角度 //角度 = 180/π×弧度 var hd = Math.PI / 180 * 30 ; var jd = 180/Math.PI * hd; //角度 = 180/Math.PI * Math.asin(1/2) console.log(Math.sin(Math.PI/180*30)); 圆周长 圆周长 = 直径× Pi //js Math.Pi()*2r //scss Pi*2r</description>
     </item>
     
     <item>
       <title>【正则-个人整理】</title>
-      <link>https://www.wuxingtao.club/posts/summary-regexp-learn/</link>
+      <link>https://www.xingtao.tk/posts/summary-regexp-learn/</link>
       <pubDate>Wed, 04 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-regexp-learn/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-regexp-learn/</guid>
       <description>[toc] 【1】部分语法 - 【语法】 构造函数RegExp 对象 new RegExp(&amp;lsquo;ab+c&amp;rsquo;, &amp;lsquo;i&amp;rsquo;); new RegExp(/ab+c/, &amp;lsquo;i&amp;rsquo;); 直接量语法 var re = /**/gi 构造函数正则可直接使用变量 正则表达式的() [] {}有不同的意思</description>
     </item>
     
     <item>
       <title>HTML5整理总结</title>
-      <link>https://www.wuxingtao.club/posts/summary-html5-learn/</link>
+      <link>https://www.xingtao.tk/posts/summary-html5-learn/</link>
       <pubDate>Fri, 08 Apr 2016 11:13:13 +0800</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-html5-learn/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-html5-learn/</guid>
       <description>[toc] HTML5中类jQuery选择器querySelector的使用 简介 HTML5向Web API新引入了document.querySelec</description>
     </item>
     
     <item>
       <title>GIT【个人整理】</title>
-      <link>https://www.wuxingtao.club/posts/summary-git-learn/</link>
+      <link>https://www.xingtao.tk/posts/summary-git-learn/</link>
       <pubDate>Thu, 07 Apr 2016 11:13:13 +0800</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-git-learn/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-git-learn/</guid>
       <description>[toc] Git ssh 生成 ssh-keygen -t rsa -C &amp;quot;wuxingtao@jlpay.com&amp;quot; -f &amp;quot;jlpayPro&amp;quot; ssh-keygen - 生成、管理和转换认证密钥 ssh-keygen [-q] [-b bits] -t type [-N new_passphrase] [-C comment] [-foutput_keyfile] ssh-keygen -p [-P old_passphrase] [-N new_passphrase] [-f keyfile] ssh-keygen -i [-f input_keyfile] ssh-keygen -e [-f input_keyfile] ssh-keygen -y [-f input_keyfile] ssh-keygen -c [-P passphrase] [-C comment] [-f keyfile] ssh-keygen -l [-f input_keyfile] ssh-keygen</description>
     </item>
     
     <item>
       <title>ajax 个人整理</title>
-      <link>https://www.wuxingtao.club/posts/summary-ajax-learn/</link>
+      <link>https://www.xingtao.tk/posts/summary-ajax-learn/</link>
       <pubDate>Sat, 11 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-ajax-learn/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-ajax-learn/</guid>
       <description>[toc] 简单应用 1.$.ajax默认为异步请求，async:true, 2..post 方法是异步的 https://api.jquery.com/jQuery.post/ http://stackoverflow.com/questions/5821380/how-to-make-a-jquery-post-request-synchronous $.post(url,{jsonparam:json},function(data){ console.log(data) }).error(function(xhr,errorText,errorType){ alert(errorText) }) $.post只是简化版的ajax是异步的 HTML 标签的</description>
     </item>
     
     <item>
       <title>编码名词整理</title>
-      <link>https://www.wuxingtao.club/posts/summary-javascript-term/</link>
+      <link>https://www.xingtao.tk/posts/summary-javascript-term/</link>
       <pubDate>Thu, 02 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-javascript-term/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-javascript-term/</guid>
       <description>[toc] 为什么在编写代码的时候要使用unicode来表示中文? 看别人的代码，有这样的片段。 setText(&amp;quot;\u5BFC\u5165\u8DEF\u5F84&amp;quot;) 为什么不直接用中文写出来，而使用unicode表示。 两</description>
     </item>
     
     <item>
       <title>Creating a New Theme</title>
-      <link>https://www.wuxingtao.club/posts/hugo/creating-a-new-theme/</link>
+      <link>https://www.xingtao.tk/posts/hugo/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/hugo/creating-a-new-theme/</guid>
+      <guid>https://www.xingtao.tk/posts/hugo/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>https://www.wuxingtao.club/posts/hugo/goisforlovers/</link>
+      <link>https://www.xingtao.tk/posts/hugo/goisforlovers/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/hugo/goisforlovers/</guid>
+      <guid>https://www.xingtao.tk/posts/hugo/goisforlovers/</guid>
       <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
 This document is a brief primer on using go templates.</description>
     </item>

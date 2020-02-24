@@ -1,6 +1,6 @@
 ﻿<?php
 echo "<!DOCTYPE html>\n";
-echo "!-- saved from url=(0018)https://www.wuxingtao.club -->\n";
+echo "!-- saved from url=(0018)https://www.xingtao.tk -->\n";
 echo "html>\n";
 echo "head>\n";
 echo "meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n";
@@ -44,7 +44,7 @@ echo "     <a href=\"./wuxingt_files/geren/index.html\">Exercises</a>\n";
 echo "     <br>\n";
 echo "     <a href=\"\">New Programs</a>\n";
 echo "     <br>\n";
-echo "     <a href=\"./wuxingt_files/geren/About-Tao.html\">About 简历及作品</a>\n";
+echo "     <a href=\"./wuxingt_files/geren/about-tao.html\">About 简历及作品</a>\n";
 echo "   </div>\n";
 echo "   <div id=\"footer-links\">\n";
 echo "<ul style=\"height:105px;margin:0px;padding:0px\">\n";

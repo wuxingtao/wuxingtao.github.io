@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on wuxingtao Blog</title>
-    <link>https://www.wuxingtao.club/categories/</link>
+    <link>https://www.xingtao.tk/categories/</link>
     <description>Recent content in Categories on wuxingtao Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-	<atom:link href="https://www.wuxingtao.club/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xingtao.tk/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Node</title>
-      <link>https://www.wuxingtao.club/categories/node/</link>
+      <link>https://www.xingtao.tk/categories/node/</link>
       <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/categories/node/</guid>
+      <guid>https://www.xingtao.tk/categories/node/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Summary</title>
-      <link>https://www.wuxingtao.club/categories/summary/</link>
+      <link>https://www.xingtao.tk/categories/summary/</link>
       <pubDate>Thu, 08 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/categories/summary/</guid>
+      <guid>https://www.xingtao.tk/categories/summary/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tao</title>
-      <link>https://www.wuxingtao.club/categories/tao/</link>
+      <link>https://www.xingtao.tk/categories/tao/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/categories/tao/</guid>
+      <guid>https://www.xingtao.tk/categories/tao/</guid>
       <description></description>
     </item>
     

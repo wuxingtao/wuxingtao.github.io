@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Express on wuxingtao Blog</title>
-    <link>https://www.wuxingtao.club/tags/express/</link>
+    <link>https://www.xingtao.tk/tags/express/</link>
     <description>Recent content in Express on wuxingtao Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 02 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.wuxingtao.club/tags/express/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xingtao.tk/tags/express/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Node-express 数据传递【个人整理】</title>
-      <link>https://www.wuxingtao.club/posts/summary-node-express-params/</link>
+      <link>https://www.xingtao.tk/posts/summary-node-express-params/</link>
       <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-node-express-params/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-node-express-params/</guid>
       <description>[toc] NODE 环境设置 NODE_ENV=production 环境变量怎么设置 说明 通过NODE_ENV可以来设置环境变量（默认值为development）。 一般我们通过检查这个值来分别对开</description>
     </item>
     

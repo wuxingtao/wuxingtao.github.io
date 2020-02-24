@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Summary on wuxingtao Blog</title>
-    <link>https://www.wuxingtao.club/categories/summary/</link>
+    <link>https://www.xingtao.tk/categories/summary/</link>
     <description>Recent content in Summary on wuxingtao Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 08 Jun 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.wuxingtao.club/categories/summary/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xingtao.tk/categories/summary/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>javascript 【窗口】的offset、client、scroll使用方法详解</title>
-      <link>https://www.wuxingtao.club/posts/summary-javascript-window-explain/</link>
+      <link>https://www.xingtao.tk/posts/summary-javascript-window-explain/</link>
       <pubDate>Thu, 08 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-javascript-window-explain/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-javascript-window-explain/</guid>
       <description>[toc] 在不同的DTD下，获取页面属性的方法是不同的 在设计页面时可能经常会用到固定层的位置，这就需要获取一些html对象的坐标以更灵活的设置目标层</description>
     </item>
     
     <item>
       <title>vscode webstorm sublime Eclipse 配置</title>
-      <link>https://www.wuxingtao.club/posts/summary-vscode-webstorm-sublime-eclipe_setting/</link>
+      <link>https://www.xingtao.tk/posts/summary-vscode-webstorm-sublime-eclipe_setting/</link>
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-vscode-webstorm-sublime-eclipe_setting/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-vscode-webstorm-sublime-eclipe_setting/</guid>
       <description>[toc] vscode 格式化 1.vue格式化——vetur 2.js格式化prettier 3.eslint格式化 (完全格式化) //package.json &amp;quot;eslint&amp;quot;: &amp;quot;^4.19.1&amp;quot;, &amp;quot;eslint-config-standard&amp;quot;: &amp;quot;^11.0.0&amp;quot;, &amp;quot;eslint-friendly-formatter&amp;quot;: &amp;quot;^4.0.1&amp;quot;, &amp;quot;eslint-loader&amp;quot;: &amp;quot;^2.0.0&amp;quot;, &amp;quot;eslint-plugin-import&amp;quot;: &amp;quot;^2.11.0&amp;quot;, &amp;quot;eslint-plugin-node&amp;quot;: &amp;quot;^6.0.1&amp;quot;, &amp;quot;eslint-plugin-promise&amp;quot;: &amp;quot;^3.7.0&amp;quot;, &amp;quot;eslint-plugin-standard&amp;quot;: &amp;quot;^3.0.1&amp;quot;,</description>
     </item>
     
     <item>
       <title>【hack】个人整理</title>
-      <link>https://www.wuxingtao.club/posts/summary-hack-person-setting/</link>
+      <link>https://www.xingtao.tk/posts/summary-hack-person-setting/</link>
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-hack-person-setting/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-hack-person-setting/</guid>
       <description>css 浏览器兼容 1. _ IE6 2. * IE6/7 3. !important IE7/Firefox 4. *+ IE7 5. \9 IE6/7/8 6. \0 IE8 7. 条件hack &amp;lt;!--[if lt IE 7]&amp;gt;&amp;lt;html class=&amp;quot;no-js lt-ie9 lt-ie8 lt-ie7&amp;quot;&amp;gt;&amp;lt;![endif]--&amp;gt; IE7以下版本 &amp;lt;!--[if IE 7]&amp;gt;&amp;lt;html class=&amp;quot;no-js lt-ie9 lt-ie8&amp;quot;&amp;gt;&amp;lt;![endif]--&amp;gt; IE7 &amp;lt;!--[if IE 8]&amp;gt; &amp;lt;html class=&amp;quot;no-js lt-ie9&amp;quot;&amp;gt;&amp;lt;![endif]--&amp;gt; IE8 &amp;lt;!--[if gt IE 8]&amp;gt;&amp;lt;!--&amp;gt;&amp;lt;html class=&amp;quot;no-js&amp;quot;&amp;gt;&amp;lt;!--&amp;lt;![endif]--&amp;gt; IE8以上</description>
     </item>
     
     <item>
       <title>Node开发整理</title>
-      <link>https://www.wuxingtao.club/posts/summary-node-documents/</link>
+      <link>https://www.xingtao.tk/posts/summary-node-documents/</link>
       <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-node-documents/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-node-documents/</guid>
       <description>[toc] 前言 总结了8点： 使用JavaScript运行于服务端的平台上，自然继承了JavaScript语言的一些特性； Node.js基于单线程、基于</description>
     </item>
     
     <item>
       <title>数学函数</title>
-      <link>https://www.wuxingtao.club/posts/summary-js-mathfunction/</link>
+      <link>https://www.xingtao.tk/posts/summary-js-mathfunction/</link>
       <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-js-mathfunction/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-js-mathfunction/</guid>
       <description>弧度 //弧度 = π/180×角度 //角度 = 180/π×弧度 var hd = Math.PI / 180 * 30 ; var jd = 180/Math.PI * hd; //角度 = 180/Math.PI * Math.asin(1/2) console.log(Math.sin(Math.PI/180*30)); 圆周长 圆周长 = 直径× Pi //js Math.Pi()*2r //scss Pi*2r</description>
     </item>
     
     <item>
       <title>【正则-个人整理】</title>
-      <link>https://www.wuxingtao.club/posts/summary-regexp-learn/</link>
+      <link>https://www.xingtao.tk/posts/summary-regexp-learn/</link>
       <pubDate>Wed, 04 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-regexp-learn/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-regexp-learn/</guid>
       <description>[toc] 【1】部分语法 - 【语法】 构造函数RegExp 对象 new RegExp(&amp;lsquo;ab+c&amp;rsquo;, &amp;lsquo;i&amp;rsquo;); new RegExp(/ab+c/, &amp;lsquo;i&amp;rsquo;); 直接量语法 var re = /**/gi 构造函数正则可直接使用变量 正则表达式的() [] {}有不同的意思</description>
     </item>
     
     <item>
       <title>HTML5整理总结</title>
-      <link>https://www.wuxingtao.club/posts/summary-html5-learn/</link>
+      <link>https://www.xingtao.tk/posts/summary-html5-learn/</link>
       <pubDate>Fri, 08 Apr 2016 11:13:13 +0800</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-html5-learn/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-html5-learn/</guid>
       <description>[toc] HTML5中类jQuery选择器querySelector的使用 简介 HTML5向Web API新引入了document.querySelec</description>
     </item>
     
     <item>
       <title>GIT【个人整理】</title>
-      <link>https://www.wuxingtao.club/posts/summary-git-learn/</link>
+      <link>https://www.xingtao.tk/posts/summary-git-learn/</link>
       <pubDate>Thu, 07 Apr 2016 11:13:13 +0800</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-git-learn/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-git-learn/</guid>
       <description>[toc] Git ssh 生成 ssh-keygen -t rsa -C &amp;quot;wuxingtao@jlpay.com&amp;quot; -f &amp;quot;jlpayPro&amp;quot; ssh-keygen - 生成、管理和转换认证密钥 ssh-keygen [-q] [-b bits] -t type [-N new_passphrase] [-C comment] [-foutput_keyfile] ssh-keygen -p [-P old_passphrase] [-N new_passphrase] [-f keyfile] ssh-keygen -i [-f input_keyfile] ssh-keygen -e [-f input_keyfile] ssh-keygen -y [-f input_keyfile] ssh-keygen -c [-P passphrase] [-C comment] [-f keyfile] ssh-keygen -l [-f input_keyfile] ssh-keygen</description>
     </item>
     
     <item>
       <title>ajax 个人整理</title>
-      <link>https://www.wuxingtao.club/posts/summary-ajax-learn/</link>
+      <link>https://www.xingtao.tk/posts/summary-ajax-learn/</link>
       <pubDate>Sat, 11 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-ajax-learn/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-ajax-learn/</guid>
       <description>[toc] 简单应用 1.$.ajax默认为异步请求，async:true, 2..post 方法是异步的 https://api.jquery.com/jQuery.post/ http://stackoverflow.com/questions/5821380/how-to-make-a-jquery-post-request-synchronous $.post(url,{jsonparam:json},function(data){ console.log(data) }).error(function(xhr,errorText,errorType){ alert(errorText) }) $.post只是简化版的ajax是异步的 HTML 标签的</description>
     </item>
     
     <item>
       <title>编码名词整理</title>
-      <link>https://www.wuxingtao.club/posts/summary-javascript-term/</link>
+      <link>https://www.xingtao.tk/posts/summary-javascript-term/</link>
       <pubDate>Thu, 02 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.wuxingtao.club/posts/summary-javascript-term/</guid>
+      <guid>https://www.xingtao.tk/posts/summary-javascript-term/</guid>
       <description>[toc] 为什么在编写代码的时候要使用unicode来表示中文? 看别人的代码，有这样的片段。 setText(&amp;quot;\u5BFC\u5165\u8DEF\u5F84&amp;quot;) 为什么不直接用中文写出来，而使用unicode表示。 两</description>
     </item>
     
