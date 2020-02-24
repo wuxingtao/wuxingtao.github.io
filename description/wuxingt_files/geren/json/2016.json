@@ -6,6 +6,7 @@
       "name": "geshop活动装修系统",
       "desc": "技术选型：vue2+webpack+gulp, 多站点,多渠道多语言，pc+wap+app端装修",
       "photoList": [
+        "images/globalegrow/geshop_app.png",
         "images/globalegrow/geshop4.png",
         "images/globalegrow/geshop_activity_m.png",
         "images/globalegrow/geshop1.png",
