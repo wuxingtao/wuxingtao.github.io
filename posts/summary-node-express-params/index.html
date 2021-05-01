@@ -1,0 +1,295 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><title>Node-express 数据传递【个人整理】 | wuxingtao Blog</title><meta name=viewport content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1"><link rel=canonical href=https://www.xingtao.ga/posts/summary-node-express-params/><link rel=stylesheet href="https://fonts.loli.net/icon?family=Material+Icons"><link href=//cdn.bootcss.com/highlight.js/10.0.0/styles/atom-one-dark.min.css rel=stylesheet><link rel=stylesheet href=https://www.xingtao.ga/css/index.css><link rel=stylesheet href=https://www.xingtao.ga/css/custom.css><link href=https://www.xingtao.ga/index.xml rel=alternate type=application/rss+xml title="wuxingtao Blog"><link href=https://www.xingtao.ga/index.xml rel=feed type=application/rss+xml title="wuxingtao Blog"><link href=https://www.xingtao.ga/favicon.ico rel="shortcut icon"><script>window.baseURL='https:\/\/www.xingtao.ga';</script></head><body><div class=navbar-fixed><nav class=navbar><div class="nav-container container"><div class="nav-wrapper inner"><a href=javascript:void(0) data-activates=sidebar class="button-collapse hide-on-large-only"><i class=material-icons>menu</i></a>
+<a href=https://www.xingtao.ga class=brand-logo><i class="material-icons hide-on-med-and-down">restaurant_menu</i>
+wuxingtao Blog</a><ul class="nav-menu tabs tabs-transparent hide-on-med-and-down"><li class=tab><a href=https://www.xingtao.ga/>Home</a></li><li class=tab><a href=https://www.xingtao.ga/archive/>Archive</a></li><li class=tab><a href=https://www.xingtao.ga/about/>About</a></li></ul><form class="nav-form hide-on-small-and-down"><div class=form-group><i class=material-icons>search</i>
+<input type=text placeholder=输入搜索关键字></div><div class=form-popout><div class=search-result><label>暂无搜索结果</label><ul></ul></div></div></form><ul class="nav-menu apps"><li><a class="search-btn hide-on-med-and-up" href=#search-panel><i class=material-icons>search</i></a></li><li><a class="term-btn hide-on-small-and-down" href=#term-panel><i class=material-icons>apps</i></a></li><li><a class="rss-btn hide-on-small-and-down" href=https://www.xingtao.ga/index.xml target=_blank><i class=material-icons>rss_feed</i></a></li></ul></div></div></nav></div><div class="mobile-search hide-on-med-and-up"><div class=header><i class=material-icons>search</i>
+<input type=text placeholder=输入搜索关键字>
+<i class="material-icons mobile-search-close">cancel</i></div><div class=content><label>暂无搜索结果</label><ul></ul></div></div><div class=taxonomy><div class=container><div class=inner><div class=taxonomy-panel><div class=group><label>Category</label><ul><li><a class="btn btn-secondary" href=https://www.xingtao.ga/categories/summary>summary
+<span class=badge>10</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/categories/node>node
+<span class=badge>2</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/categories/tao>tao
+<span class=badge>1</span></a></li></ul></div><div class=group><label>Tag</label><ul><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/summary>summary
+<span class=badge>5</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/javascript>javascript
+<span class=badge>3</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/node>node
+<span class=badge>2</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/ajax>ajax
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/development>development
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/express>express
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/git>git
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/go>go
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/golang>golang
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/hack>hack
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/html>html
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/hugo>hugo
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/mongodb>mongodb
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/react>react
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/regexp>regexp
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/seajs>seajs
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/templates>templates
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/theme>theme
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/themes>themes
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/typescript>typescript
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/vscode>vscode
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/vue>vue
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/webstorm>webstorm
+<span class=badge>1</span></a></li></ul></div></div></div></div></div><ul class=side-nav id=sidebar><li><a href=https://www.xingtao.ga/>Home</a></li><li><a href=https://www.xingtao.ga/archive/>Archive</a></li><li><a href=https://www.xingtao.ga/about/>About</a></li><li><a class="term-btn-mobile hide-on-med-only" href=https://www.xingtao.ga/categories/>Categories</a></li><li><a class="term-btn-mobile hide-on-med-only" href=https://www.xingtao.ga/tags/>Tags</a></li><li><a class="rss-btn-mobile hide-on-med-only" href=https://www.xingtao.ga/index.xml target=_blank>Rss</a></li></ul><main id=single role=main class=main-panel><div class=page-content><div class="container container-ex"><div class=inner><section class=post-wrapper><div class=toc-panel><nav id=TableOfContents><ul><li><a href=#node_envproduction-环境变量怎么设置>NODE_ENV=production 环境变量怎么设置</a></li><li><a href=#node-版本管理工具>Node 版本管理工具</a></li><li><a href=#nodejs-urlparse方法将一个url字符串转换成对象并返回>NodeJs： url.parse方法——将一个URL字符串转换成对象并返回。</a></li><li><a href=#nodejsmodulefilename__filename__dirnameprocesscwd和requiremainfilename-解惑>NodeJs：module.filename、__filename、__dirname、process.cwd()和require.main.filename 解惑</a></li><li><a href=#node-文件系统>Node 文件系统</a><ul><li><a href=#上传文件>上传文件</a></li><li><a href=#图片压缩>图片压缩</a></li></ul></li><li><a href=#nodejs的process模块>Node.js的process模块</a><ul><li><a href=#属性>属性</a></li><li><a href=#方法>方法</a></li><li><a href=#事件>事件</a></li></ul></li><li><a href=#npm>npm</a><ul><li><a href=#npm-packagejson中的dependencies和devdependencies的区别>npm package.json中的dependencies和devDependencies的区别</a></li></ul></li></ul><ul><li><a href=#span-stylecolorrednodejs-express-获取url参数post参数的三种方式span>Nodejs express 获取url参数，post参数的三种方式：</a></li><li><a href=#数据传递>数据传递:</a></li></ul></nav></div><div class="post reveal"><div class=card><section class=breadcrumb-root><div class=breadcrumbs role=navigation aria-label="breadcrumbs navigation"><a class=breadcrumb href=https://www.xingtao.ga><i class=material-icons>location_on</i>Home</a>
+<span class=breadcrumb>Node-express 数据传递【个人整理】</span></div></section><div class="card-header postinfo"><span class=card-title>Node-express 数据传递【个人整理】</span></div><div class="card-header date"><div class=group><i class=material-icons>book</i><address>归档：
+<a href=https://www.xingtao.ga/categories/node>node</a>&nbsp;</address></div><div class=group><i class=material-icons>flag</i>
+<time>创建：2017年01月 2日</time></div><div class=group><i class=material-icons>mode_edit</i>
+<time>修改：2020年09月17日</time></div></div><div class=card-content><article class=article><p>[toc]</p><h1 id=node-环境设置>NODE 环境设置</h1><h2 id=node_envproduction-环境变量怎么设置>NODE_ENV=production 环境变量怎么设置</h2><p><em>说明</em></p><p>通过<code>NODE_ENV</code>可以来设置环境变量（默认值为<code>development</code>）。 一般我们通过检查这个值来分别对开发环境和生产环境下做不同的处理。可以在命令行中通过下面的方式设置这个值：</p><ul><li>linux & mac: <code>export NODE_ENV=production</code></li><li>windows:<code>set NODE_ENV=production</code>
+比方说如果代码中要对生产环境下做一些处理，可以这样写：</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>process</span>.<span style=color:#a6e22e>env</span>.<span style=color:#a6e22e>NODE_ENV</span> <span style=color:#f92672>===</span> <span style=color:#e6db74>&#39;production&#39;</span>) {
+<span style=color:#75715e>// just for production code
+</span><span style=color:#75715e></span>}
+</code></pre></div><p>设置环境变量，在terminal里面运行下面的命令就会有开发环境的调试数据，例如日志、mongodb的数据操作等等。一般我们通过检查这个值来分别对开发环境和生产环境下做不同的处理。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#75715e>//app.js
+</span><span style=color:#75715e></span><span style=color:#66d9ef>if</span> (<span style=color:#e6db74>&#39;dev&#39;</span> <span style=color:#f92672>===</span> <span style=color:#a6e22e>app</span>.<span style=color:#a6e22e>get</span>(<span style=color:#e6db74>&#39;env&#39;</span>)) {
+    <span style=color:#a6e22e>app</span>.<span style=color:#a6e22e>use</span>(<span style=color:#a6e22e>morgan</span>(<span style=color:#e6db74>&#39;dev&#39;</span>))<span style=color:#75715e>//中间件日志
+</span><span style=color:#75715e></span>    <span style=color:#a6e22e>mongoose</span>.<span style=color:#a6e22e>set</span>(<span style=color:#e6db74>&#39;debug&#39;</span>, <span style=color:#66d9ef>true</span>);
+}
+
+<span style=color:#a6e22e>shellNODE_ENV</span><span style=color:#f92672>=</span><span style=color:#a6e22e>dev</span> <span style=color:#a6e22e>node</span> <span style=color:#a6e22e>app</span>.<span style=color:#a6e22e>js</span>
+</code></pre></div><p>linux永久设置</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># 所有用户都生效</span>
+vim /etc/profile
+<span style=color:#75715e># 当前用户生效</span>
+vim ~/.bash_profile
+在文件末尾添加类似如下语句进行环境变量的设置或修改
+
+<span style=color:#75715e># 在文件末尾添加如下格式的环境变量</span>
+export path<span style=color:#f92672>=</span>$path:/home/download:/usr/local/
+export NODE_ENV <span style=color:#f92672>=</span> product
+
+
+<span style=color:#75715e># 修改/etc/profile文件后</span>
+source /etc/profile
+<span style=color:#75715e># 修改~/.bash_profile文件后</span>
+source ~/.bash_profile
+</code></pre></div><p>*** windows下 ***</p><pre><code>SET NODE_ENV=production
+node app.js
+</code></pre><pre><code>// app.js
+console.log(process.env.NODE_ENV);
+</code></pre><blockquote><p>To set an environment variable in Windows:
+<code>SET NODE_ENV=development</code></p></blockquote><blockquote><p>on OS X or Linux:
+<code>export NODE_ENV=development</code></p></blockquote><p>We ran into this problem when working with node on Windows.</p><p>Rather than requiring anyone who attempts to run the app to set these variables, we provided a fallback within the application.</p><p><code>var environment = process.env.NODE_ENV || 'development';</code>
+In a production environment, we would define it per the usual methods (SET/export).</p><blockquote><p><strong>tips</strong></p></blockquote><pre><code>//in package.json:
+ 
+&quot;scripts&quot;: {
+  &quot;start&quot;: &quot;set NODE_ENV=dev &amp;&amp; node app.js&quot;
+}
+//in app.js:
+ 
+console.log(process.env.NODE_ENV) // dev
+console.log(process.env.NODE_ENV === 'dev') // false
+console.log(process.env.NODE_ENV.length) // 4 (including a space at the end)
+//so, this may better:
+ 
+&quot;start&quot;: &quot;set NODE_ENV=dev&amp;&amp; node app.js&quot;
+or
+ 
+console.log(process.env.NODE_ENV.trim() === 'dev') // true
+
+
+如果用webstorm开发的话 
+QQ截图20160923115412.png
+</code></pre><h2 id=node-版本管理工具>Node 版本管理工具</h2><p>windows: GNVM</p><p>linux: NVM</p><p>osx : n模块</p><h2 id=nodejs-urlparse方法将一个url字符串转换成对象并返回>NodeJs： url.parse方法——将一个URL字符串转换成对象并返回。</h2><ul><li>方法说明：
+讲一个URL字符串转换成对象并返回。</li><li>语法：
+<code>url.parse(urlStr, [parseQueryString], [slashesDenoteHost])</code></li><li>接收参数：</li></ul><pre><code>urlStr                                       url字符串
+parseQueryString                   为true时将使用查询模块分析查询字符串，默认为false
+slashesDenoteHost              
+默认为false，//foo/bar 形式的字符串将被解释成 { pathname: ‘//foo/bar' }
+如果设置成true，//foo/bar 形式的字符串将被解释成  { host: ‘foo', pathname: ‘/bar' }
+</code></pre><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>url</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#39;url&#39;</span>);
+<span style=color:#66d9ef>var</span> <span style=color:#a6e22e>a</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>url</span>.<span style=color:#a6e22e>parse</span>(<span style=color:#e6db74>&#39;http://example.com:8080/one?a=index&amp;t=article&amp;m=default&#39;</span>);
+<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>a</span>);
+ 
+<span style=color:#75715e>//输出结果：
+</span><span style=color:#75715e></span>{
+    <span style=color:#a6e22e>protocol</span> <span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;http&#39;</span> ,
+    <span style=color:#a6e22e>auth</span> <span style=color:#f92672>:</span> <span style=color:#66d9ef>null</span> ,
+    <span style=color:#a6e22e>host</span> <span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;example.com:8080&#39;</span> ,
+    <span style=color:#a6e22e>port</span> <span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;8080&#39;</span> ,
+    <span style=color:#a6e22e>hostname</span> <span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;example.com&#39;</span> ,
+    <span style=color:#a6e22e>hash</span> <span style=color:#f92672>:</span> <span style=color:#66d9ef>null</span> ,
+    <span style=color:#a6e22e>search</span> <span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;?a=index&amp;t=article&amp;m=default&#39;</span>,
+    <span style=color:#a6e22e>query</span> <span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;a=index&amp;t=article&amp;m=default&#39;</span>,
+    <span style=color:#a6e22e>pathname</span> <span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;/one&#39;</span>,
+    <span style=color:#a6e22e>path</span> <span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;/one?a=index&amp;t=article&amp;m=default&#39;</span>,
+    <span style=color:#a6e22e>href</span> <span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;http://example.com:8080/one?a=index&amp;t=article&amp;m=default&#39;</span>
+}
+</code></pre></div><h2 id=nodejsmodulefilename__filename__dirnameprocesscwd和requiremainfilename-解惑>NodeJs：module.filename、__filename、__dirname、process.cwd()和require.main.filename 解惑</h2><p><strong>背景</strong></p><p>一直存在一个疑惑，require()坐标路径是啥？fs.readFile()的坐标路径又是啥？总之，需要路径的方法，我总有这样的疑问。今天就实验一下，给弄清楚。</p><p><strong>实验</strong></p><p><strong>实验素材</strong></p><p>app.js</p><pre><code>1 //执行 node E:\node_study\file_path_study\app.js
+2
+3 console.log('*** app start ***');
+4
+5 console.log('***      module.filename = ' + module.filename + ' ***');
+6 console.log('***           __filename = ' + __filename + ' ***');
+7 console.log('***            __dirname = ' + __dirname + ' ***');
+8 console.log('***        process.cwd() = ' + process.cwd() + ' ***');
+9 console.log('*** require.main.filename= ' + require.main.filename + ' ***');
+10
+11 console.log('*** app end ***');
+12
+13 console.log('');
+14
+15 require('./lib/test');
+</code></pre><p>test.js</p><pre><code>1 console.log('*** app start ***');
+2
+3 console.log('***      module.filename = ' + module.filename + ' ***');
+4 console.log('***           __filename = ' + __filename + ' ***');
+5 console.log('***            __dirname = ' + __dirname + ' ***');
+6 console.log('***        process.cwd() = ' + process.cwd() + ' ***');
+7 console.log('*** require.main.filename= ' + require.main.filename + ' ***');
+8
+9 console.log('*** app end ***');
+</code></pre><p><strong>结果</strong></p><p><strong>结论</strong></p><p>module.filename：开发期间，该行代码所在的文件。
+__filename：始终等于 module.filename。
+__dirname：开发期间，该行代码所在的目录。
+process.cwd()：运行node的工作目录，可以使用 cd /d 修改工作目录。
+require.main.filename：用node命令启动的module的filename, 如 node xxx，这里的filename就是这个xxx。
+require()方法的坐标路径是：module.filename；fs.readFile()的坐标路径是：process.cwd()。</p><h2 id=node-文件系统>Node 文件系统</h2><h3 id=上传文件>上传文件</h3><ul><li>原生</li><li>formidable （扩展案例 见Doracms）</li><li>connect-form</li><li>multiple express4.x最新最简单的方法</li></ul><h3 id=图片压缩>图片压缩</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>gm</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>requrie</span>(<span style=color:#e6db74>&#39;gm&#39;</span>)
+<span style=color:#a6e22e>error</span><span style=color:#960050;background-color:#1e0010>：</span><span style=color:#66d9ef>this</span> <span style=color:#a6e22e>most</span> <span style=color:#a6e22e>likely</span> <span style=color:#a6e22e>means</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>gm</span><span style=color:#f92672>/</span><span style=color:#a6e22e>convert</span> <span style=color:#a6e22e>binaries</span> <span style=color:#a6e22e>can</span><span style=color:#960050;background-color:#1e0010>&#39;</span><span style=color:#a6e22e>t</span> <span style=color:#a6e22e>be</span> <span style=color:#a6e22e>found</span>
+</code></pre></div><p><code>apt-get install imagemagick graphicsmagick</code></p><p>原因：</p><p>1、没有安装GraphicsMagick</p><p>2、没有配置GraphicsMagick的path环境变量</p><p>3、安装和配置path环境变量后，机器没有重新启动。</p><p>windows下安装会默认配置path路径：</p><h2 id=nodejs的process模块>Node.js的process模块</h2><p>process模块用来与当前进程互动，可以通过全局变量process访问，不必使用require命令加载。它是一个EventEmitter对象的实例。</p><h3 id=属性>属性</h3><blockquote><p>process对象提供一系列属性，用于返回系统信息。</p></blockquote><p>process.pid：当前进程的进程号。
+process.version：Node的版本，比如v0.10.18。
+process.platform：当前系统平台，比如Linux。
+process.title：默认值为“node”，可以自定义该值。
+process.argv：当前进程的命令行参数数组。这是一个数组，数组里存放着启动这个node.js进程各个参数和命令代码，官方代码一目了然。
+process.env：指向当前shell的环境变量，比如process.env.HOME。
+process.execPath：运行当前进程的可执行文件的绝对路径。返回当前node.js进程的启动命令路径，也就是node.js安装目录下的node命令路径，是一个绝对路径</p><pre><code>$ node test.js
+url: /usr/local/bin/node
+</code></pre><p>process.stdout：指向标准输出。
+process.stdin：指向标准输入。
+process.stderr：指向标准错误。
+下面是主要属性的介绍。</p><p>(1)stdout</p><p>process.stdout用来控制标准输出，也就是在命令行窗口向用户显示内容。它的write方法等同于console.log。</p><pre><code>exports.log = function() {
+    process.stdout.write(format.apply(this, arguments) + '\n');
+};
+</code></pre><p>（2）argv</p><p>process.argv返回命令行脚本的各个参数组成的数组。</p><p>先新建一个脚本文件argv.js。</p><pre><code>// argv.js
+ 
+console.log(&quot;argv: &quot;,process.argv);
+console.log(&quot;argc: &quot;,process.argc);
+</code></pre><p>在命令行下调用这个脚本，会得到以下结果。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#a6e22e>node</span> <span style=color:#a6e22e>argv</span>.<span style=color:#a6e22e>js</span> <span style=color:#a6e22e>a</span> <span style=color:#a6e22e>b</span> <span style=color:#a6e22e>c</span>
+<span style=color:#960050;background-color:#1e0010>#</span> [ <span style=color:#e6db74>&#39;node&#39;</span>, <span style=color:#e6db74>&#39;/path/to/argv.js&#39;</span>, <span style=color:#e6db74>&#39;a&#39;</span>, <span style=color:#e6db74>&#39;b&#39;</span>, <span style=color:#e6db74>&#39;c&#39;</span> ]
+</code></pre></div><p>上面代码表示，argv返回数组的成员依次是命令行的各个部分。要得到真正的参数部分，可以把argv.js改写成下面这样。</p><pre><code>// argv.js
+ 
+var myArgs = process.argv.slice(2);
+console.log(myArgs);
+</code></pre><h3 id=方法>方法</h3><blockquote><p>process对象提供以下方法：</p></blockquote><p>process.exit()：退出当前进程。
+process.cwd()：返回运行当前脚本的工作目录的路径。_
+process.chdir()：改变工作目录。
+process.nextTick()：将一个回调函数放在下次事件循环的顶部。</p><p>process.chdir()改变工作目录的例子。</p><pre><code>process.cwd()
+# '/home/aaa'
+ 
+process.chdir('/home/bbb')
+ 
+process.cwd()
+# '/home/bbb'
+</code></pre><p>process.nextTick()的例子，指定下次事件循环首先运行的任务。</p><pre><code>process.nextTick(function () {
+    console.log('Next event loop!');
+});
+</code></pre><p>上面代码可以用setTimeout改写，但是nextTick的效果更高、描述更准确。</p><pre><code>setTimeout(function () {
+   console.log('Next event loop!');
+}, 0)
+</code></pre><h3 id=事件>事件</h3><p>（1）exit事件</p><p>当前进程退出时，会触发exit事件，可以对该事件指定回调函数。这一个用来定时检查模块的状态的好钩子(hook)(例如单元测试),当主事件循环在执行完’exit’的回调函数后将不再执行,所以在exit事件中定义的定时器可能不会被加入事件列表.</p><pre><code>process.on('exit', function () {
+  fs.writeFileSync('/tmp/myfile', 'This MUST be saved on exit.');
+});
+</code></pre><p>（2）uncaughtException事件</p><p>当前进程抛出一个没有被捕捉的意外时，会触发uncaughtException事件。</p><pre><code>process.on('uncaughtException', function (err) {
+   console.error('An uncaught error occurred!');
+   console.error(err.stack);
+});
+</code></pre><h2 id=npm>npm</h2><h3 id=npm-packagejson中的dependencies和devdependencies的区别>npm package.json中的dependencies和devDependencies的区别</h3><p>一个node package有两种依赖，一种是dependencies一种是devDependencies，其中前者依赖的项该是正常运行该包时所需要的依赖项，而后者则是开发的时候需要的依赖项，像一些进行单元测试之类的包。</p><p>如果你将包下载下来在包的根目录里运行</p><p>npm install
+默认会安装两种依赖，如果你只是单纯的使用这个包而不需要进行一些改动测试之类的，可以使用</p><p>npm install &ndash;production
+只安装dependencies而不安装devDependencies。</p><p>如果你是通过以下命令进行安装</p><p>npm install packagename
+那么只会安装dependencies，如果想要安装devDependencies，需要输入</p><p>npm install packagename &ndash;dev</p><h1 id=nodejs-express>Nodejs express</h1><h2 id=span-stylecolorrednodejs-express-获取url参数post参数的三种方式span>Nodejs express 获取url参数，post参数的三种方式：</h2><p>express获取参数有三种方法：官网实例：</p><pre><code>Checks route params (req.params),                 ex: /user/:id  
+Checks query string params (req.query),         ex: ?id=12  
+Checks urlencoded body params (req.body),   ex: 表单值 或 post的值
+</code></pre><p><strong>Node 原生方法</strong>
+<code>url.parse(urlString[, parseQueryString[, slashesDenoteHost]])</code></p><pre><code>//示例：
+(req.){
+    params = url.(req.)searchKey = params..area = req..}
+</code></pre><p>1、例如：127.0.0.1:3000/index，这种情况下，我们为了得到index，我们可以通过使用req.params得到，通过这种方法我们就可以很好的处理Node中的路由处理问题，同时利用这点可以非常方便的实现MVC模式；</p><p>2、例如：127.0.0.1:3000/index?id=12，这种情况下，这种方式是获取客户端get方式传递过来的值，通过使用req.query.id就可以获得，类似于PHP的get方法；
+3、例如：127.0.0.1：300/index，然后post了一个id=2的值，这种方式是获取客户端post过来的数据，可以通过req.body.id获取，类似于PHP的post方法；</p><p>注：post请求需要导入body-parser</p><pre><code>var express        =         require(&quot;express&quot;);  
+var bodyParser     =         require(&quot;body-parser&quot;);  
+var app            =         express();  
+  
+// need it...  
+app.use(bodyParser.urlencoded({ extended: false }));  
+  
+app.post('/login',function(req,res){  
+  var user_name=req.body.user;  
+  var password=req.body.password;  
+  console.log(&quot;User name = &quot;+user_name+&quot;, password is &quot;+password);  
+  res.end(&quot;yes&quot;);  
+});  
+***
+// 3-1 表单post传递参数至后台：
+&lt;form method=&quot;POST&quot; action=&quot;add&quot; name=&quot;userform&quot;&gt;
+    &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot; value=&quot;xq&quot; class=&quot;form-control&quot; /&gt;
+    &lt;input type=&quot;text&quot; id=&quot;age&quot; name=&quot;age&quot; value=&quot;12&quot; class=&quot;form-control&quot; /&gt;
+    &lt;input type=&quot;text&quot; id=&quot;job&quot; name=&quot;job&quot; value=&quot;coder&quot; class=&quot;form-control&quot; /&gt;
+    &lt;input type=&quot;text&quot; id=&quot;hobby&quot; name=&quot;hobby&quot; value=&quot;run&quot; class=&quot;form-control&quot; /&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt; 提交添加&lt;/button&gt;
+&lt;/form&gt;
+//app.js
+var express = require('express');
+var router = express.Router();
+router.route('/add').post(function(req, res) {
+    var userObj = {};
+    userObj = { name: req.body.name, age: req.body.age, job: req.body.job, hobby: req.body.hobby };
+    console.log(userObj); // {name:'xq',age:'12',job:'coder',hobby:'run'}});
+}
+***
+//3-2 jquery ajax传递参数至后台：
+var _id = '123456';
+$.post('/user/delete', { id: _id }, function(data) {
+    if (data.error) { 
+        $('#removeTips').html('删除异常:' + data.error + '请刷新重试。'); 
+    }else { window.location.href = '/admin/'; 
+    } 
+}, 'json');
+//app.js
+var express = require('express');
+var router = express.Router();
+router.route('/user/delete').post(function(req, res) {
+    var _id = req.body.id;
+    console.log(_id); // 123456});
+}
+
+//2-1 req.query 该属性只能获取 “express路由器传递的参数”,  值得一提的是： 与req.params配合还能在express路由器中玩正则。
+GET /search?q=tobi+ferret req.query.q
+=&gt; &quot;tobi ferret&quot;
+GET /shoes?order=desc&amp;shoe[color]=blue&amp;shoe[type]=converse req.query.order
+=&gt; &quot;desc&quot;req.query.shoe.color
+
+</code></pre><h2 id=数据传递>数据传递:</h2><ul><li><strong>1.中间件：body-Parser:</strong> （配置）取body中数据
+var bodyParser = require(&lsquo;body-parser&rsquo;);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));</li></ul><p>方法：req.body.title，（可取，或title = $(&ldquo;input[name=&ldquo;title&rdquo;]").val()）</p><ul><li><p><strong>2.params</strong>
+获取GET方法的params 参数 req.params.</p></li><li><p><strong>3.url.parse</strong> 将一个URL字符串转换成对象并返回。</p></li></ul><p>语法：
+<code>url.parse(urlStr, [parseQueryString], [slashesDenoteHost])</code></p><p>接收参数：
+urlStr url字符串
+parseQueryString 为true时将使用查询模块分析查询字符串，默认为false
+slashesDenoteHost<br>默认为false，//foo/bar 形式的字符串将被解释成 { pathname: ‘//foo/bar' }
+如果设置成true，//foo/bar 形式的字符串将被解释成 { host: ‘foo', pathname: ‘/bar' }
+例子：</p><pre><code>var url = require('url');
+var a = url.parse('http://example.com:8080/one?a=index&amp;t=article&amp;m=default');
+console.log(a);
+ 
+//输出结果：
+{
+    protocol : 'http' ,
+    auth : null ,
+    host : 'example.com:8080' ,
+    port : '8080' ,
+    hostname : 'example.com' ,
+    hash : null ,
+    search : '?a=index&amp;t=article&amp;m=default',
+    query : 'a=index&amp;t=article&amp;m=default',
+    pathname : '/one',
+    path : '/one?a=index&amp;t=article&amp;m=default',
+    href : 'http://example.com:8080/one?a=index&amp;t=article&amp;m=default'
+}
+
+## node 模版引擎
+ejs (已移除layout)
+jade (逻辑性好，缩进问题，维护难)
+swig (观望学习)
+</code></pre><blockquote><a rel=license href=http://creativecommons.org/licenses/by-nc/4.0/><img alt=知识共享许可协议 style=border-width:0 src=https://i.creativecommons.org/l/by-nc/4.0/88x31.png></a><br>本作品采用<a rel=license href=http://creativecommons.org/licenses/by-nc/4.0/>知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。</blockquote></article></div><div class="card-action card-action-links"><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/node>node</a>
+<a class="btn btn-secondary" href=https://www.xingtao.ga/tags/express>express</a>
+<a class="btn btn-secondary" href=https://www.xingtao.ga/tags/summary>Summary</a></div><div class=card-action></div><div class=pagination-single><span class="pagination-item previous"><i class=material-icons>navigate_before</i>
+<a href=https://www.xingtao.ga/posts/server-mongodb_mongoose-person-setting/ rel=prev>MongoDb + mongoose 个人整理</a></span>
+<span class="pagination-item next"><a href=https://www.xingtao.ga/posts/seajs-learn/ rel=next>seajs 学习整理</a>
+<i class=material-icons>navigate_next</i></span></div></div></div></section></div></div></div><footer class=page-footer><div class=container><div class=inner><div class=wrapper><div class="group group-slink"><h5>wuxingtao Blog</h5><ul class=slink><li><a href=https://github.com/wuxingtao target=_blank title=Github><svg class="svg-icons svg-icons-github"><use xlink:href="#svg-icons-github"/></svg></a></li><li><a href=https://twitter.com/wuxingtao target=_blank title=Twitter><svg class="svg-icons svg-icons-twitter"><use xlink:href="#svg-icons-twitter"/></svg></a></li></ul></div><div class="group group-flink"><h5>My Friends</h5><ul></ul></div></div></div></div><div class=footer-copyright><div class=container><div class=inner>Copyleft@wuxingtao</div></div></div><script>var cnzz_s_tag=document.createElement('script');cnzz_s_tag.type='text/javascript';cnzz_s_tag.async=true;cnzz_s_tag.charset='utf-8';cnzz_s_tag.src='https://s9.cnzz.com/z_stat.php?id=1278688351&web_id=1278688351';var root_s=document.getElementsByTagName('script')[0];root_s.parentNode.insertBefore(cnzz_s_tag,root_s);</script></footer></main><script type=text/javascript async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script><script type=text/javascript src=//cdn.bootcss.com/highlight.js/10.0.0/highlight.min.js></script><script src=https://cdn.bootcss.com/highlight.js/10.0.0/languages/go.min.js></script><script src=https://cdn.bootcdn.net/ajax/libs/highlight.js/10.0.0/languages/javascript.min.js></script><script src=https://cdn.bootcss.com/highlight.js/10.0.0/languages/typescript.min.js></script><script>hljs.configure({tabReplace:'  '})
+hljs.registerLanguage("graphql",function(e){return{aliases:["gql"],k:{keyword:"query mutation subscription|10 type interface union scalar fragment|10 enum on ...",literal:"true false null"},c:[e.HCM,e.QSM,e.NM,{cN:"type",b:"[^\\w][A-Z][a-z]",e:"\\W",eE:!0},{cN:"literal",b:"[^\\w][A-Z][A-Z]",e:"\\W",eE:!0},{cN:"variable",b:"\\$",e:"\\W",eE:!0},{cN:"keyword",b:"[.]{2}",e:"\\."},{cN:"meta",b:"@",e:"\\W",eE:!0}],i:/([;<']|BEGIN)/}});hljs.initHighlightingOnLoad();</script><script type=text/javascript src=https://www.xingtao.ga/js/polyfill.js></script><script type=text/javascript src=https://www.xingtao.ga/js/index.js></script></body></html>

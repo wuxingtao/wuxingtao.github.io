@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>账号绑定</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../../script/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../script/css/iconfont/qiqi-iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../../script/css/global.css">
+    <script src="../../script/js/jquery.min.js"></script>
+    <script src="../../script/plugin/layer/layer.m.js"></script>
+    <script src="../../script/js/total.js"></script>
+    <script>
+    function checkmessage() {
+        var number_pwd = $.trim($("#number_pwd").val());
+    }
+    </script>
+</head>
+
+<body class="card-wrapper mhome">
+    <header class="login-header">
+        <dl class="card-header">
+            <dt><img src="../../script/images/member/card/2_01.png"></dt>
+        </dl>
+    </header>
+    <div class="container">
+        <span class="tips-info">
+        首次登陆系统请修改初始密码并绑定密保手机
+        </span>
+        <div class="form-box">
+            <ul>
+                <li>
+                    <input type="tel" class="form-control cur" placeholder="请输入您的身份证号">
+                </li>
+                <li>
+                    <input type="password" class="form-control" placeholder="请输入新密码">
+                </li>
+                <li>
+                    <input type="password" class="form-control" placeholder="确认新密码">
+                </li>
+                <li>
+                    <input type="tel" class="form-control" placeholder="请输入手机号">
+                </li>
+            </ul>
+            <!--             <em class="clear-icon general-iconfont">&#xe65c;</em> -->
+            <!--             <em class="clear-icon general-iconfont">&#xe65c;</em> -->
+            <div class="table-box">
+                <div class="verification-box">
+                    <input type="password" class="form-control" placeholder="验证码">
+                </div>
+                <span class="btn btn-original btn-inline form-control verification-mg">发送验证码</span>
+            </div>
+        </div>
+        <div class="btn btn-original form-control" id="next_step"><a href="bindSuccess.html">绑定完成</a></div>
+    </div>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../script/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+/*    $("#next_step").on("click",function(){
+        // event.preventDefault();
+        var ident;
+        if(ident==undefined){
+            var tip = layer.open({
+                content:'您输入的验证码有误<br/>请重新输入',
+                btn:['重新输入'],
+                class:'',
+                style:'width:80%;margin:0 auto;text-align: center;'
+
+            })
+        }
+    })*/
+        //notNUll
+        // var clearhtml = '<em class="clear-icon general-iconfont">&#xe65c;</em>';
+        // $(".form-box li").append(clearhtml)
+        var sele = $(".form-box li");
+        var nextbtn = $("#next_step");
+
+        formBox.notnull(sele, nextbtn);
+        formBox.clear($('.clear-icon'), "click")
+
+    </script>
+</body>
+
+</html>

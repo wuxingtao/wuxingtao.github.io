@@ -1,0 +1,46 @@
+body{
+ font-family: "Sailec-Regular",system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.container {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+.card-content .article{
+    word-break: break-word;
+}
+
+.toc-panel nav>ul>li:first-child a {
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.toc-panel nav>ul{
+    white-space: nowrap;
+}
+
+.article{
+    font-size: 14px;
+    line-height: 1.8rem;
+}
+
+.article h2{
+    font-size:24px;
+}
+.article h3{
+    font-size:20px;
+}
+
+code,kbd,pre,samp {
+    font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;;
+    font-size:1em
+}
+img[alt*=img-80]{
+    width: 80%;
+}

@@ -1,0 +1,135 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><title>GIT【个人整理】 | wuxingtao Blog</title><meta name=viewport content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1"><link rel=canonical href=https://www.xingtao.ga/posts/summary-git-learn/><link rel=stylesheet href="https://fonts.loli.net/icon?family=Material+Icons"><link href=//cdn.bootcss.com/highlight.js/10.0.0/styles/atom-one-dark.min.css rel=stylesheet><link rel=stylesheet href=https://www.xingtao.ga/css/index.css><link rel=stylesheet href=https://www.xingtao.ga/css/custom.css><link href=https://www.xingtao.ga/index.xml rel=alternate type=application/rss+xml title="wuxingtao Blog"><link href=https://www.xingtao.ga/index.xml rel=feed type=application/rss+xml title="wuxingtao Blog"><link href=https://www.xingtao.ga/favicon.ico rel="shortcut icon"><script>window.baseURL='https:\/\/www.xingtao.ga';</script></head><body><div class=navbar-fixed><nav class=navbar><div class="nav-container container"><div class="nav-wrapper inner"><a href=javascript:void(0) data-activates=sidebar class="button-collapse hide-on-large-only"><i class=material-icons>menu</i></a>
+<a href=https://www.xingtao.ga class=brand-logo><i class="material-icons hide-on-med-and-down">restaurant_menu</i>
+wuxingtao Blog</a><ul class="nav-menu tabs tabs-transparent hide-on-med-and-down"><li class=tab><a href=https://www.xingtao.ga/>Home</a></li><li class=tab><a href=https://www.xingtao.ga/archive/>Archive</a></li><li class=tab><a href=https://www.xingtao.ga/about/>About</a></li></ul><form class="nav-form hide-on-small-and-down"><div class=form-group><i class=material-icons>search</i>
+<input type=text placeholder=输入搜索关键字></div><div class=form-popout><div class=search-result><label>暂无搜索结果</label><ul></ul></div></div></form><ul class="nav-menu apps"><li><a class="search-btn hide-on-med-and-up" href=#search-panel><i class=material-icons>search</i></a></li><li><a class="term-btn hide-on-small-and-down" href=#term-panel><i class=material-icons>apps</i></a></li><li><a class="rss-btn hide-on-small-and-down" href=https://www.xingtao.ga/index.xml target=_blank><i class=material-icons>rss_feed</i></a></li></ul></div></div></nav></div><div class="mobile-search hide-on-med-and-up"><div class=header><i class=material-icons>search</i>
+<input type=text placeholder=输入搜索关键字>
+<i class="material-icons mobile-search-close">cancel</i></div><div class=content><label>暂无搜索结果</label><ul></ul></div></div><div class=taxonomy><div class=container><div class=inner><div class=taxonomy-panel><div class=group><label>Category</label><ul><li><a class="btn btn-secondary" href=https://www.xingtao.ga/categories/summary>summary
+<span class=badge>10</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/categories/node>node
+<span class=badge>2</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/categories/tao>tao
+<span class=badge>1</span></a></li></ul></div><div class=group><label>Tag</label><ul><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/summary>summary
+<span class=badge>5</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/javascript>javascript
+<span class=badge>3</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/node>node
+<span class=badge>2</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/ajax>ajax
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/development>development
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/express>express
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/git>git
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/go>go
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/golang>golang
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/hack>hack
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/html>html
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/hugo>hugo
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/mongodb>mongodb
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/react>react
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/regexp>regexp
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/seajs>seajs
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/templates>templates
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/theme>theme
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/themes>themes
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/typescript>typescript
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/vscode>vscode
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/vue>vue
+<span class=badge>1</span></a></li><li><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/webstorm>webstorm
+<span class=badge>1</span></a></li></ul></div></div></div></div></div><ul class=side-nav id=sidebar><li><a href=https://www.xingtao.ga/>Home</a></li><li><a href=https://www.xingtao.ga/archive/>Archive</a></li><li><a href=https://www.xingtao.ga/about/>About</a></li><li><a class="term-btn-mobile hide-on-med-only" href=https://www.xingtao.ga/categories/>Categories</a></li><li><a class="term-btn-mobile hide-on-med-only" href=https://www.xingtao.ga/tags/>Tags</a></li><li><a class="rss-btn-mobile hide-on-med-only" href=https://www.xingtao.ga/index.xml target=_blank>Rss</a></li></ul><main id=single role=main class=main-panel><div class=page-content><div class="container container-ex"><div class=inner><section class=post-wrapper><div class=toc-panel><nav id=TableOfContents><ul><li><ul><li><a href=#git-ssh-生成>Git ssh 生成</a></li><li><a href=#git常用命令速查表>Git常用命令速查表</a></li><li><a href=#git-add--a-git-add-git-add--u-区别>git add -A ，git add .，git add -u 区别</a></li><li><a href=#本地仓库推送>本地仓库推送</a></li><li><a href=#git-分支>git 分支</a></li><li><a href=#git-commit-中文报错>git commit 中文报错</a></li><li><a href=#git的撤消操作---重置-签出-和-撤消和储藏>Git的撤消操作 - 重置, 签出 和 撤消,和储藏</a></li><li><a href=#commit-message-格式>commit message 格式</a></li><li><a href=#git错误整理>git错误整理</a></li></ul></li></ul></nav></div><div class="post reveal"><div class=card><section class=breadcrumb-root><div class=breadcrumbs role=navigation aria-label="breadcrumbs navigation"><a class=breadcrumb href=https://www.xingtao.ga><i class=material-icons>location_on</i>Home</a>
+<span class=breadcrumb>GIT【个人整理】</span></div></section><div class="card-header postinfo"><span class=card-title>GIT【个人整理】</span></div><div class="card-header date"><div class=group><i class=material-icons>book</i><address>归档：
+<a href=https://www.xingtao.ga/categories/summary>Summary</a>&nbsp;</address></div><div class=group><i class=material-icons>flag</i>
+<time>创建：2016年04月 7日</time></div></div><div class=card-content><article class=article><p>[toc]</p><h3 id=git-ssh-生成>Git ssh 生成</h3><p><code>ssh-keygen -t rsa -C "wuxingtao@jlpay.com" -f "jlpayPro"</code></p><pre><code>     ssh-keygen - 生成、管理和转换认证密钥
+     
+     ssh-keygen [-q] [-b bits] -t type [-N new_passphrase] [-C comment] [-foutput_keyfile]
+     
+     ssh-keygen -p [-P old_passphrase] [-N new_passphrase] [-f keyfile]
+     
+     ssh-keygen -i [-f input_keyfile]
+     
+     ssh-keygen -e [-f input_keyfile]
+     
+     ssh-keygen -y [-f input_keyfile]
+     
+     ssh-keygen -c [-P passphrase] [-C comment] [-f keyfile]
+     
+     ssh-keygen -l [-f input_keyfile]
+     
+     ssh-keygen -B [-f input_keyfile]
+     
+     ssh-keygen -D reader
+     
+     ssh-keygen -F hostname [-f known_hosts_file]
+     
+     ssh-keygen -f filename
+     
+     ssh-keygen -H [-f known_hosts_file]
+     
+     ssh-keygen -R hostname [-f known_hosts_file]
+     
+     ssh-keygen -U reader [-f input_keyfile]
+     
+     ssh-keygen -r hostname [-f input_keyfile] [-g]
+     
+     ssh-keygen -G output_file [-v] [-b bits] [-M memory] [-S start_point]
+     
+     ssh-keygen -T output_file -f input_file [-v] [-a num_trials] [-W generator]
+     
+     ssh-keygen 用于为 生成、管理和转换认证密钥，包括 RSA 和 DSA 两种密钥。
+</code></pre><h3 id=git常用命令速查表>Git常用命令速查表</h3><p><img src=D:%5CApocalyWorkSpace%5C%E4%B8%AA%E4%BA%BAmark%E5%9B%BE%E7%89%87%5C0.27535180817358196.png alt=image></p><h3 id=git-add--a-git-add-git-add--u-区别>git add -A ，git add .，git add -u 区别</h3><ul><li><ol><li>git add -A 保存所有的修改</li></ol></li><li><ol start=2><li>git add . 保存新的添加和修改，但是不包括删除</li></ol></li><li><ol start=3><li>git add -u 保存修改和删除，但是不包括新建文件。</li></ol></li></ul><h3 id=本地仓库推送>本地仓库推送</h3><pre><code>1. git init //初始化仓库
+
+2. git add .(文件name) //添加文件到本地仓库
+
+3. git commit -m &quot;first commit&quot; //添加文件描述信息
+
+4. git remote add origin + 远程仓库地址 //链接远程仓库，创建主分支
+
+5. git pull origin master // 把本地仓库的变化连接到远程仓库主分支
+
+6. git push -u origin master //把本地仓库的文件推送到远程仓库
+7. git push -u origin master -f // 强制推送
+</code></pre><h3 id=git-分支>git 分支</h3><blockquote><p>git branch 新建分支</p></blockquote><blockquote><p>git checkout 切换本地分支</p></blockquote><blockquote><p>git push origin dev 提交该分支到远程仓库</p></blockquote><blockquote><p>git pull origin xf:xf 把远程分支的代码pull到本地分支：git pull &lt;远程主机名> &lt;远程分支名>:&lt;本地分支名></p></blockquote><blockquote><p>git push origin xf:xf 将本地的xf分支推送到origin主机的xf分支。</p></blockquote><blockquote><p>git push origin test 将本地的test分支推送到origin主机的test分支。如果后者不存在，则会被新建。</p></blockquote><pre><code>git checkout -b iss53   //创建新分支并选择该分支
+
+</code></pre><p>它是下面两条命令的简写：</p><pre><code>$ git branch iss53
+$ git checkout iss53
+</code></pre><pre><code>git branch -r  命令查看远端库的分支情况
+git branch -a 查看所有分支，包含本地远程
+
+
+$ git push origin dbg_lichen_star:dbg_lichen_star  //把新建的本地分支push到远程服务器，远程分支与本地分支同名（当然可以随意起名）：
+</code></pre><h4 id=解决git本地仓库push远程仓库的时候报了异常fatal-the-current-branch-master-has-no-upstream-branch>解决git本地仓库push远程仓库的时候，报了异常：fatal the current branch master has no upstream branch</h4><p><code>1.翻译后大致意思是，远程仓库创建时候要建立一个README文件，然后再进行push操作。因为这个文件是远程仓库主分支所必须的，见如下截图。</code></p><pre><code>git push -u origin master
+</code></pre><h3 id=git-commit-中文报错>git commit 中文报错</h3><pre><code>Warning: Your console font probably doesn't support Unicode
+</code></pre><p>应该是字符不对，所以在粘贴之前先修改一下字符，
+用这个命令：<code>$ git config --global core.autocrlf true</code></p><h3 id=git的撤消操作---重置-签出-和-撤消和储藏>Git的撤消操作 - 重置, 签出 和 撤消,和储藏</h3><h4 id=修复未提交文件中的错误重置>修复未提交文件中的错误(重置)</h4><p><code>git checkout .</code> 本地所有修改,没有提交的返回原来的状态;</p><p><code>git reset --hard HEAD</code></p><p>让工作目录回到上次提交时的状态(last committed state):</p><p><code>git checkout -- hello.rb</code></p><p>只是要恢复一个文件,如"hello.rb", 你就要使用 git checkout</p><p><code>git reset --hard FETCH_HEAD</code></p><p>local文件冲突了
+1.pull会使用git merge导致冲突，需要将冲突的文件resolve掉 git add -u, git commit之后才能成功pull.</p><p>2.如果想放弃本地的文件修改，可以使用git reset &ndash;hard FETCH_HEAD，FETCH_HEAD表示上一次成功git pull之后形成的commit点。然后git pull.
+注意：</p><p>git merge会形成MERGE-HEAD(FETCH-HEAD) 。git push会形成HEAD这样的引用。HEAD代表本地最近成功push后形成的引用。</p><p>在git push的时候，有时候我们会想办法撤销git commit的内容</p><p>1、找到之前提交的git commit的id</p><p><code>git log</code></p><p>找到想要撤销的id</p><p>2、<code>git reset –hard id</code></p><p>完成撤销,同时将代码恢复到前一commit_id 对应的版本</p><p>3、<code>git reset id</code></p><p>完成Commit命令的撤销，但是不对代码修改进行撤销，可以直接通过git commit 重新提交对本地代码的修改</p><h4 id=修复已提交文件中的错误>修复已提交文件中的错误</h4><p><code>git revert HEAD</code>
+撤消了上次提交(HEAD)的新提交, 你就有机会来修改新提交(new commit)里的提交注释信息.</p><p><code>git revert HEAD^</code>
+你也可撤消更早期的修改, 下面这条命令就是撤消“上上次”(next-to-last)的提交:</p><h4 id=git冲突>git冲突</h4><p><code>You are not currently on a branch.</code>
+首先git checkout -b temp</p><p>其次git checkout master</p><p>即可恢复到master repository的状态，然后就可以pull了</p><h4 id=储藏stashing>储藏(Stashing)</h4><p><code>git stash</code>
+<a href=https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%EF%BC%88Stashing%EF%BC%89>参考</a></p><h3 id=commit-message-格式>commit message 格式</h3><h4 id=格式语法>格式语法</h4><p>每次提交，Commit message 都包括三个部分：Header，Body 和 Footer。Header为必须</p><pre><code>&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;
+// 空一行
+&lt;body&gt;
+// 空一行
+&lt;footer&gt;
+//例:
+feat(gulp):gulp增加ruby-scss控制
+</code></pre><p>Header部分只有一行，包括三个字段：<strong>type</strong>（必需）、<strong>scope</strong>（可选）和<strong>subject</strong>（必需）。
+Body 部分是对本次 commit 的详细描述，可以分成多行。</p><pre><code>More detailed explanatory text, if necessary.  Wrap it to
+about 72 characters or so.
+ 
+Further paragraphs come after blank lines.
+ 
+- Bullet points are okay, too
+- Use a hanging indent
+</code></pre><hr><h4 id=1commitizen依赖及生成工具>1.commitizen依赖及生成工具</h4><pre><code>$ npm install -g commitizen //commit message撰写工具
+$ commitizen init cz-conventional-changelog --save --save-exact   //项目目录里，运行下面的命令，使其支持 Angular 的 Commit message 格式。
+</code></pre><p>以后，凡是用到<strong>git commit</strong>命令，一律改为使用<strong>git cz</strong>。这时，就会出现选项，用来生成符合格式的 Commit message。</p><p>| <strong>生成changelog</strong></p><pre><code>npm install -g conventional-changelog
+npm install -g conventional-changelog-cli
+
+$ conventional-changelog -p angular -i CHANGELOG.md -w   // 上面命令不会覆盖以前的 Change log，只会在CHANGELOG.md的头部加上自从上次发布以来的变动。
+conventional-changelog -p angular -i CHANGELOG.md -w -r 0        //想生成所有发布的 Change log，要改为运行下面的命令。
+</code></pre><hr><h4 id=2changelogmd-commit内容回退修改>2.changelog.md commit内容回退，修改</h4><p><code>git commit --amend</code> 或者 (<code>git cz --amend</code>)
+如果已经通过git push提交了，看你们公司用的什么git服务器了，一般用户想修改的话需要相关的权限，找管理员了;如果已经有其他开发人员基于你的提交进行了修改并提交的话，那就更麻烦了，后面的所有提交都要重新做一遍;
+如果还没有push到服务器，只是本地进行了commit，并且没有进行新的commit，只需要git commit &ndash;amend;如果进行了新的commit，只需要git reset &ndash;soft xxx （xxx有问题那次提交的commit id），然后在进行git commit就行，不过所有后面的提交都成为了一次提交;如果想保持每次提交独立的话，使用</p><pre><code>git checkout -b tmp ^xxx
+git cherry-pick xxx
+git commit --amend
+git cherry-pick &lt;依次后面的提交id&gt;
+</code></pre><h4 id=vim-模式-写commit-message>vim 模式 写commit message</h4><p><strong>1.摁键盘i,最下面有所变化</strong></p><p><strong>2.此时光标在最上面，输入要替提交的说明&rsquo;comment',嗯Esc,然后输入:,光标跑到了最下面</strong></p><p><strong>3.输入wq之后，摁回车即可，就要回到了原始的命令行界面</strong></p><hr><h4 id=vim模式下报错e37-no-write-since-last-change-add--to-override>vim模式下报错E37: No write since last change (add ! to override)</h4><p><strong>故障现象：</strong></p><p>使用vim修改文件报错，系统提示如下：</p><p>E37: No write since last change (add ! to override)</p><p><strong>故障原因：</strong></p><p>文件为只读文件，无法修改。</p><p><strong>解决办法：</strong></p><p>使用命令:w!强制存盘即可，在vim模式下，键入以下命令：</p><p>:w！</p><p>存盘后在使用vim命令检查是否保存，如未保存，编辑后重复以上操作。</p><p>或者报出linux中vi保存文件时的“Can&rsquo;t open file for writing”</p><p>E212: Can&rsquo;t open file for writing</p><p>Press ENTER or type command to continue</p><p>出现这个错误的原因可能有两个：一是当前用户的权限不足，二是此文件可能正被其他程序或用户使用。这里的错误原因是前者，解决方案是在使用vi命令打开文件时，前面加上sudo来临时提供管理员权限，即使用命令“sudo vi grub.cfg”打开编辑文件。由此看来，sudo命令是很有用的，当我们执行某种操作系统提示诸如“operation not permitted”等权限不足信息时，我们很多时候都可以在命令前面加上sudo来解决权限不足问题</p><h3 id=git错误整理>git错误整理</h3><h4 id=with-the-branch-name-from-the-remote-but-no-such-ref-was-fetched>with the from the remote, but no such ref was fetched.?</h4><blockquote><p>解决:git branch &ndash;set-upstream master origin/master</p></blockquote><h4 id=git-checkout-行结束符crlf-lf问题>git checkout 行结束符CRLF LF问题</h4><p>主要的原因在与文件的结尾标识符。</p><p>CRLF->Windows style</p><p>LF->Unix Style</p><p>CR->Mac Style</p><p>CRLF表示句尾使用回车换行两个字符(即我们常在Windows编程时使用”\r\n”换行) LF表示表示句尾，只使用换行. CR表示只使用回车.</p><p>Git 可以在你提交时，自动地把行结束符 CRLF 转换成 LF，而在签出代码时把 LF 转换成 CRLF 。用 core.autocrlf 来打开此项功能，如果是在Windows 系统上，把它设置成 true，这样当签出代码时，LF 会被转换成 CRLF： <code>git config –global core.autocrlf true</code></p><p>Linux 或 Mac 系统使用 LF 作为行结束符，因此你不想 Git 在签出文件时进行自动的转换；当一个以 CRLF 为行结束符的文件不小心被引入时，你肯定想进行修正，把 core.autocrlf 设置成 input 来告诉 Git 在提交时把 CRLF 转换成 LF，签出时不转换： <code>git config –global core.autocrlf input</code></p><p>参考上面的配置方法，你就可以在 Windows 系统上，签出文件时保留 CRLF，而在 Mac 和 Linux 系统上，包括仓库中，保留 LF 。</p><p>如果你是 Windows 程序员，且正在开发仅运行在 Windows 上的项目，可以设置 false 取消此功能，把回车符记录在库中： <code>git config –global core.autocrlf false</code></p><p>这次我这边的修改是，使用了<code>git config –global core.autocrlf input</code>该命令，将问题解决了。</p><p>也可以在windows重新安装git工具，git安装过程中，有个选项，可以通过这个选项来选择选 择core.autocrlf默认配置。</p><blockquote><a rel=license href=http://creativecommons.org/licenses/by-nc/4.0/><img alt=知识共享许可协议 style=border-width:0 src=https://i.creativecommons.org/l/by-nc/4.0/88x31.png></a><br>本作品采用<a rel=license href=http://creativecommons.org/licenses/by-nc/4.0/>知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。</blockquote></article></div><div class="card-action card-action-links"><a class="btn btn-secondary" href=https://www.xingtao.ga/tags/summary>Summary</a>
+<a class="btn btn-secondary" href=https://www.xingtao.ga/tags/git>git</a></div><div class=card-action></div><div class=pagination-single><span class="pagination-item previous"><i class=material-icons>navigate_before</i>
+<a href=https://www.xingtao.ga/posts/summary-html5-learn/ rel=prev>HTML5整理总结</a></span>
+<span class="pagination-item next"><a href=https://www.xingtao.ga/posts/summary-ajax-learn/ rel=next>ajax 个人整理</a>
+<i class=material-icons>navigate_next</i></span></div></div></div></section></div></div></div><footer class=page-footer><div class=container><div class=inner><div class=wrapper><div class="group group-slink"><h5>wuxingtao Blog</h5><ul class=slink><li><a href=https://github.com/wuxingtao target=_blank title=Github><svg class="svg-icons svg-icons-github"><use xlink:href="#svg-icons-github"/></svg></a></li><li><a href=https://twitter.com/wuxingtao target=_blank title=Twitter><svg class="svg-icons svg-icons-twitter"><use xlink:href="#svg-icons-twitter"/></svg></a></li></ul></div><div class="group group-flink"><h5>My Friends</h5><ul></ul></div></div></div></div><div class=footer-copyright><div class=container><div class=inner>Copyleft@wuxingtao</div></div></div><script>var cnzz_s_tag=document.createElement('script');cnzz_s_tag.type='text/javascript';cnzz_s_tag.async=true;cnzz_s_tag.charset='utf-8';cnzz_s_tag.src='https://s9.cnzz.com/z_stat.php?id=1278688351&web_id=1278688351';var root_s=document.getElementsByTagName('script')[0];root_s.parentNode.insertBefore(cnzz_s_tag,root_s);</script></footer></main><script type=text/javascript async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script><script type=text/javascript src=//cdn.bootcss.com/highlight.js/10.0.0/highlight.min.js></script><script src=https://cdn.bootcss.com/highlight.js/10.0.0/languages/go.min.js></script><script src=https://cdn.bootcdn.net/ajax/libs/highlight.js/10.0.0/languages/javascript.min.js></script><script src=https://cdn.bootcss.com/highlight.js/10.0.0/languages/typescript.min.js></script><script>hljs.configure({tabReplace:'  '})
+hljs.registerLanguage("graphql",function(e){return{aliases:["gql"],k:{keyword:"query mutation subscription|10 type interface union scalar fragment|10 enum on ...",literal:"true false null"},c:[e.HCM,e.QSM,e.NM,{cN:"type",b:"[^\\w][A-Z][a-z]",e:"\\W",eE:!0},{cN:"literal",b:"[^\\w][A-Z][A-Z]",e:"\\W",eE:!0},{cN:"variable",b:"\\$",e:"\\W",eE:!0},{cN:"keyword",b:"[.]{2}",e:"\\."},{cN:"meta",b:"@",e:"\\W",eE:!0}],i:/([;<']|BEGIN)/}});hljs.initHighlightingOnLoad();</script><script type=text/javascript src=https://www.xingtao.ga/js/polyfill.js></script><script type=text/javascript src=https://www.xingtao.ga/js/index.js></script></body></html>
